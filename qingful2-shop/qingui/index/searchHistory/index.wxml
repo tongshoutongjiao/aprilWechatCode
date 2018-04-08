@@ -1,0 +1,13 @@
+<view class='qingful-search-extend-wrap'>
+    <view class='qingful-search-extend-header'>
+        <view class='qingful-search-extend-box' style='width:{{defaultWidth-130/(750/defaultWidth)}}px'>
+            <icon class='iconfont icon-sousuo' style='padding:0 10rpx 0 24rpx;'></icon>
+            <input class='qingful-search-extend-input' focus="true" placeholder='搜索你喜欢的' style='width:{{defaultWidth-196/(750/defaultWidth)}}px'></input>
+        </view>
+        <view>取消</view>
+    </view>
+    <view class='qingful-search-extend-history'>
+        <view class='qingful-search-extend-title font-15'>历史搜索{{historyData.defaultWidth}}</view>
+        <text class='qingful-search-extend-item font-13' wx:for="{{historyData.data}}" wx:key="">{{item.content}}</text>
+    </view>
+</view>

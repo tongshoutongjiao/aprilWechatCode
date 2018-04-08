@@ -1,0 +1,194 @@
+@import "../../../app.wxss";
+@font-face {
+    font-family: 'iconfont'; /* project id 560268 */
+    src: url('//at.alicdn.com/t/font_560268_ls8d02rixvoq1tt9.eot');
+    src: url('//at.alicdn.com/t/font_560268_ls8d02rixvoq1tt9.eot?#iefix') format('embedded-opentype'),
+         url('//at.alicdn.com/t/font_560268_ls8d02rixvoq1tt9.woff') format('woff'),
+         url('//at.alicdn.com/t/font_560268_ls8d02rixvoq1tt9.ttf') format('truetype'),
+         url('//at.alicdn.com/t/font_560268_ls8d02rixvoq1tt9.svg#iconfont') format('svg');
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 50rpx;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-gouwuche:before { content: "\e609"; }
+.icon-gouwuche1:before { content: "\e687"; }
+.icon-gouwuche2:before { content: "\e655"; }
+.icon-gouwuche3:before { content: "\e657"; }
+
+.qingful-product-wrap{
+    padding: 0 24rpx;
+    background: #fff;
+    margin-bottom: 20rpx;
+}
+.qingful-product-wrap.scroll{
+    padding: 0;
+}
+.qingful-product-img{
+    width: 100%;
+    height: 100%;
+}
+/* 一列大图  */
+.qingful-product-0-wrap{
+    margin: 30rpx 0;
+    background-color: #fff;
+    
+    box-shadow: 0rpx 8rpx 16rpx rgba(0,0,0,.1);
+}
+.qingful-product-0-info{
+    display: flex;
+    justify-content: space-between;
+}
+.qingful-product-0-info.name-btn{
+    position: relative;
+}
+.qingful-product-0-info-name{
+    line-height: 48rpx;
+    padding: 20rpx 0 20rpx 16rpx;
+}
+.qingful-product-wrap.no-slide .qingful-product-0-info-name{
+    padding: 20rpx 24rpx;
+}
+.qingful-product-btn-icon{
+    width: 44rpx;
+    height: 44rpx;
+    text-align: center;
+    line-height: 44rpx;
+    color: #fff;
+    position: absolute;
+}
+.qingful-product-0-info-wrap .qingful-product-btn-icon{
+    bottom: 0;
+    right: 76rpx;
+}
+.qingful-product-0-info-price{
+    padding: 0 0 20rpx 16rpx;
+}
+.qingful-product-wrap.no-slide .ingful-product-0-info-price{
+    padding: 0 0 20rpx 24rpx;
+}
+.qingful-product-0-btn-sale{
+    padding-right: 16rpx;
+}
+.qingful-product-wrap.no-slide .qingful-product-0-btn-sale{
+    padding-right: 24rpx;
+}
+/*一列 横向排列  */
+.qingful-product-1-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin: 20rpx 0;
+    background-color: #fff;
+    box-shadow: 0rpx 8rpx 16rpx rgba(0,0,0,.1);
+}
+.qingful-product-1-wrap.is-slide{
+    padding: 20rpx;
+}
+.qingful-product-1-wrap.no-slide{
+    padding: 20rpx 24rpx;
+}
+.qingful-product-1-img-wrap{
+    width: 230rpx;
+    min-width: 230rpx;
+    height: 230rpx;
+}
+.qingful-product-1-info-wrap{
+    padding-left: 20rpx;
+}
+.qingful-product-1-name{
+    line-height: 48rpx;
+}
+.qingful-product-1-price-wrap{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 36rpx;
+}
+.qingful-product-1-price-wrap .qingful-product-btn-icon{
+    bottom: 0;
+    right: 24rpx;
+}
+.qingful-product-1-sub{
+    color: #8a8a8a;
+    height: 84rpx;
+    line-height: 42rpx;
+}
+/* 两列  */
+.qingful-product-2-wrap-item{
+    background: #fff;
+    margin-top: 30rpx;
+    box-shadow: 0rpx 8rpx 16rpx rgba(0,0,0,.1);
+}
+.qingful-product-2-wrap-item:nth-child(2n+1){
+    float: left;
+}
+.qingful-product-2-wrap-item:nth-child(2n){
+    float: right;
+}
+.qingful-product-2-info-wrap{
+    margin: 0 14rpx;
+}
+.qingful-product-2-price-wrap{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10rpx 0 20rpx 0;
+}
+.qingful-product-2-price-wrap .qingful-product-btn-icon{
+    bottom: 20rpx;
+    right: 0rpx;
+}
+/*三列  */
+.qingful-product-3-wrap{
+    display: flex;
+    flex-flow: row wrap;
+}
+.qingful-product-3-item{
+    box-shadow: 0rpx 8rpx 16rpx rgba(0,0,0,.1);
+    margin-top: 24rpx;
+}
+.qingful-product-3-item:not(:nth-child(3n)){
+     margin-right: 15rpx; 
+}
+.qingful-product-3-item .qingful-product-2-price-wrap .qingful-product-btn-icon{
+    bottom: 20rpx;
+    right: 0;
+}
+/* 三列滚动  */
+.qingful-product-4-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.qingful-product-4-wrap.no-slide .qingful-product-4-item:last-child{
+    padding-right: 24rpx;
+}
+.qingful-product-4-item{
+    width: 216rpx;
+    min-width: 216rpx;
+    background: #fff;
+    padding-top: 20rpx;
+}
+.qingful-product-4-item:not(:last-child){
+    margin-right: 12rpx;
+}
+.qingful-product-4-item:first-child{
+    margin-left: 24rpx;
+}
+.qingful-product-4-item:last-child{
+    padding-right: 24rpx;
+}
+.qingful-product-4-img-wrap{
+    width: 216rpx;
+    min-width: 216rpx;
+    height: 216rpx;
+}
+.qingful-product-2-name{
+    padding-top: 20rpx;
+}
+.qingful-product-4-item .qingful-product-2-price-wrap .qingful-product-btn-icon{
+    bottom: 20rpx;
+    right: 0;
+}

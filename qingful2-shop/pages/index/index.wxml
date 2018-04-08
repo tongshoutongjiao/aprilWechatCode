@@ -1,0 +1,15 @@
+<!-- <view wx:if="{{!start_page}}" style="height: 140rpx;background-color: #08b8fd;z-index: 50;position: fixed;width: 100%;">
+
+</view> -->
+<view class="container">
+    <view style="width:100%;height: 100%;">
+        <!-- 启动页 -->
+        <qingui-index-start wx:if="{{page_id && start_page}}" page_id="{{page_id}}" bind:start-event="startEvent"></qingui-index-start>
+        <!-- 弹出广告 -->
+        <qingui-index-layer wx:if="{{page_id && !start_page}}" page_id="{{page_id}}"></qingui-index-layer>
+        <!-- 组件列表 -->
+        <qingui-index wx:if="{{page_id && !start_page}}" page_id="{{page_id}}"></qingui-index>
+        <!-- 底部导航 -->
+        <qingui-index-tabbar wx:if="{{page_id && !start_page}}" tab-data="{{tabbar}}" bind:tabbar-event="tabbarEvent"></qingui-index-tabbar>
+    </view>
+</view>

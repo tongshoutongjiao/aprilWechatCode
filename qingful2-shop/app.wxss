@@ -1,0 +1,97 @@
+/**app.wxss**/
+@import "./font.wxss";
+
+page {
+    color:#222222;
+    line-height:160%;
+    background:#f4f4f4;
+    font-size:28rpx;
+    font-family:'PingFang-SC';
+}
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+} 
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.clearfix {
+	clear: both;
+}
+.text-align-c{
+    text-align: center;
+}
+.text-align-l{
+    text-align: left;
+}
+.text-align-r{
+    text-align: right;
+}
+.font-10{
+    font-size: 20rpx;
+}
+.font-11{
+    font-size: 22rpx;
+}
+.font-12{
+    font-size: 24rpx;
+}
+.font-13{
+    font-size: 26rpx;
+}
+.font-14{
+    font-size: 28rpx;
+}
+.font-15{
+    font-size: 30rpx;
+}
+.font-16{
+    font-size: 32rpx;
+}
+.font-17{
+    font-size: 34rpx;
+}
+.font-18{
+    font-size: 36rpx;
+}
+.font-20{
+    font-size: 40rpx;
+}
+.font-21{
+    font-size: 42rpx;
+}
+.font-25{
+    font-size: 50rpx;
+}
+.text-hidden-1{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.text-hidden-2{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	display:-webkit-box; 
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2; 
+}
+.text-decoration{
+    text-decoration:line-through;
+}
+.qingful-text-color{
+    color:#FF5757;
+}
+.qingful-bg-color{
+    background-color: #FF5757;
+}
+.qingful-btn-bgcolor{
+    background:#FF5757;
+    box-shadow: 0rpx 6rpx 12rpx rgba(255,87,87,.4);
+}

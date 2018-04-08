@@ -1,0 +1,19 @@
+<!--pages/address/address.wxml-->
+<view class="container">
+    <view>
+        <view class="city">北京市</view>
+        <view class="city">北京市</view>
+        <view class="city">北京市</view>
+        <view class="city">北京市</view>
+        <view class="city">上海市</view>
+        <view class="city">上海市</view>
+        <view class="city">上海市</view>
+        <view class="city">上海市</view>
+        <view class="city">新疆维吾尔自治区</view>
+        <view class="city">广西壮族自治区</view>
+        <view class="city">内蒙古自治区</view>
+        <view class="city">秦皇岛市</view>
+        <view class="city">西藏自治区</view>
+    </view>
+
+</view>

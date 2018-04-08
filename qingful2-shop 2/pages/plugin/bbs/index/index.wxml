@@ -1,0 +1,145 @@
+<view class="qingful-bbs-container">
+    <view class="searchPart">
+        <view class="selectPart" bindtap="switchSelectTab">
+            {{firstItem}}
+            <text class="down" wx:if="{{!selectArea}}"></text>
+            <text class="up" wx:else></text>
+        </view>
+        <view class="search">
+            <icon type="search" size="15"></icon>
+            <input placeholder="搜索你喜欢的" bindinput="heardTitle"/>
+        </view>
+        <view class="topic" bindtap="{{keyword?'searchBbs':'navigatorToItemList'}}">{{keyword?'搜索':'话题'}}</view>
+        <view class="selectBox">
+            <view class="phone_select" wx:if="{{!selectTab}}">
+                <block wx:for="{{searchItem}}" wx:key="index">
+                    <view class="select_one  {{item.content== firstItem?'selectedItem':'' }}" bindtap="mySelect"
+                          data-name="{{item.content}}" data-type="{{item.type}}">
+                        {{item.content}}
+                        <view class="underLine"></view>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+    <view scrollY="true" class="userList" style="width: {{windowWidth}}">
+        <block wx:for="{{bbsList}}" wx:key="bbs">
+            <view class="user" wx:if="{{item.is_cream && is_cream}}" bindtap="linkDetail" data-id="{{item.id}}">
+                <view class="name" catchtap="navigatorToSelf" data-id="{{item.bbs_user_id}}">
+                    <image class="photo" mode="scaleToFill" src="{{item.headimg}}"></image>
+                    <view>
+                        <text>{{item.username}}</text>
+                        <text>{{item.created_at}}</text>
+                    </view>
+                    <view class="concat" style="color:{{color}};border-color: {{color}};" bindtap="makePhoneCall"
+                          data-phone="{{item.phone}}">联系TA
+                    </view>
+                </view>
+                <view class="title">
+                    <block wx:if="{{item.is_top}}">
+                        <text class="top">顶</text>
+                    </block>
+                    <block wx:if="{{item.is_cream}}">
+                        <text class="better">精</text>
+                    </block>
+                    <text>{{item.title}}</text>
+                </view>
+                <view class="con">
+                    <view wx:if="{{item.content}}">{{item.content}}</view>
+                    <view class="imgList" wx:if="{{item.img.length}}">
+                        <view class="imgWrapper" wx:for="{{item.img}}" wx:for-item="img" wx:key=":this">
+                            <image mode="scaleToFill" src="{{img}}"></image>
+                        </view>
+                    </view>
+                    <view class="tagList">
+                        <block wx:for="{{item.label}}" wx:for-item="label" wx:key=":this">
+                            <text class="tag">{{label.plate.name}}</text>
+                        </block>
+                    </view>
+                    <view class="position" wx:if="{{item.address}}">
+                        <text class="icon iconfont icon-address"></text>
+                        <text class="over-hide" style="-webkit-line-clamp:1;width: 75%;">{{item.address}}</text>
+                        <text>{{item.len}}km</text>
+                    </view>
+                </view>
+                <view class="btm">
+                    <view class="operateTab">
+                        <text class="icon iconfont icon-yanjing"></text>
+                        <text class="number">{{item.num_look}}</text>
+                    </view>
+                    <view class="operateTab">
+                        <text class="icon iconfont icon-pinglun"></text>
+                        <text class="number">{{item.num_reply}}</text>
+                    </view>
+                    <view class="operateTab">
+                        <text class="icon iconfont icon-zan"></text>
+                        <text class="number">{{item.num_zan}}</text>
+                    </view>
+                    <view class="operateTab">
+                        <text class="icon iconfont icon-fenxiang"></text>
+                        <text class="number">{{item.num_share}}</text>
+                    </view>
+                </view>
+            </view>
+            <view class="user" wx:if="{{!is_cream}}" bindtap="linkDetail" data-id="{{item.id}}">
+                <view class="name">
+                    <image class="photo" catchtap="navigatorToSelf" data-id="{{item.bbs_user_id}}" mode="scaleToFill"
+                           src="{{item.headimg}}"></image>
+                    <view>
+                        <text>{{item.username}}</text>
+                        <text>{{item.created_at}}</text>
+                    </view>
+                    <view class="concat" style="color:{{color}};border-color: {{color}};" catchtap="makePhoneCall"
+                          data-phone="{{item.phone}}">联系TA
+                    </view>
+                </view>
+                <view class="title">
+                    <text class="title-tap-1" wx:if="{{item.is_top}}">顶</text>
+                    <text class="title-tap-2" wx:if="{{item.is_cream}}">精</text>
+                    <text>{{item.title}}</text>
+                </view>
+                <view class="con">
+                    <view wx:if="{{item.content}}">{{item.content}}</view>
+                    <view class="imgList" wx:if="{{item.img.length}}">
+                        <view class="imgWrapper" wx:for="{{item.img}}" wx:for-item="img" wx:if="{{index<3}}"
+                              wx:key=":this">
+                            <image mode="scaleToFill" src="{{img}}"></image>
+                        </view>
+                    </view>
+                    <view class="tagList">
+                        <block wx:for="{{item.label}}" wx:for-item="label" wx:key=":this">
+                            <text class="tag">{{label.plate.name}}</text>
+                        </block>
+                    </view>
+                    <view class="position" wx:if="{{item.address}}">
+                        <text class="icon iconfont icon-address"></text>
+                        <text class="over-hide" style="-webkit-line-clamp:1;width: 75%;">{{item.address}}</text>
+                        <text>{{item.len}}km</text>
+                    </view>
+                </view>
+                <view class="btm">
+                    <view class="operateTab">
+                        <text class="icon iconfont icon-yanjing"></text>
+                        <text class="number">{{item.num_look}}</text>
+                    </view>
+                    <view class="operateTab">
+                        <text class="icon iconfont icon-pinglun"></text>
+                        <text class="number">{{item.num_reply}}</text>
+                    </view>
+                    <view class="operateTab">
+                        <text class="icon iconfont icon-zan"></text>
+                        <text class="number">{{item.num_zan}}</text>
+                    </view>
+                    <view class="operateTab">
+                        <text class="icon iconfont icon-fenxiang"></text>
+                        <text class="number">{{item.num_share}}</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+    <navigator style="background: {{color}}" hover-class="none" class="edit" url="../addTopic/addTopic">
+        <view class="row"></view>
+        <view class="col"></view>
+    </navigator>
+</view>

@@ -1,0 +1,34 @@
+/* 这里的样式只应用于这个自定义组件 */
+.qingful-form-upload{
+	padding: 0 30rpx 0 0;
+}
+.img-item{
+	display: flex;
+	flex-wrap: wrap;
+}
+.camera {
+	box-sizing: border-box;
+	width:140rpx;
+	height:140rpx;
+	padding: 30rpx;
+	margin-left:30rpx;
+	margin-top:30rpx;
+}
+.img-wrap {
+	width:140rpx;
+	height:140rpx;
+	margin-left:30rpx;
+	margin-top:30rpx;
+}
+.img-wrap image{
+	width:100%;
+	height:100%;
+}
+.prompt1{
+  line-height: 60rpx;
+  color: #c8c8c8;
+  font-size: 24rpx;
+  margin-left: 30rpx;
+}
+
+

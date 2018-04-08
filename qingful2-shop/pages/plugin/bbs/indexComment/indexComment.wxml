@@ -1,0 +1,131 @@
+<!--pages/indexComment/indexComment.wxml-->
+<view class="qingful-bbs-container">
+
+    <view class="user">
+        <view class="name">
+            <view class="photo"></view>
+            <view>
+                <text>兔斯基爱吃萝…</text>
+                <text>35分钟前</text>
+            </view>
+            <view class="concat">联系TA</view>
+        </view>
+        <view class="title">
+            <text class="top">顶</text>
+            <text class="better">精</text>
+            <text>最美踏青节</text>
+        </view>
+        <view class="con">
+            <view>春天来了，最美三月，带你一起去踏青，枯黄的原野变绿了。新绿的叶子在枯枝上长出来。阳光温柔地洒在草地…</view>
+            <view class="imgList">
+                <view class="imgWrapper">
+                    <image></image>
+                </view>
+                <view class="imgWrapper">
+                    <image></image>
+                </view>
+                <view class="imgWrapper">
+                    <image></image>
+                </view>
+                <view class="imgWrapper">
+                    <image></image>
+                </view>
+                <view class="imgWrapper">
+                    <image></image>
+                </view>
+                <view class="imgWrapper">
+                    <image></image>
+                </view>
+            </view>
+            <view class="tagList">
+                <text class="tag">最美三月</text>
+                <text class="tag">去踏青</text>
+                <text class="tag">旅游的季节</text>
+            </view>
+            <view class="position">
+                <text class="icon iconfont icon-address"></text>
+                <text>郑州市金水区瀚海北金</text>
+                <text>2.5km</text>
+            </view>
+        </view>
+        <view class="btm">
+            <view class="operateTab">
+                <text class="icon iconfont icon-yanjing"></text>
+                <text class="number">123</text>
+            </view>
+            <view class="operateTab">
+                <text class="icon iconfont icon-pinglun"></text>
+                <text class="number">{{item.num_reply}}</text>
+            </view>
+            <view class="operateTab">
+                <text class="icon iconfont icon-zan"></text>
+                <text class="number">{{item.num_zan}}</text>
+            </view>
+            <view class="operateTab">
+                <text class="icon iconfont icon-fenxiang"></text>
+                <text class="number">{{item.num_share}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="commentPart">
+        <view class="all">全部评论</view>
+        <view class="content">
+            <view class="specCon">
+                <view class="photo"></view>
+                <view class="comment">
+                    <view class="nickName">是纯儿啊
+                        <text class="support">456</text>
+                    </view>
+                    <view class="con">青否小程序，国内首家小程序平台，提供完整的行业小程序解决方案。</view>
+                    <view class="info">
+                        <text class="date">08-12 15:12</text>
+                        <text class="num">回复(12)</text>
+                    </view>
+                </view>
+                <view class="replay">
+                    <view class="title">黎黎黎黎黎黎(作者)：</view>
+                    <view>青否小程序，国内首家小程序平台，提供完整的行业小程序解决方案。</view>
+                </view>
+            </view>
+            <view class="specCon">
+                <view class="photo"></view>
+                <view class="comment">
+                    <view class="nickName">是纯儿啊
+                        <text class="support">235</text>
+                    </view>
+                    <view class="con">青否小程序，国内首家小程序平台，提供完整的行业小程序解决方案。</view>
+                    <view class="info">
+                        <text class="date">08-12 15:12</text>
+                        <text class="num">回复(12)</text>
+                    </view>
+                </view>
+                <view class="replay">
+                    <view class="title">黎黎黎黎黎黎(作者)：</view>
+                    <view>青否小程序，国内首家小程序平台，提供完整的行业小程序解决方案。</view>
+                </view>
+            </view>
+            <view class="specCon">
+                <view class="photo"></view>
+                <view class="comment">
+                    <view class="nickName">是纯儿啊
+                        <text class="support">785</text>
+                    </view>
+                    <view class="con">青否小程序，国内首家小程序平台，提供完整的行业小程序解决方案。</view>
+                    <view class="info">
+                        <text class="date">08-12 15:12</text>
+                        <text class="num">回复(12)</text>
+                    </view>
+                </view>
+                <view class="replay">
+                    <view class="title">黎黎黎黎黎黎(作者)：</view>
+                    <view>青否小程序，国内首家小程序平台，提供完整的行业小程序解决方案。</view>
+                </view>
+            </view>
+        </view>
+        <view class="operate">
+            <input placeholder="请输入评论" placeholder-class="commentStyle"/>
+            <button>发布</button>
+        </view>
+    </view>
+
+</view>

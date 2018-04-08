@@ -1,0 +1,12 @@
+<view class="qingful-slide-wrap" style="height:{{slideData.config.height}}rpx">
+    <swiper class="qingful-slide" style="height:{{slideData.config.height}}rpx" autoplay="{{slideData.config.autoplay}}" interval="{{slideData.config.interval*1000}}" circular="true" duration="500" current bindchange="changeSlide">
+        <block wx:for="{{slideData.data}}" wx:key="_slide">
+            <swiper-item>
+                <image class="qingful-slide-image" src="{{item.img_url}}" bindtap="navigateTo" data-target_type="{{item.target_type}}" data-target_url="{{item.target_url}}"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="qingful-slide-dots-wrap {{slideData.config.indicator_position == 'left' ? 'left' : slideData.config.indicator_position == 'center' ? 'center' : 'right'}}">
+        <view class="qingful-slide-dots-item {{slideData.config.current == index ? 'active' : ''}}" wx:for="{{slideData.data.length}}" wx:for-index="index" wx:key="" style="background:{{slideData.config.current == index ? slideData.config.indicator_active_color : slideData.config.indicator_color}}"></view>
+    </view>
+</view>

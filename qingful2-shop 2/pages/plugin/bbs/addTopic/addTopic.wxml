@@ -1,0 +1,56 @@
+<view class="qingful-bbs-container">
+    <view class="formPart">
+        <view class="topicTitle">
+            <input placeholder="请输入标题" bindinput="titleInput" placeholder-style="color:#b2b2b2; font-weight: lighter;" />
+        </view>
+        <view class="multiInput">
+            <textarea placeholder="请输入详细内容或你的故事" bindinput="contentInput" placeholder-style="color:#b2b2b2;" />
+            <view style="display: flex;">
+                <image style="width:140rpx;height: 140rpx;border-radius: 6rpx;margin: 0 10px;" bindlongpress="deleteImage" data-index="{{index}}" wx:for="{{img_list}}" src="{{item}}" wx:key=":this"></image>
+                <view class="add" bindtap="chooseImage">
+                    <view class="icon">
+                        <text>
+                            <text></text>
+                            <text></text>
+                        </text>
+                        <text>添加</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="address over-hide" style="-webkit-line-clamp:1;" bindtap="chooseShopMap">
+            <text class="underLine"></text>
+            <text class="locationIcon iconfont icon-address"></text>
+            {{address}}
+        </view>
+        <view class="phone">
+            <text class="phoneIcon iconfont icon-dianhua"></text>
+            <input placeholder="请输入您的电话号码" maxlength="11" bindinput="phoneInput" placeholder-style=" color:#b2b2b2; font-weight: lighter;" />
+        </view>
+    </view>
+    <view class="topic">
+        <!-- <view class="title">添加话题(0/3)</view>
+        <view class="addTopic" style="color:{{color}};">
+            <view>
+                <text style="background:{{color}};"></text>
+                <text style="background:{{color}};"></text>
+            </view>
+            <view bindtap="addTopic">新建话题</view>
+        </view> -->
+        <view class="topicList">
+            <view class="title">已有话题</view>
+            <view class="list">
+                <text bindtap="selectTap" wx:for="{{topic}}" wx:key="index" data-id="{{item.id}}" style="color:{{item.select?color:''}};border-color: {{item.select?color:''}};">{{item.name}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="publish" bindtap="addBbsPost" style="background: {{color}};">立即发布</view>
+</view>
+<view class="phone-bind-bg" wx:if="{{status}}">
+    <form bindsubmit="addTopic" report-submit="true" class="phone-bind-box">
+        <view class="iconfont userinfo-fahuo-close-icon" bindtap="phone_bind_show" style="position: absolute;right: 2px;top: 10px;font-size:40px;color: #c7c7cc;"></view>
+        <view class="phone-bind-title">新增话题</view>
+        <input class="phone-bind-input" name='topic' maxlength="11" placeholder="输入新话题" bindinput="monitor_input" placeholder-style="color:#262628;" />
+        <button formType="submit" class="confirm-btn" style="background: {{color}};">确认</button>
+    </form>
+</view>

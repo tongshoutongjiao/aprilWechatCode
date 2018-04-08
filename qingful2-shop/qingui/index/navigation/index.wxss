@@ -1,0 +1,28 @@
+@import "../../../font.wxss";
+@import "../../../app.wxss";
+.qingful-title-wrap-type-text{
+    background-color: #fff;
+    margin-bottom: 20rpx;
+}
+.qingful-title-img-wrap{
+    width: 58rpx;
+    height: 58rpx;
+    padding: 20rpx 20rpx 20rpx 24rpx;
+}
+.qingful-title-img{
+    width: 100%;
+    height: 100%;
+}
+.qingful-title-text{
+    line-height: 98rpx;
+}
+.qingful-title-btn-wrap{
+    color: #8a8a8a;
+    line-height: 98rpx;
+    position: relative;
+}
+.qingful-title-arrow-right{
+    position: absolute;
+    right: 0rpx;
+    top: 1rpx;
+}

@@ -1,0 +1,17 @@
+<view class="qingful-menu-wrap" style="background:{{menuData.config.bg_color}}">
+    <scroll-view scroll-x="true" scroll-with-animation="true" scroll-left='0' bindscroll="getleft">
+        <view class="qingful-menu-container" wx:for="{{menuData.data}}" wx:for-item="menu" wx:key>
+            <view class="qingful-menu-item" wx:for="{{menu}}" wx:for-item="item" wx:for-index="index" wx:key="_menu" style="width:{{defaultWidth/menuData.config.line_num + 'px'}};min-width:{{defaultWidth/menuData.config.line_num + 'px'}}">
+                <view class="qingful-menu-info">
+                    <view class="qingful-menu-img-wrap">
+                        <image class="qingful-menu-img" src="{{item.img_url}}"></image>
+                    </view>
+                    <view class="qingful-menu-text" style="color: {{item.name_color}};">{{item.name}}</view>
+                </view>
+            </view>
+        </view>
+    </scroll-view >
+    <view class="qingful-menu-progress-bar" wx:if="{{menuData.config.show_scroll}}">
+        <view class="qingful-menu-progress-bar-select qingful-bg-color" style="width:{{menu_.slideWidth}}px;margin-left:{{menu_.slideLeft<=1 ? 0 : menu_.slideLeft+'px'}}"></view>
+    </view>
+</view>

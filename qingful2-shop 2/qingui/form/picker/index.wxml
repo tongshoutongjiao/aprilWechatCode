@@ -1,0 +1,27 @@
+<!-- picker组件模板 -->
+
+<!-- <view class="weui-cells__title">啦啦啦啦</view> -->
+<block wx:for="{{pickerData.data}}" wx:for-item="picker" wx:for-index="idx" wx:key="picker">
+    <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">{{picker.title}}
+        	<view wx:if="{{picker.describe_position == 'left'}}" style="color: #999;">{{picker.describe}}</view>
+        </view>
+
+        <view class="weui-cell__ft weui-cell__ft_in-access">
+            <!-- 日期选择器 -->
+			<picker wx:if="{{picker.type == 'date'}}" mode="date" data-index="{{idx}}" value="{{picker.value}}" bindchange="bindDateChange">
+			    <view wx:if="{{!picker.value && picker.describe_position == 'right'}}">{{picker.describe}}</view>
+			    <view wx:if="{{picker.value}}">{{picker.value}}</view>
+			</picker>
+			<!-- 时间选择器 -->
+			<picker wx:if="{{picker.type == 'time'}}" mode="time" data-index="{{idx}}" value="{{picker.value}}" start="00:00" end="24:00" bindchange="bindTimeChange">
+			    <view wx:if="{{!picker.value && picker.describe_position == 'right'}}">{{picker.describe}}</view>
+			    <view wx:if="{{picker.value}}">{{picker.value}}</view>
+			</picker>
+        </view>
+    </view>
+</block>
+
+
+
+

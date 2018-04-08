@@ -1,0 +1,36 @@
+<view style="">
+    <block wx:for="{{components.plugin}}" wx:key="index">
+        <!-- 轮播图组件 -->
+        <qingui-index-slide wx:if="{{item.name == 'slide'}}" slide-data='{{item}}'></qingui-index-slide>
+        <!-- 快捷菜单 -->
+        <qingui-index-menu wx:if="{{item.name == 'menu'}}" menu-data='{{item}}'></qingui-index-menu>
+        <!-- 公告 -->
+        <qingui-index-notice wx:if="{{item.name == 'notice'}}" notice-data='{{item}}'></qingui-index-notice>
+        <!-- 辅助线 -->
+        <qingui-index-line wx:if="{{item.name == 'line'}}" line-data='{{item}}'></qingui-index-line>
+        <!-- 广告 -->
+        <qingui-index-ads wx:if="{{item.name == 'ads'}}" ads-data='{{item}}'></qingui-index-ads>
+        <!-- 标题 -->
+        <qingui-index-title wx:if="{{item.name == 'title'}}" title-data='{{item}}'></qingui-index-title>
+        <!-- 主题 -->
+        <qingui-index-theme wx:if="{{item.name == 'theme'}}" theme-data='{{item}}'></qingui-index-theme>
+        <!-- 导航 -->
+        <qingui-index-navigation wx:if="{{item.name == 'navigation'}}" navigation-data='{{item}}'></qingui-index-navigation>
+        <!-- 小程序跳转 -->
+        <qingui-index-wxa wx:if="{{item.name == 'wxa'}}" wxa-data='{{item}}'></qingui-index-wxa>
+        <!-- 门店 -->
+        <qingui-index-store wx:if="{{item.name == 'store'}}" store-data='{{item}}'></qingui-index-store>
+        <!-- web网页 -->
+        <qingui-index-web wx:if="{{item.name == 'web'}}" web-data='{{item}}'></qingui-index-web>
+        <!-- 悬浮框 -->
+        <qingui-index-xuanfu wx:if="{{item.name == 'hover_button'}}" xuanfu-data='{{item}}'></qingui-index-xuanfu>
+        <!-- 表单 -->
+        <qingui-index-form wx:if="{{item.name == 'form'}}" form-data='{{item}}'></qingui-index-form>
+        <!-- 文章 -->
+        <qingui-index-article wx:if="{{item.name == 'article'}}" article-data='{{item}}'></qingui-index-article>
+
+        <!-- <qingui-index-coupon wx:if="{{item.name == 'coupon'}}" coupon-data='{{item}}'></qingui-index-coupon>    -->
+        <!-- <qingui-index-search wx:if="{{item.name == 'search'}}" search-data='{{item}}'></qingui-index-search> -->
+        <qingui-index-video wx:if="{{item.name == 'video'}}" video-data='{{item}}'></qingui-index-video>
+    </block>
+</view>

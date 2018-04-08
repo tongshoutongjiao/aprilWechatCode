@@ -1,0 +1,10 @@
+<!--components/tabbar.wxml-->
+
+<view class="tabList" wx:if="{{tabData.data.length}}" style="background-color:{{tabData.backgroundColor}};border-top:1px solid {{tabData.borderStyle}}">
+    <view class="specTab {{selectedIndex==item.index?'selected':''}}" data-index="{{item.index}}" wx:for="{{tabData.data}}"   bindtap="selectTab">
+        <text class="icon" style="background-image:url({{selectedIndex==item.index?item.selectedIconPath:item.iconPath}});">
+            <text>16</text>
+        </text>
+        <text class="con" style="color:{{selectedIndex==item.index?tabData.selectedColor:tabData.color}}"    >{{item.text}}</text>
+    </view>
+</view>

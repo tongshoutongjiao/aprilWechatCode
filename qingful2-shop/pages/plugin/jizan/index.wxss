@@ -1,0 +1,481 @@
+/* pages/zan/lottery_draw/lottery_draw.wxss */
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 560268 */
+    src: url('//at.alicdn.com/t/font_560268_88d0lh7dbcma38fr.eot');
+    src: url('//at.alicdn.com/t/font_560268_88d0lh7dbcma38fr.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_560268_88d0lh7dbcma38fr.woff') format('woff'),
+    url('//at.alicdn.com/t/font_560268_88d0lh7dbcma38fr.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_560268_88d0lh7dbcma38fr.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-rtjiantou:before {
+    content: "\e775";
+}
+
+.icon-btjiantou:before {
+    content: '\e699';
+}
+
+.icon-mendian:before {
+    content: "\e68f";
+}
+
+.icon-dizhi1:before {
+    content: "\e696";
+}
+
+.icon-duihao:before {
+    content: "\e691";
+}
+
+.icon-quan:before {
+    content: '\e6fe';
+}
+
+.icon-jiantouarrow499-copy:before {
+    content: "\e735";
+}
+
+.icon-cheng:before {
+    content: '\e6fb';
+}
+
+.icon-money:before {
+    content: '\e64a';
+}
+
+.icon-search:before {
+    content: '\e68d';
+}
+
+.icon-zan:before {
+    content: '\e708';
+}
+
+.icon-phone:before {
+    content: '\e64b';
+}
+.wxParse-p image {
+    width: 100%!important;
+}
+
+page {
+    background-color: #fff;
+    font-family: "PingFangSC-Regular"
+}
+
+.qingful_jizan_code {
+    -webkit-font-smoothing: antialiased;
+    font-family: PingFangSC-Medium;
+    -webkit-text-size-adjust: none;
+    display: block;
+    /*font-size:15px;*/
+}
+
+.qingful_jizan_lotter {
+    width: 100%;
+    height: 100%;
+}
+
+.qingful_jizan_lotter_top {
+    width: 100%;
+}
+
+.qingful_jizan_lotter .qingful_jizan_lotter_top .qingful_jizan_lotter_image {
+    width: 100%;
+}
+
+.qingful_jizan_lotter .qingful_jizan_lotter_top .qingful_jizan_lotter_image image {
+    width: 100%;
+    height: 187.5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.qingful_jizan_lotter .qingful_jizan_lotter_top .qingful_jizan_text_lf,
+.qingful_jizan_text_rt {
+    font-size: 12px;
+    color: #fff;
+}
+
+.qingful_jizan_lotter .qingful_jizan_lotter_top .qingful_jizan_text_lf {
+    position: absolute;
+    top: 161px;
+    left: 10.5px;
+    text-shadow: 2px 2px 4px #8a8a8a;
+}
+
+.qingful_jizan_lotter .qingful_jizan_lotter_top .qingful_jizan_text_rt {
+    position: absolute;
+    top: 161px;
+    right: 10.5px;
+    text-shadow: 2px 2px 4px #8a8a8a;
+}
+
+.qingful_jizan_lotter .qingful_jizan_lotter_title {
+    margin: 10px;
+    color: #222222;
+    font-size: 17px;
+    /*text-shadow:2px 2px 1px #8a8a8a;*/
+}
+
+.qingful_jizan_lotter .qingful_jizan_zan_num {
+    margin: 0 10px 10px 10px;
+}
+
+.qingful_jizan_lotter .qingful_jizan_zan_num .qingful_jizan_num {
+    line-height:100rpx;
+    font-family: PingFangSC-Medium;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-weight: bolder;
+    color: #ff5757;
+}
+
+.qingful_jizan_lotter .qingful_jizan_zan_num .qingful_jizan_price {
+    vertical-align: bottom;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #8a8a8a;
+    margin: 20px 0 0 5px;
+    position: relative;
+}
+
+.qingful_jizan_lotter .qingful_jizan_zan_num .qingful_jizan_price::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid #8a8a8a;
+    position: absolute;
+    top: 50%;
+    left: 1px;
+}
+
+.qingful_jizan_lotter .qingful_jizan_zan_num .qingful_jizan_ready {
+    font-family: "PingFangSC-Regular";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    margin-top: 20px;
+    color: #ff5757;
+}
+
+.qingful_jizan_lotter .qingful_jizan_zan_num .qingful_jizan_on {
+    font-family: "PingFangSC-Regular";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.qingful_jizan_lotter .qingful_jizan_award {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: #222222;
+    margin-bottom:100px;
+    margin: 15px 0 10px 0;
+    padding-bottom: 50px;
+}
+
+.qingful_jizan_lotter .qingful_jizan_award .qingful_jizan_code_num {
+    width: 35px;
+    height: 45px;
+    color: #a93939;
+    font-size: 34px;
+    line-height: 45px;
+    background-color: #fbfcfc;
+    border-radius: 4px;
+    margin: 11.5px 5px;
+    border: 1px solid #c6c6c6;
+    font-family: PingFangSC-Medium;
+}
+
+.qingful_jizan_lotter .qingful_jizan_lotter_headpic {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.qingful_jizan_lotter .qingful_jizan_lotter_headpic image {
+    margin: 0 3.5px 10px 3.5px;
+}
+
+.qingful_jizan_lotter .qingful_jizan_bg_ddd {
+    text-align: left;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #222222;
+}
+
+.qingful_jizan_lotter .qingful_jizan_height {
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.qingful_jizan_lotter .qingful_jizan_activity_detail {
+    height: 21px;
+    color: #222222;
+    font-size: 15px;
+    margin: 20px 0 10px 0;
+}
+
+.qingful_jizan_lotter .qingful_jizan_detail {
+    text-align: left;
+}
+
+.qingful_jizan_lotter .qingful_jizan_marginBottom {
+    margin-bottom: 5px;
+}
+
+.qingful_jizan_lotter .qingful_jizan_score {
+    margin: 20px 0 10px 0;
+}
+
+.qingful_jizan_ful-btn {
+    width: 94px;
+    height: 30px;
+    background: rgba(255, 87, 87, .1);
+    border-radius: 3px 0px 0px 3px;
+    border: none;
+    color: #000;
+}
+
+.qingful_jizan_btn button:nth-child(2) {
+    border-radius: 0 3px 3px 0;
+}
+
+.qingful_jizan_lotter .add_bg {
+    background-color: #ff5757;
+    color: #fff;
+}
+
+.qingful_jizan_lotter .qingful_jizan_lotter_btn {
+    font-size: 20px;
+    margin-top: 0px;
+    vertical-align: top;
+}
+
+.qingful_jizan_lottery_code_num {
+    background-color: #ff5757;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 48.5px;
+}
+
+.qingful_jizan_lottery_code_icon {
+    font-size: 26px;
+    vertical-align: top;
+    margin-top: -10px;
+}
+
+.qingful_jizan_lotter .qingful_jizan_lotter_btn {
+    font-size: 20px;
+    margin-top: 0px;
+    vertical-align: top;
+}
+
+.qingful_jizan_lottery_btn_lf {
+    /*background-color: #fff;
+    */
+    background: -webkit-linear-gradient(left, #FFEDED, #FFB9B9);
+    background: -o-linear-gradient(left, #FFEDED, #FFB9B9);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(left, #FFEDED, #FFB9B9);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(left, #FFEDED, #FFB9B9);
+    /* 标准的语法 */
+    color: #ff5757;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    height: 48.5px
+}
+
+.qingful_jizan_lottery_btn_rt {
+    background-color: #ff5757;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    right: 0;
+    height: 48.5px
+}
+
+.qingful_jizan_code_num_bg {
+    height: 22.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    border-radius: 4px 4px 0 0;
+    background: -webkit-linear-gradient(#fff, #f6f6f6);
+    background: -o-linear-gradient(#fff, #f6f6f6);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#fff, #f6f6f6);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#fff, #f6f6f6);
+    /* 标准的语法 */
+}
+
+.qingful_jizan_code_num_bgbottom {
+    height: 22.5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 4px;
+    width: 35px;
+    background: -webkit-linear-gradient(#fff, #f6f6f6);
+    background: -o-linear-gradient(#fff, #f6f6f6);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#fff, #f6f6f6);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#fff, #f6f6f6);
+    /* 标准的语法 */
+}
+
+.qingful_jizan_award .qingful_jizan_lotter_headpic {
+    position: relative;
+}
+
+.qingful_jizan_initiator {
+    width: 37px;
+    height: 10px;
+    line-height: 10px;
+    text-align: center;
+    font-size: 8px;
+    color: #fff;
+    background-color: #ff5757;
+    border-radius: 50px;
+    border: solid 1px #ffffff;
+    opacity: 0.8;
+    position: absolute;
+    top: 26px;
+    left: 2px;
+}
+
+
+
+.lf {
+    float: left;
+}
+
+.rt {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f15 {
+    font-size: 15px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+button {
+    border-radius: 0;
+    border: none;
+    outline: none;
+}
+
+button::after {
+    border-radius: 0;
+    border: none;
+    outline: none;
+}
+
+.rel {
+    position: relative;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.ovh {
+    overflow: hidden;
+}
+
+.fw_6 {
+    font-weight: 600;
+}
+
+.fw_7 {
+    font-weight: 700;
+}
+
+.fw_8 {
+    font-weight: 800;
+}
+
+.fw_9 {
+    font-weight: 900;
+}
+
+.fw_bold {
+    font-weight: bold;
+}
+
+.fw_bolder {
+    font-weight: bolder;
+}
+
+.tf {
+    text-align: left;
+}
+
+.tc {
+    text-align: center
+}
+@media screen and (min-width:375px) and (max-width:415px){
+    .qingful_jizan_lotter .qingful_jizan_lotter_headpic image {
+      margin:0 2.5px 10px 4px
+  }
+}
+@media screen and (max-width:320px) {
+  .qingful_jizan_lotter .qingful_jizan_lotter_headpic image {
+      margin:0 2.5px 10px 3px
+  }
+  .qingful_jizan_text{
+      width:75%!important;
+  }
+}

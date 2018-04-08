@@ -1,0 +1,712 @@
+<!--pages/orderStatus/orderStatus.wxml-->
+<view class="container">
+    <scroll-view class="orderList" scroll-X="true" scroll-left="{{scrollLeft}}">
+        <view class=" wrap  {{selectedTab==0?'active':''}}" data-id="0" bindtap="selectTap">
+            <view>全部</view>
+        </view>
+        <view class=" wrap {{selectedTab==1?'active':''}}" data-id="1" bindtap="selectTap">
+            <view>进行中</view>
+        </view>
+        <view class="wrap {{selectedTab==2?'active':''}}" data-id="2" bindtap="selectTap">
+            <view>待发货</view>
+        </view>
+        <view class=" wrap {{selectedTab==3?'active':''}}" data-id="3" bindtap="selectTap">
+            <view>待收货</view>
+        </view>
+        <view class=" wrap  {{selectedTab==4?'active':''}}" data-id="4" bindtap="selectTap">
+            <view>待评价</view>
+        </view>
+
+    </scroll-view>
+    <swiper class="tab-content"  current="{{selectedTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+        <swiper-item>
+            <block wx:if="{{selectedTab == 0}}">
+                <view class="wrapper ">
+                    <view class="orderNumber">
+                        订单号：3245789
+                        <view>进行中</view>
+                    </view>
+                    <view class="mid">
+                        <text class="icon"></text>
+                        <view>冰雪丹妮旗舰店</view>
+                        <view class="rightTwo"></view>
+                        <view class="right"></view>
+                    </view>
+                    <view class="brand">
+                        <view class="imgWrapper">
+                            <image class="photo"></image>
+                        </view>
+                        <view class="desc">
+                            <view>
+                                时尚迷人蕾丝花边两件套连衣裙时尚迷人
+                                蕾丝花边两件套连衣裙
+                            </view>
+                            <view class="btm">
+                                <text>玫红色 均码</text>
+                                <text>库存：36件</text>
+                            </view>
+                        </view>
+
+                    </view>
+                    <view class="priceSection">
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>原价</text>
+
+                        </view>
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>当前价</text>
+                        </view>
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>最低价</text>
+                        </view>
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>人帮砍</text>
+                        </view>
+                    </view>
+                    <view class="bottom">
+                        <view>
+                            <text>当前价购买</text>
+                            <text>邀请好友</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="wrapper wrapperTwo">
+                    <view class="orderNumber">
+                        订单号：3245789
+                        <view>进行中</view>
+                    </view>
+                    <view class="mid">
+                        <text class="icon"></text>
+                        <view>冰雪丹妮旗舰店</view>
+                        <view class="rightTwo"></view>
+                        <view class="right"></view>
+                    </view>
+                    <view class="brand">
+                        <view class="imgWrapper">
+                            <image class="photo"></image>
+                        </view>
+                        <view class="desc">
+                            <view>
+                                时尚迷人蕾丝花边两件套连衣裙时尚迷人
+                                蕾丝花边两件套连衣裙
+                            </view>
+                            <view class="btm">
+                                <text>玫红色 均码</text>
+                                <view class="price">
+                                    <text>￥366.88</text>
+                                    <text>+1</text>
+                                </view>
+
+                            </view>
+                        </view>
+                        <view class="orderTitle">
+                            还差1人成团，3月26日 12:30:22截止
+                        </view>
+
+                    </view>
+
+                    <view class="bottom">
+                        <view>
+                            <text>取消订单</text>
+                            <text>邀请好友</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="wrapper wrapperThree">
+                    <view class="orderNumber">
+                        订单号：3245789
+                        <view>进行中</view>
+                    </view>
+                    <view class="mid">
+                        <text class="icon"></text>
+                        <view>冰雪丹妮旗舰店</view>
+                        <view class="rightTwo"></view>
+                        <view class="right"></view>
+                    </view>
+                    <view class="brand">
+                        <view class="imgWrapper">
+                            <image class="photo"></image>
+                        </view>
+                        <view class="desc">
+                            <view>
+                                时尚迷人蕾丝花边两件套连衣裙时尚迷人
+                                蕾丝花边两件套连衣裙
+                            </view>
+                            <view class="btm">
+                                <text>玫红色 均码</text>
+                                <view class="price">
+                                    <text>￥366.88</text>
+                                    <text>+1</text>
+                                </view>
+
+                            </view>
+                        </view>
+
+                    </view>
+
+                    <view class="bottom">
+                        <view>
+                            <text>原价购买</text>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </swiper-item>
+        <swiper-item>
+            <block wx:if="{{selectedTab == 1}}">
+                <view class="wrapper ">
+                    <view class="orderNumber">
+                        订单号：3245789
+                        <view>进行中</view>
+                    </view>
+                    <view class="mid">
+                        <text class="icon"></text>
+                        <view>冰雪丹妮旗舰店</view>
+                        <view class="rightTwo"></view>
+                        <view class="right"></view>
+                    </view>
+                    <view class="brand">
+                        <view class="imgWrapper">
+                            <image class="photo"></image>
+                        </view>
+                        <view class="desc">
+                            <view>
+                                时尚迷人蕾丝花边两件套连衣裙时尚迷人
+                                蕾丝花边两件套连衣裙
+                            </view>
+                            <view class="btm">
+                                <text>玫红色 均码</text>
+                                <text>库存：36件</text>
+                            </view>
+                        </view>
+
+                    </view>
+                    <view class="priceSection">
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>原价</text>
+
+                        </view>
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>当前价</text>
+                        </view>
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>最低价</text>
+                        </view>
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>人帮砍</text>
+                        </view>
+                    </view>
+                    <view class="bottom">
+                        <view>
+                            <text>当前价购买</text>
+                            <text>邀请好友</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="wrapper wrapperTwo">
+                    <view class="orderNumber">
+                        订单号：3245789
+                        <view>进行中</view>
+                    </view>
+                    <view class="mid">
+                        <text class="icon"></text>
+                        <view>冰雪丹妮旗舰店</view>
+                        <view class="rightTwo"></view>
+                        <view class="right"></view>
+                    </view>
+                    <view class="brand">
+                        <view class="imgWrapper">
+                            <image class="photo"></image>
+                        </view>
+                        <view class="desc">
+                            <view>
+                                时尚迷人蕾丝花边两件套连衣裙时尚迷人
+                                蕾丝花边两件套连衣裙
+                            </view>
+                            <view class="btm">
+                                <text>玫红色 均码</text>
+                                <view class="price">
+                                    <text>￥366.88</text>
+                                    <text>+1</text>
+                                </view>
+
+                            </view>
+                        </view>
+                        <view class="orderTitle">
+                            还差1人成团，3月26日 12:30:22截止
+                        </view>
+
+                    </view>
+
+                    <view class="bottom">
+                        <view>
+                            <text>取消订单</text>
+                            <text>邀请好友</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="wrapper wrapperThree">
+                    <view class="orderNumber">
+                        订单号：3245789
+                        <view>进行中</view>
+                    </view>
+                    <view class="mid">
+                        <text class="icon"></text>
+                        <view>冰雪丹妮旗舰店</view>
+                        <view class="rightTwo"></view>
+                        <view class="right"></view>
+                    </view>
+                    <view class="brand">
+                        <view class="imgWrapper">
+                            <image class="photo"></image>
+                        </view>
+                        <view class="desc">
+                            <view>
+                                时尚迷人蕾丝花边两件套连衣裙时尚迷人
+                                蕾丝花边两件套连衣裙
+                            </view>
+                            <view class="btm">
+                                <text>玫红色 均码</text>
+                                <view class="price">
+                                    <text>￥366.88</text>
+                                    <text>+1</text>
+                                </view>
+
+                            </view>
+                        </view>
+
+                    </view>
+
+                    <view class="bottom">
+                        <view>
+                            <text>原价购买</text>
+                        </view>
+                    </view>
+                </view>
+            </block>
+
+        </swiper-item>
+        <swiper-item>
+            <block wx:if="{{selectedTab == 2}}">
+                <view class="wrapper ">
+                    <view class="orderNumber">
+                        订单号：3245789
+                        <view>进行中</view>
+                    </view>
+                    <view class="mid">
+                        <text class="icon"></text>
+                        <view>冰雪丹妮旗舰店</view>
+                        <view class="rightTwo"></view>
+                        <view class="right"></view>
+                    </view>
+                    <view class="brand">
+                        <view class="imgWrapper">
+                            <image class="photo"></image>
+                        </view>
+                        <view class="desc">
+                            <view>
+                                时尚迷人蕾丝花边两件套连衣裙时尚迷人
+                                蕾丝花边两件套连衣裙
+                            </view>
+                            <view class="btm">
+                                <text>玫红色 均码</text>
+                                <text>库存：36件</text>
+                            </view>
+                        </view>
+
+                    </view>
+                    <view class="priceSection">
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>原价</text>
+
+                        </view>
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>当前价</text>
+                        </view>
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>最低价</text>
+                        </view>
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>人帮砍</text>
+                        </view>
+                    </view>
+                    <view class="bottom">
+                        <view>
+                            <text>当前价购买</text>
+                            <text>邀请好友</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="wrapper wrapperTwo">
+                    <view class="orderNumber">
+                        订单号：3245789
+                        <view>进行中</view>
+                    </view>
+                    <view class="mid">
+                        <text class="icon"></text>
+                        <view>冰雪丹妮旗舰店</view>
+                        <view class="rightTwo"></view>
+                        <view class="right"></view>
+                    </view>
+                    <view class="brand">
+                        <view class="imgWrapper">
+                            <image class="photo"></image>
+                        </view>
+                        <view class="desc">
+                            <view>
+                                时尚迷人蕾丝花边两件套连衣裙时尚迷人
+                                蕾丝花边两件套连衣裙
+                            </view>
+                            <view class="btm">
+                                <text>玫红色 均码</text>
+                                <view class="price">
+                                    <text>￥366.88</text>
+                                    <text>+1</text>
+                                </view>
+
+                            </view>
+                        </view>
+                        <view class="orderTitle">
+                            还差1人成团，3月26日 12:30:22截止
+                        </view>
+
+                    </view>
+
+                    <view class="bottom">
+                        <view>
+                            <text>取消订单</text>
+                            <text>邀请好友</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="wrapper wrapperThree">
+                    <view class="orderNumber">
+                        订单号：3245789
+                        <view>进行中</view>
+                    </view>
+                    <view class="mid">
+                        <text class="icon"></text>
+                        <view>冰雪丹妮旗舰店</view>
+                        <view class="rightTwo"></view>
+                        <view class="right"></view>
+                    </view>
+                    <view class="brand">
+                        <view class="imgWrapper">
+                            <image class="photo"></image>
+                        </view>
+                        <view class="desc">
+                            <view>
+                                时尚迷人蕾丝花边两件套连衣裙时尚迷人
+                                蕾丝花边两件套连衣裙
+                            </view>
+                            <view class="btm">
+                                <text>玫红色 均码</text>
+                                <view class="price">
+                                    <text>￥366.88</text>
+                                    <text>+1</text>
+                                </view>
+
+                            </view>
+                        </view>
+
+                    </view>
+
+                    <view class="bottom">
+                        <view>
+                            <text>原价购买</text>
+                        </view>
+                    </view>
+                </view>
+            </block>
+
+        </swiper-item>
+        <swiper-item>
+            <block wx:if="{{selectedTab == 3}}">
+                <view class="wrapper ">
+                    <view class="orderNumber">
+                        订单号：3245789
+                        <view>进行中</view>
+                    </view>
+                    <view class="mid">
+                        <text class="icon"></text>
+                        <view>冰雪丹妮旗舰店</view>
+                        <view class="rightTwo"></view>
+                        <view class="right"></view>
+                    </view>
+                    <view class="brand">
+                        <view class="imgWrapper">
+                            <image class="photo"></image>
+                        </view>
+                        <view class="desc">
+                            <view>
+                                时尚迷人蕾丝花边两件套连衣裙时尚迷人
+                                蕾丝花边两件套连衣裙
+                            </view>
+                            <view class="btm">
+                                <text>玫红色 均码</text>
+                                <text>库存：36件</text>
+                            </view>
+                        </view>
+
+                    </view>
+                    <view class="priceSection">
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>原价</text>
+
+                        </view>
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>当前价</text>
+                        </view>
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>最低价</text>
+                        </view>
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>人帮砍</text>
+                        </view>
+                    </view>
+                    <view class="bottom">
+                        <view>
+                            <text>当前价购买</text>
+                            <text>邀请好友</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="wrapper wrapperTwo">
+                    <view class="orderNumber">
+                        订单号：3245789
+                        <view>进行中</view>
+                    </view>
+                    <view class="mid">
+                        <text class="icon"></text>
+                        <view>冰雪丹妮旗舰店</view>
+                        <view class="rightTwo"></view>
+                        <view class="right"></view>
+                    </view>
+                    <view class="brand">
+                        <view class="imgWrapper">
+                            <image class="photo"></image>
+                        </view>
+                        <view class="desc">
+                            <view>
+                                时尚迷人蕾丝花边两件套连衣裙时尚迷人
+                                蕾丝花边两件套连衣裙
+                            </view>
+                            <view class="btm">
+                                <text>玫红色 均码</text>
+                                <view class="price">
+                                    <text>￥366.88</text>
+                                    <text>+1</text>
+                                </view>
+
+                            </view>
+                        </view>
+                        <view class="orderTitle">
+                            还差1人成团，3月26日 12:30:22截止
+                        </view>
+
+                    </view>
+
+                    <view class="bottom">
+                        <view>
+                            <text>取消订单</text>
+                            <text>邀请好友</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="wrapper wrapperThree">
+                    <view class="orderNumber">
+                        订单号：3245789
+                        <view>进行中</view>
+                    </view>
+                    <view class="mid">
+                        <text class="icon"></text>
+                        <view>冰雪丹妮旗舰店</view>
+                        <view class="rightTwo"></view>
+                        <view class="right"></view>
+                    </view>
+                    <view class="brand">
+                        <view class="imgWrapper">
+                            <image class="photo"></image>
+                        </view>
+                        <view class="desc">
+                            <view>
+                                时尚迷人蕾丝花边两件套连衣裙时尚迷人
+                                蕾丝花边两件套连衣裙
+                            </view>
+                            <view class="btm">
+                                <text>玫红色 均码</text>
+                                <view class="price">
+                                    <text>￥366.88</text>
+                                    <text>+1</text>
+                                </view>
+
+                            </view>
+                        </view>
+
+                    </view>
+
+                    <view class="bottom">
+                        <view>
+                            <text>原价购买</text>
+                        </view>
+                    </view>
+                </view>
+            </block>
+
+        </swiper-item>
+        <swiper-item>
+            <block wx:if="{{selectedTab == 4}}">
+                <view class="wrapper ">
+                    <view class="orderNumber">
+                        订单号：3245789
+                        <view>进行中</view>
+                    </view>
+                    <view class="mid">
+                        <text class="icon"></text>
+                        <view>冰雪丹妮旗舰店</view>
+                        <view class="rightTwo"></view>
+                        <view class="right"></view>
+                    </view>
+                    <view class="brand">
+                        <view class="imgWrapper">
+                            <image class="photo"></image>
+                        </view>
+                        <view class="desc">
+                            <view>
+                                时尚迷人蕾丝花边两件套连衣裙时尚迷人
+                                蕾丝花边两件套连衣裙
+                            </view>
+                            <view class="btm">
+                                <text>玫红色 均码</text>
+                                <text>库存：36件</text>
+                            </view>
+                        </view>
+
+                    </view>
+                    <view class="priceSection">
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>原价</text>
+
+                        </view>
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>当前价</text>
+                        </view>
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>最低价</text>
+                        </view>
+                        <view class="price">
+                            <text>286.99</text>
+                            <text>人帮砍</text>
+                        </view>
+                    </view>
+                    <view class="bottom">
+                        <view>
+                            <text>当前价购买</text>
+                            <text>邀请好友</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="wrapper wrapperTwo">
+                    <view class="orderNumber">
+                        订单号：3245789
+                        <view>进行中</view>
+                    </view>
+                    <view class="mid">
+                        <text class="icon"></text>
+                        <view>冰雪丹妮旗舰店</view>
+                        <view class="rightTwo"></view>
+                        <view class="right"></view>
+                    </view>
+                    <view class="brand">
+                        <view class="imgWrapper">
+                            <image class="photo"></image>
+                        </view>
+                        <view class="desc">
+                            <view>
+                                时尚迷人蕾丝花边两件套连衣裙时尚迷人
+                                蕾丝花边两件套连衣裙
+                            </view>
+                            <view class="btm">
+                                <text>玫红色 均码</text>
+                                <view class="price">
+                                    <text>￥366.88</text>
+                                    <text>+1</text>
+                                </view>
+
+                            </view>
+                        </view>
+                        <view class="orderTitle">
+                            还差1人成团，3月26日 12:30:22截止
+                        </view>
+
+                    </view>
+
+                    <view class="bottom">
+                        <view>
+                            <text>取消订单</text>
+                            <text>邀请好友</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="wrapper wrapperThree">
+                    <view class="orderNumber">
+                        订单号：3245789
+                        <view>进行中</view>
+                    </view>
+                    <view class="mid">
+                        <text class="icon"></text>
+                        <view>冰雪丹妮旗舰店</view>
+                        <view class="rightTwo"></view>
+                        <view class="right"></view>
+                    </view>
+                    <view class="brand">
+                        <view class="imgWrapper">
+                            <image class="photo"></image>
+                        </view>
+                        <view class="desc">
+                            <view>
+                                时尚迷人蕾丝花边两件套连衣裙时尚迷人
+                                蕾丝花边两件套连衣裙
+                            </view>
+                            <view class="btm">
+                                <text>玫红色 均码</text>
+                                <view class="price">
+                                    <text>￥366.88</text>
+                                    <text>+1</text>
+                                </view>
+
+                            </view>
+                        </view>
+
+                    </view>
+
+                    <view class="bottom">
+                        <view>
+                            <text>原价购买</text>
+                        </view>
+                    </view>
+                </view>
+            </block>
+
+        </swiper-item>
+    </swiper>
+</view>

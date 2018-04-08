@@ -1,0 +1,64 @@
+@import "../../../font.wxss";
+@import "../../../app.wxss";
+.qingful-address-header{
+    background-color: #fff;
+    padding: 28rpx 24rpx;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between; 
+}
+.qingful-address-header-text{
+    color: #222;
+}
+.qingful-address-header-text:last-child{
+    color: #8a8a8a;
+}
+.qingful-address-city-wrap{
+    position: relative;
+}
+.qingful-address-current{
+    margin-top: 118rpx;
+    padding: 20rpx 24rpx;
+    background-color: #fff;
+}
+.qingful-address-current-text{
+    color: #8a8a8a;
+    padding-bottom: 20rpx;
+}
+.qingful-address-current-city{
+    width: 200rpx;
+    height: 64rpx;
+    border: 2rpx solid #ccc;
+    color: #222;
+    box-sizing: border-box;
+    border-radius: 6rpx;
+    text-align: center;
+    line-height: 64rpx;
+}
+.qingful-address-list-wrap{
+    color: #222;
+}
+.qingful-address-sign{
+    padding: 0 24rpx;
+    line-height: 40rpx;
+}
+.qingful-address-city{
+    padding: 0 24rpx; 
+    line-height: 100rpx;
+    background-color: #fff;
+}
+.qingful-address-prompt{
+    position: fixed;
+    top: 123rpx;
+    right: 6rpx; 
+    width: 40rpx;
+    text-align: center;
+}
+.qingful-address-sign-item.selected{
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 50%;
+    color: #fff;
+}

@@ -1,0 +1,82 @@
+<!--pages/store/store.wxml-->
+<view class="container">
+    <view class="search">
+        <icon type="search" size="15"/>
+        <input placeholder="请输入店铺名称" />
+    </view>
+    <view class="tabSelect">
+        <view >综合</view>
+        <view >综合</view>
+        <view >综合</view>
+        <view class="selected" >综合</view>
+        <view >综合</view>
+    </view>
+    <scroll-view scrollY="true" class="list">
+        <view class="storeList">
+            <view class="storeName">
+                <view class="photo"></view>
+                <view class="intro">
+                    <text>普拉达官方旗舰店</text>
+                    <text>满588元减100元</text>
+                </view>
+                <view class="go">进店</view>
+            </view>
+            <view class="imgList">
+                <view class="imgWrapper">
+                    <image ></image>
+                </view>
+                <view class="imgWrapper">
+                    <image ></image>
+                </view>
+                <view class="imgWrapper">
+                    <image ></image>
+                </view>
+            </view>
+
+        </view>
+        <view class="storeList">
+            <view class="storeName">
+                <view class="photo"></view>
+                <view class="intro">
+                    <text>普拉达官方旗舰店</text>
+                    <text>满588元减100元</text>
+                </view>
+                <view class="go">进店</view>
+            </view>
+            <view class="imgList">
+                <view class="imgWrapper">
+                    <image ></image>
+                </view>
+                <view class="imgWrapper">
+                    <image ></image>
+                </view>
+                <view class="imgWrapper">
+                    <image ></image>
+                </view>
+            </view>
+
+        </view>
+        <view class="storeList">
+            <view class="storeName">
+                <view class="photo"></view>
+                <view class="intro">
+                    <text>普拉达官方旗舰店</text>
+                    <text>满588元减100元</text>
+                </view>
+                <view class="go">进店</view>
+            </view>
+            <view class="imgList">
+                <view class="imgWrapper">
+                    <image ></image>
+                </view>
+                <view class="imgWrapper">
+                    <image ></image>
+                </view>
+                <view class="imgWrapper">
+                    <image ></image>
+                </view>
+            </view>
+
+        </view>
+    </scroll-view>
+</view>

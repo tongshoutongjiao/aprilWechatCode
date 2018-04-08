@@ -1,0 +1,43 @@
+@import "../../../font.wxss";
+@import "../../../app.wxss";
+.qingful-search-extend-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+}
+.qingful-search-extend-header{
+    margin: 0 24rpx;
+    display: flex;
+    justify-content: space-between;
+    line-height: 80rpx;
+    padding: 48rpx 0 40rpx;
+}
+.qingful-search-extend-box{
+    height: 80rpx;
+    border-radius: 100rpx;
+    background-color: #f8f8f8;
+}
+.qingful-search-extend-box{
+    display: flex;
+    flex-flow: row nowrap;
+    line-height: 80rpx;
+}
+.qingful-search-extend-input{
+    height: 80rpx;
+}
+.qingful-search-extend-history{
+    margin: 0 24rpx;
+}
+.qingful-search-extend-title{
+    margin-bottom: 40rpx;
+}
+.qingful-search-extend-item{
+    display: inline-block;
+    padding: 12rpx 30rpx;
+    border-radius: 30rpx;
+    background-color: #f8f8f8;
+    margin: 0 20rpx 20rpx 0;
+}

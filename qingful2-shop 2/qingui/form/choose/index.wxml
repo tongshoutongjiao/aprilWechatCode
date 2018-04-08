@@ -1,0 +1,37 @@
+<!-- choose组件模板,单选、多选 -->
+<view class="weui-cells__title" wx:if="{{chooseData.config.title}}" style="line-height: 44px;border-bottom: 1px solid #e6e6e6;margin-bottom: 0px;margin-top: 0px;color: #000000;">{{chooseData.config.title}}</view>
+<!-- <view class="weui-cells weui-cells_after-title"> -->
+    <radio-group wx:if="{{chooseData.config.type == 'radio'}}" bindchange="radioChange">
+        <label class="weui-cell" wx:for="{{chooseData.data}}" wx:key="choose" style="padding: 9.5px 15px;">
+            <radio class="weui-check" value="{{index}}" checked="{{item.select}}"/>
+
+            <view class="weui-cell__bd" wx:if="{{chooseData.config.icon_position != 'left'}}">{{item.name}}</view>
+            <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                <icon class="iconfont icon-duihao-center2 unchecked" wx:if="{{!item.select && chooseData.config.icon_type == 1}}"></icon>
+                <icon class="iconfont icon-duihao-center checked" wx:if="{{item.select && chooseData.config.icon_type == 1}}" style="color: {{chooseData.config.select_color}}"></icon>
+                <icon class="iconfont icon-duihao unchecked" wx:if="{{!item.select && chooseData.config.icon_type == 2}}"></icon>
+                <icon class="iconfont icon-duihao checked" wx:if="{{item.select && chooseData.config.icon_type == 2}}" style="color: {{chooseData.config.select_color}}"></icon>
+                <icon class="iconfont icon-circle unchecked" wx:if="{{!item.select && chooseData.config.icon_type == 3}}"></icon>
+                <icon class="iconfont icon-circle-center checked" wx:if="{{item.select && chooseData.config.icon_type == 3}}" style="color: {{chooseData.config.select_color}}"></icon>
+            </view>
+            <view class="weui-cell__bd" wx:if="{{chooseData.config.icon_position != 'right'}}">{{item.name}}</view>
+        </label>
+    </radio-group>
+    <checkbox-group wx:if="{{chooseData.config.type == 'checkbox'}}" bindchange="checkboxChange">
+        <label class="weui-cell" wx:for="{{chooseData.data}}" wx:key="checkbox" style="padding: 9.5px 15px;">
+            <checkbox class="weui-check" value="{{index}}" checked="{{item.select}}"/>
+
+            <view class="weui-cell__bd" wx:if="{{chooseData.config.icon_position != 'left'}}">{{item.name}}</view>
+            <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                <icon class="iconfont icon-duihao-center2 unchecked" wx:if="{{!item.select && chooseData.config.icon_type == 1}}"></icon>
+                <icon class="iconfont icon-duihao-center checked" wx:if="{{item.select && chooseData.config.icon_type == 1}}" style="color: {{chooseData.config.select_color}}"></icon>
+                <icon class="iconfont icon-duihao unchecked" wx:if="{{!item.select && chooseData.config.icon_type == 2}}"></icon>
+                <icon class="iconfont icon-duihao checked" wx:if="{{item.select && chooseData.config.icon_type == 2}}" style="color: {{chooseData.config.select_color}}"></icon>
+                <icon class="iconfont icon-circle unchecked" wx:if="{{!item.select && chooseData.config.icon_type == 3}}"></icon>
+                <icon class="iconfont icon-circle-center checked" wx:if="{{item.select && chooseData.config.icon_type == 3}}" style="color: {{chooseData.config.select_color}}"></icon>
+            </view>
+            <view class="weui-cell__bd" wx:if="{{chooseData.config.icon_position != 'right'}}">{{item.name}}</view>
+        </label>
+    </checkbox-group>
+<!-- </view> -->
+

@@ -1,0 +1,85 @@
+<view class="qingful-bbs-container">
+    <view class="user">
+        <view class="name">
+            <image class="photo" bindtap="navigatorToSelf" data-id="{{bbs.bbs_user_id}}" mode="scaleToFill" src="{{bbs.headimg}}"></image>
+            <view>
+                <text>{{bbs.username}}</text>
+                <text>{{bbs.created_at}}</text>
+            </view>
+            <view class="concat" bindtap="makePhoneCall" data-phone="{{bbs.phone}}">联系TA</view>
+        </view>
+        <view class="title">
+            <text class="title-tap-1" wx:if="{{bbs.is_top}}">顶</text>
+            <text class="title-tap-2" wx:if="{{bbs.is_cream}}">精</text>
+            <text>{{bbs.title}}</text>
+        </view>
+        <view class="con">
+            <view>{{bbs.content}}</view>
+            <view class="imgList">
+                <block wx:for="{{bbs.img}}" wx:for-item="img" wx:key=":this">
+                    <view class="imgWrapper">
+                        <image mode="scaleToFill" src="{{img}}"></image>
+                    </view>
+                </block>
+            </view>
+            <view class="tagList">
+                <block wx:for="{{bbs.label}}" wx:for-item="label" wx:key=":this">
+                    <text class="tag">{{label.plate.name}}</text>
+                </block>
+            </view>
+            <view class="position">
+                <text class="icon iconfont icon-address"></text>
+                <text>{{bbs.address}}</text>
+                <text>{{bbs.len}}km</text>
+            </view>
+        </view>
+        <view class="btm">
+            <view class="operateTab">
+                <text class="icon iconfont icon-yanjing"></text>
+                <text class="number">{{bbs.num_look}}</text>
+            </view>
+            <view class="operateTab">
+                <text class="icon iconfont icon-pinglun"></text>
+                <text class="number">{{bbs.num_reply}}</text>
+            </view>
+            <view class="operateTab">
+                <text class="icon iconfont icon-zan"></text>
+                <text class="number">{{bbs.num_zan}}</text>
+            </view>
+            <view class="operateTab">
+                <text class="icon iconfont icon-fenxiang"></text>
+                <text class="number">{{bbs.num_share}}</text>
+                <button open-type="share" class="hidden-button"></button>
+            </view>
+        </view>
+    </view>
+    <view class="commentPart">
+        <view class="all">全部评论({{bbs.num_reply}})</view>
+        <view wx:for="{{commentList}}" wx:key="index" class="content" style="padding-bottom:20px;margin-bottom: {{index+1==commentList.length?'50px':''}};">
+            <view class="specCon">
+                <image class="photo" mode="scaleToFill" src="{{item.hf_headimg}}"></image>
+                <view class="comment">
+                    <view class="nickName">{{item.hf_username}}</view>
+                    <view class="con">{{item.hf_comment}}</view>
+                    <view class="info">
+                        <text class="date">{{item.created_at}}</text>
+                        <text class="num" bindtap="input_focus" data-id="{{item.id}}">回复</text>
+                    </view>
+                </view>
+                <view class="replay" wx:if="{{item.reply_content}}">
+                    <view class="title">{{bbs.username}}(作者)：</view>
+                    <view>{{item.reply_content}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="qingful-article-comment-bottom">
+    <input placeholder="请输入评论" placeholder-class="commentStyle" focus="{{input_focus}}" bindinput="bindinput" value="{{comment}}" cursor-spacing="20" />
+    <view wx:if="{{comment}}" class="fabu" bindtap="formSubmit">发布</view>
+    <view wx:if="{{!comment}}" class="fabu" bindtap="bbsZan" data-id="{{bbs.id}}">
+        <text wx:if="{{!bbs.zan_status}}" class='iconfont icon-xihuan' style="font-size: 20px;"></text>
+        <text wx:if="{{bbs.zan_status}}" class='iconfont icon-xihuan-xuanzhong' style="font-size: 24px;color: red;"></text>
+    </view>
+</view>

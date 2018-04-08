@@ -1,0 +1,23 @@
+<view class="qingful-address-wrap">
+    <view class='qingful-address-header' style='width:{{defaultWidth-48/(750/defaultWidth)}}px'>
+        <view class="qingful-address-header-text font-15">您正在看：郑州市金水区</view>
+        <view class="qingful-address-header-text font-14" style='display:flex;flex-flow:row nowrap;'>
+            <view style='padding-right:10rpx;'>选择县区</view>
+            <view class='iconfont icon-xiangxia1 font-12'></view>
+        </view>
+    </view>
+    <scroll-view scroll-y class="qingful-address-city-wrap">
+        <view class="qingful-address-current">
+            <view class="qingful-address-current-text">当前定位城市</view>
+            <view class='qingful-address-current-city'>郑州市</view>
+        </view>
+        <view wx:for="{{address}}" wx:key="address_" class="qingful-address-list-wrap">
+            <view class="qingful-address-sign font-13">{{item.sign}}</view>
+            <view class="qingful-address-city font-14" wx:for="{{item.data}}" wx:for-item="list" wx:key="">{{list}}</view>
+        </view>
+        <view class="qingful-address-prompt">
+            <view class="font-10" style='line-height:28rpx;'>当前最近</view>
+            <view wx:for="{{sign}}" wx:for-index="index" wx:key="" class="qingful-address-sign-item font-12 {{is_selected==index ? 'selected' : ''}}" style="height:{{defaultHeight>554 ? (defaultHeight-90/(1110/defaultHeight))/26 : (defaultHeight-75/(1110/defaultHeight))/26}}px;line-height:{{defaultHeight>554 ? (defaultHeight-90/(1110/defaultHeight))/26 : (defaultHeight-75/(1110/defaultHeight))/26}}px;background:{{is_selected==index ? color : ''}}">{{item}}</view>
+        </view>
+    </scroll-view>
+</view>

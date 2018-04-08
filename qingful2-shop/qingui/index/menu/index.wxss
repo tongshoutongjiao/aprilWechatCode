@@ -1,0 +1,49 @@
+@import "../../../app.wxss";
+
+.qingful-menu-wrap{
+    background: #fff;
+    padding-bottom: 20rpx;
+    margin-bottom: 20rpx;
+}
+.qingful-menu-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; 
+}
+.qingful-menu-item{
+    padding: 20rpx 0;
+    display: flex;
+    justify-content: center;
+}
+.qingful-menu-info{
+    width: 112rpx;
+}
+.qingful-menu-img-wrap{
+    width: 98rpx;
+    height: 98rpx;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.qingful-menu-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.qingful-menu-text{
+    font-size: 28rpx;
+    line-height: 40rpx;
+    text-align: center; 
+    margin-top: 20rpx;
+}
+.qingful-menu-progress-bar{
+    width: 200rpx;
+    height: 4rpx;
+    border-radius: 100rpx;
+    background: #e6e6e6;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.qingful-menu-progress-bar-select{
+    height: 4rpx;
+    border-radius: 4rpx;
+}

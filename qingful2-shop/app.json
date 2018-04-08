@@ -1,0 +1,22 @@
+{
+    "pages": [
+        "pages/plugin/bbs/index/index",
+        "pages/index/index",
+        "pages/plugin/bbs/addTopic/addTopic",
+        "pages/plugin/bbs/indexComment/indexComment",
+
+        "pages/plugin/bbs/itemList/itemList",
+        "pages/plugin/bbs/itemIndex/itemIndex",
+        "pages/plugin/bbs/self/self",
+        "pages/plugin/jizan/index",
+
+        "pages/plugin/article/detail"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black",
+        "navigationStyle": "default"
+    }
+}

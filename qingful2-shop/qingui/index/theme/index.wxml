@@ -1,0 +1,213 @@
+<view class="qingful-window-wrap">
+    <!-- 一行排列 -->
+    <view class="qingful-window-item-2" wx:if="{{themeData.config.style_type==0}}" wx:for="{{themeData.data}}" wx:key="" style='width:{{(defaultWidth-64/(750/defaultWidth))/2}}px'>
+        <image class='qingful-window-img' src='{{item.img_url}}'></image>
+    </view>
+    <view class="qingful-window-item-3" wx:if="{{themeData.config.style_type==1}}" wx:for="{{themeData.data}}" wx:key="" style='width:{{(defaultWidth-64/(750/defaultWidth))/3}}px'>
+        <image class='qingful-window-img' src='{{item.img_url}}'></image>
+    </view>
+    <view class="qingful-window-item-4" wx:if="{{themeData.config.style_type==3}}" wx:for="{{themeData.data}}" wx:key="" style='width:{{(defaultWidth-64/(750/defaultWidth))/4}}px'>
+        <image class='qingful-window-img' src='{{item.img_url}}'></image>
+    </view>
+    <!-- 3个橱窗 左右排列 -->
+    <view class="qingful-window-item-wrap" wx:if="{{themeData.config.style_type==2}}">
+        <view class="qingful-window-item-l">
+            <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[0]}}" wx:key="" style='width:{{(defaultWidth-64/(750/defaultWidth))/2}}px'>
+                <image class='qingful-window-img' src='{{item.img_url}}'></image>
+            </view>
+        </view>
+        <view class="qingful-window-item-r">
+            <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[1]}}" wx:key="" style='width:{{(defaultWidth-64/(750/defaultWidth))/2}}px'>
+                <image class='qingful-window-img' src='{{item.img_url}}'></image>
+            </view>
+        </view>
+    </view>
+    <!-- 4个橱窗 左右排列 -->
+    <view class="qingful-window-item-wrap" wx:if="{{themeData.config.style_type==4}}">
+        <view class="qingful-window-item-l">
+            <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[0]}}" wx:key="" style='width:{{(defaultWidth-64/(750/defaultWidth))/2}}px'>
+                <image class='qingful-window-img' src='{{item.img_url}}'></image>
+            </view>
+        </view>
+        <view class="qingful-window-item-r">
+            <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[1]}}" wx:key="" style='width:{{(defaultWidth-64/(750/defaultWidth))/2}}px'>
+                <image class='qingful-window-img' src='{{item.img_url}}'></image>
+            </view>
+        </view>
+    </view>
+    <!-- 5个橱窗 左右排列 -->
+    <view class="qingful-window-item-wrap" wx:if="{{themeData.config.style_type==5}}">
+        <view class="qingful-window-item-l">
+            <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[0]}}" wx:key="" style='width:{{(defaultWidth-64/(750/defaultWidth))/2}}px'>
+                <image class='qingful-window-img' src='{{item.img_url}}'></image>
+            </view>
+        </view>
+        <view class="qingful-window-item-r">
+            <view class="qingful-window-item-r-t">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[1]}}" wx:key="" style='width:{{(defaultWidth-64/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+            <view class="qingful-window-item-r-b">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[2]}}" wx:key="" style='width:{{((defaultWidth-64/(750/defaultWidth))/2-16/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 6个橱窗 左右排列 -->
+    <view class="qingful-window-item-wrap" wx:if="{{themeData.config.style_type==6}}">
+        <view class="qingful-window-item-l">
+            <view class="qingful-window-item-l-t">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[0]}}" wx:key="" style='width:{{(defaultWidth-64/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+            <view class="qingful-window-item-l-b">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[1]}}" wx:key="" style='width:{{((defaultWidth-64/(750/defaultWidth))/2-16/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+        </view>
+        <view class="qingful-window-item-r">
+            <view class="qingful-window-item-r-t">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[2]}}" wx:key="" style='width:{{(defaultWidth-64/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+            <view class="qingful-window-item-r-b">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[3]}}" wx:key="" style='width:{{((defaultWidth-64/(750/defaultWidth))/2-16/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 7个橱窗 左右排列 -->
+    <view class="qingful-window-item-wrap" wx:if="{{themeData.config.style_type==7}}">
+        <view class="qingful-window-item-l">
+            <view class="qingful-window-item-l-t">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[0]}}" wx:key="" style='width:{{(defaultWidth-64/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+            <view class="qingful-window-item-l-b">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[1]}}" wx:key="" style='width:{{((defaultWidth-64/(750/defaultWidth))/2-16/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+        </view>
+        <view class="qingful-window-item-r">
+            <view class="qingful-window-item-r-t">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[2]}}" wx:key="" style='width:{{((defaultWidth-64/(750/defaultWidth))/2-16/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+            <view class="qingful-window-item-r-b">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[3]}}" wx:key="" style='width:{{((defaultWidth-64/(750/defaultWidth))/2-16/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 8个橱窗 左右排列 -->
+    <view class="qingful-window-item-wrap" wx:if="{{themeData.config.style_type==8}}">
+        <view class="qingful-window-item-l">
+            <view class="qingful-window-item-l-t">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[0]}}" wx:key="" style='width:{{((defaultWidth-64/(750/defaultWidth))/2-16/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+            <view class="qingful-window-item-l-b">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[1]}}" wx:key="" style='width:{{((defaultWidth-64/(750/defaultWidth))/2-16/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+        </view>
+        <view class="qingful-window-item-r">
+            <view class="qingful-window-item-r-t">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[2]}}" wx:key="" style='width:{{((defaultWidth-64/(750/defaultWidth))/2-16/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+            <view class="qingful-window-item-r-b">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[3]}}" wx:key="" style='width:{{((defaultWidth-64/(750/defaultWidth))/2-16/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 9个橱窗 左右排列 -->
+    <view class="qingful-window-item-wrap" wx:if="{{themeData.config.style_type==9}}">
+        <view class="qingful-window-item-l">
+            <view class="qingful-window-item-l-t">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[0]}}" wx:key="" style='width:{{(defaultWidth-64/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+            <view class="qingful-window-item-l-t line-2">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[1]}}" wx:key="" style='width:{{(defaultWidth-64/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+            <view class="qingful-window-item-l-b">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[2]}}" wx:key="" style='width:{{((defaultWidth-64/(750/defaultWidth))/2-16/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+        </view>
+        <view class="qingful-window-item-r">
+            <view class="qingful-window-item-l-t">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[3]}}" wx:key="" style='width:{{(defaultWidth-64/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+            <view class="qingful-window-item-r-t line-2">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[4]}}" wx:key="" style='width:{{((defaultWidth-64/(750/defaultWidth))/2-16/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+            <view class="qingful-window-item-r-b">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[5]}}" wx:key="" style='width:{{((defaultWidth-64/(750/defaultWidth))/2-16/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 10个橱窗 左右排列 -->
+    <view class="qingful-window-item-wrap" wx:if="{{themeData.config.style_type==10}}">
+        <view class="qingful-window-item-l">
+            <view class="qingful-window-item-l-t">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[0]}}" wx:key="" style='width:{{(defaultWidth-64/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+            <view class="qingful-window-item-l-t line-2">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[1]}}" wx:key="" style='width:{{((defaultWidth-64/(750/defaultWidth))/2-16/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+            <view class="qingful-window-item-l-b">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[2]}}" wx:key="" style='width:{{((defaultWidth-64/(750/defaultWidth))/2-16/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+        </view>
+        <view class="qingful-window-item-r">
+            <view class="qingful-window-item-l-t">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[3]}}" wx:key="" style='width:{{(defaultWidth-64/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+            <view class="qingful-window-item-r-t line-2">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[4]}}" wx:key="" style='width:{{((defaultWidth-64/(750/defaultWidth))/2-16/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+            <view class="qingful-window-item-r-b">
+                <view class="qingful-window-item{{'-'+themeData.config.style_type}}" wx:for="{{themeData.data[5]}}" wx:key="" style='width:{{((defaultWidth-64/(750/defaultWidth))/2-16/(750/defaultWidth))/2}}px'>
+                    <image class='qingful-window-img' src='{{item.img_url}}'></image>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

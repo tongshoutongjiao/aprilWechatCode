@@ -1,0 +1,10 @@
+<!--pages/testPage/testPage.wxml-->
+<view class="test">
+    <view>123</view>
+    <view>123</view>
+    <view>123</view>
+    <view>123</view>
+    <view>123</view>
+    <view>123</view>
+    <view>123</view>
+</view>

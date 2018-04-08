@@ -1,0 +1,84 @@
+<!--pages/specStore/specStore.wxml-->
+<view class="container">
+    <view class="brand">
+        <view class="imgWrapper">
+            <image></image>
+            <text class="surplus">剩余50份</text>
+        </view>
+        <view class="btm">
+            <text class="title">时尚迷人蕾丝花边两件套连衣裙</text>
+            <view class="member">
+                <text class="photo"></text>
+                <text class="photo"></text>
+                <text class="photo"></text>
+                <text class="photo"></text>
+                <text class="photo"></text>
+                <text class="photo"></text>
+
+                <text>68人正在参加</text>
+            </view>
+            <view class="priceInfo">
+                <view class="price">
+                    <text>最低</text>
+                    <text>￥269.5</text>
+                    <text>原价￥299.00</text>
+                </view>
+                <button>去砍价</button>
+            </view>
+        </view>
+    </view>
+    <view class="brand">
+        <view class="imgWrapper">
+            <image></image>
+            <text class="surplus">剩余50份</text>
+        </view>
+        <view class="btm">
+            <text class="title">时尚迷人蕾丝花边两件套连衣裙</text>
+            <view class="member">
+                <text class="photo"></text>
+                <text class="photo"></text>
+                <text class="photo"></text>
+                <text class="photo"></text>
+                <text class="photo"></text>
+                <text class="photo"></text>
+
+                <text>68人正在参加</text>
+            </view>
+            <view class="priceInfo">
+                <view class="price">
+                    <text>最低</text>
+                    <text>￥269.5</text>
+                    <text>原价￥299.00</text>
+                </view>
+                <button>去砍价</button>
+            </view>
+        </view>
+    </view>
+    <view class="brand">
+        <view class="imgWrapper">
+            <image></image>
+            <text class="surplus">剩余50份</text>
+        </view>
+        <view class="btm">
+            <text class="title">时尚迷人蕾丝花边两件套连衣裙</text>
+            <view class="member">
+                <text class="photo"></text>
+                <text class="photo"></text>
+                <text class="photo"></text>
+                <text class="photo"></text>
+                <text class="photo"></text>
+                <text class="photo"></text>
+
+                <text>68人正在参加</text>
+            </view>
+            <view class="priceInfo">
+                <view class="price">
+                    <text>最低</text>
+                    <text>￥269.5</text>
+                    <text>原价￥299.00</text>
+                </view>
+                <button>去砍价</button>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "",
+    "enablePullDownRefresh": true,
+    "usingComponents":{
+        "qingui-index":"../../qingui/index/index",
+        "qingui-index-layer": "../../qingui/index/layer/index",
+        "qingui-index-tabbar": "../../qingui/index/tabbar/index",
+        "qingui-index-start": "../../qingui/index/start/index"
+    }
+}

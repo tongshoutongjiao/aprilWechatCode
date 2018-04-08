@@ -1,0 +1,141 @@
+<view class="qingful-mendian-wrap">
+    <view class='qingful-mendian-item' wx:if="{{storeData.config.style_type==1}}">
+        <view class="qingful-mendian-style-wrap">
+            <view class="qingful-mendian-info-wrap">
+                <view class="qingful-mendian-img-wrap">
+                    <image class="qingful-mendian-img" src="{{storeData.config.logo}}"></image>
+                </view>
+                <view style="width:{{defaultWidth-248/(750/defaultWidth)}}px">
+                    <view class="qingful-mendian-name text-hidden-1">{{storeData.config.name}}</view>
+                    <view class="qingful-mendian-sub text-hidden-1">{{storeData.config.summary}}</view>
+                </view>
+            </view>
+            <view class="qingful-mendian-address-wrap">
+                <view class="qingful-mendian-address">
+                    <view class="qingful-mendian-icon-left" style='color:{{storeData.config.icon_color}};position:relative'>
+                        <icon class='iconfont icon-address' style='position:absolute;top:-8rpx;left:-12rpx;font-size: 52rpx;'></icon>
+                    </view>
+                    <view class="font-14 text-hidden-1" style="width:{{(defaultWidth-156/(750/defaultWidth))+'px'}};line-height:40rpx;">{{storeData.config.address}}</view>
+                </view>
+            </view>
+            <view class="qingful-mendian-phone-wrap">
+                <view class="qingful-mendian-phone">
+                    <view class="qingful-mendian-icon-left" style='color:{{storeData.config.icon_color}};position:relative'>
+                        <icon class='iconfont icon-dianhua1' style='position:absolute;top:-8rpx;left:-12rpx;font-size: 52rpx;'></icon>
+                    </view>
+                    <view class="font-14" style='line-height:40rpx;'>{{storeData.config.phone}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class='qingful-mendian-item' wx:if="{{storeData.config.style_type==2}}">
+        <view class="qingful-mendian-style-wrap">
+            <view class="qingful-mendian-info-wrap">
+                <view class="qingful-mendian-img-wrap">
+                    <image class="qingful-mendian-img" src="{{storeData.config.logo}}"></image>
+                </view>
+                <view style="width:{{defaultWidth-248/(750/defaultWidth)}}px">
+                    <view class="qingful-mendian-name text-hidden-1">{{storeData.config.name}}</view>
+                    <view class="qingful-mendian-sub text-hidden-1">{{storeData.config.summary}}</view>
+                </view>
+            </view>
+            <view class="qingful-mendian-address-wrap">
+                <view class="qingful-mendian-address">
+                    <view class="qingful-mendian-icon-left" style='color:{{storeData.config.icon_color}};position:relative'>
+                        <icon class='iconfont icon-address' style='position:absolute;top:-8rpx;left:-12rpx;font-size: 52rpx;'></icon>
+                    </view>
+                    <view class="font-14 text-hidden-1" style="width:{{(defaultWidth-156/(750/defaultWidth))+'px'}};line-height:40rpx;">{{storeData.config.address}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class='qingful-mendian-item' wx:if="{{storeData.config.style_type==3}}">
+        <view class="qingful-mendian-style-wrap">
+            <view class="qingful-mendian-info-wrap">
+                <view class="qingful-mendian-img-wrap">
+                    <image class="qingful-mendian-img" src="{{storeData.config.logo}}"></image>
+                </view>
+                <view style="width:{{defaultWidth-248/(750/defaultWidth)}}px">
+                    <view class="qingful-mendian-name text-hidden-1">{{storeData.config.name}}</view>
+                    <view class="qingful-mendian-sub text-hidden-1">{{storeData.config.summary}}</view>
+                </view>
+            </view>
+            <view class="qingful-mendian-phone-wrap">
+                <view class="qingful-mendian-phone">
+                    <view class="qingful-mendian-icon-left" style='color:{{storeData.config.icon_color}};position:relative'>
+                        <icon class='iconfont icon-dianhua1' style='position:absolute;top:-8rpx;left:-12rpx;font-size: 52rpx;'></icon>
+                    </view>
+                    <view class="font-14" style='line-height:40rpx;'>{{storeData.config.phone}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class='qingful-mendian-item' wx:if="{{storeData.config.style_type==4}}">
+        <view class="qingful-mendian-style-wrap">
+            <view class="qingful-mendian-info-wrap" wx:if="{{storeData.config.style_type!==5}}">
+                <view class="qingful-mendian-img-wrap">
+                    <image class="qingful-mendian-img" src="{{storeData.config.logo}}"></image>
+                </view>
+                <view style="width:{{defaultWidth-248/(750/defaultWidth)}}px">
+                    <view class="qingful-mendian-name text-hidden-1">{{storeData.config.name}}</view>
+                    <view class="qingful-mendian-sub text-hidden-1">{{storeData.config.summary}}</view>
+                </view>
+            </view>
+            <view class="qingful-mendian-address-wrap">
+                <view class="qingful-mendian-address">
+                    <view class="qingful-mendian-icon-left" style='color:{{storeData.config.icon_color}};position:relative'>
+                        <icon class='iconfont icon-dizhi' style='position:absolute;top:-8rpx;left:-12rpx;font-size: 52rpx;'></icon>
+                    </view>
+                    <view class="font-14 text-hidden-1" style="width:{{(defaultWidth-196/(750/defaultWidth))+'px'}};line-height:40rpx;">{{storeData.config.address}}</view>
+                    <view class="qingful-mendian-icon-right" style='color:{{storeData.config.icon_color}};position:relative'>
+                        <icon class='iconfont icon-dianhua' style='position:absolute;top:-8rpx;left:0px;font-size: 52rpx;'></icon>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view> 
+    <view class='qingful-mendian-item' wx:if="{{storeData.config.style_type==5}}">
+        <view class="qingful-mendian-style-wrap">
+            <view class="qingful-mendian-info-wrap">
+                <view class="qingful-mendian-img-wrap">
+                    <image class="qingful-mendian-img" src="{{storeData.config.logo}}"></image>
+                </view>
+                <view style="width:{{defaultWidth-248/(750/defaultWidth)}}px">
+                    <view class="qingful-mendian-name text-hidden-1">{{storeData.config.name}}</view>
+                    <view class="qingful-mendian-sub text-hidden-1">{{storeData.config.summary}}</view>
+                </view>
+            </view>
+            <view class="qingful-mendian-address-wrap">
+                <view class="qingful-mendian-address">
+                    <view class="font-14 text-hidden-1" style="width:{{(defaultWidth-156/(750/defaultWidth))+'px'}};line-height:40rpx;">{{storeData.config.address}}</view>
+                </view>
+                <view class="qingful-mendian-icon-right" style='color:{{storeData.config.icon_color}};position:relative'>
+                    <icon class='iconfont icon-address' style='position:absolute;top:-8rpx;left:-12rpx;font-size: 52rpx;'></icon>
+                </view>
+            </view>
+            <view class="qingful-mendian-phone-wrap">
+                <view class="qingful-mendian-phone">
+                    <view class="font-14" style='line-height:40rpx;'>{{storeData.config.phone}}</view>
+                </view>
+                <view class="qingful-mendian-icon-right" style='color:{{storeData.config.icon_color}};position:relative'>
+                    <icon class='iconfont icon-dianhua1' style='position:absolute;top:-8rpx;left:-12rpx;font-size: 52rpx;'></icon>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class='qingful-mendian-item' wx:if="{{storeData.config.style_type==6}}">
+        <view class="qingful-mendian-style-wrap" style='padding:0 24rpx 20rpx'>
+            <view class="qingful-mendian-address-wrap">
+                <view class="qingful-mendian-address">
+                    <view class="qingful-mendian-icon-left" style='color:{{storeData.config.icon_color}};position:relative'>
+                        <icon class='iconfont icon-dizhi' style='position:absolute;top:-8rpx;left:-12rpx;font-size: 52rpx;'></icon>
+                    </view>
+                    <view class="font-14 text-hidden-1" style="width:{{(defaultWidth-196/(750/defaultWidth))+'px'}};line-height:40rpx;">{{storeData.config.address}}</view>
+                    <view class="qingful-mendian-icon-right" style='color:{{storeData.config.icon_color}};position:relative'>
+                        <icon class='iconfont icon-dianhua' style='position:absolute;top:-8rpx;left:0px;font-size: 52rpx;'></icon>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

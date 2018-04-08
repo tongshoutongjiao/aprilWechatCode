@@ -1,0 +1,18 @@
+<!-- switch组件模板 -->
+<block wx:for="{{switchData.data}}" wx:for-item="switch" wx:key="switch">
+    <view class="weui-cell weui-cell_access" style="padding: 6px 15px;">
+        <view class="weui-cell__bd">{{switch.title}}</view>
+        <switch bindchange="switchChange" data-index="{{index}}" color="{{switchData.config.color}}"/>
+    </view>
+</block>
+
+
+
+
+
+
+
+
+
+
+

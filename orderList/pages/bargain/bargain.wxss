@@ -1,0 +1,355 @@
+image {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0rpx 24rpx;
+  background: #ff4040;
+  fontFamily: "PingFangSC-Regular";
+}
+.container .brand {
+  display: inline-block;
+  box-sizing: border-box;
+  background: #fff;
+  width: 100%;
+  height: 210rpx;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  margin-top: 390rpx;
+}
+.container .brand view {
+  display: inline-block;
+}
+.container .brand .imgWrapper {
+  width: 170rpx;
+  height: 170rpx;
+  background: lightgray;
+  border: 1rpx solid rgba(0, 0, 0, 0.5);
+  margin-right: 20rpx;
+  vertical-align: middle;
+}
+.container .brand .brandName {
+  vertical-align: top;
+  width: 442rpx ;
+  height: 96rpx ;
+}
+.container .brand .brandName view {
+  display: inline-block;
+}
+.container .brand .brandName view text {
+  font-size: 24rpx;
+  color: #999999;
+  line-height: 56rpx;
+}
+.container .brand .brandName view text:nth-child(2) {
+  color: #f7412d;
+  font-size: 34rpx;
+  margin: 0rpx 10rpx ;
+}
+.container .brand .brandName .name {
+  line-height: 48rpx;
+  font-size: 34rpx;
+  color: #222222;
+  margin-bottom: 20rpx;
+}
+.container .info {
+  height: 448rpx;
+  box-sizing: border-box;
+  padding: 10rpx 20rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #fff;
+  margin-top: 30rpx;
+  text-align: center;
+}
+.container .info .partOne {
+  width: 100%;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin-bottom: 30rpx;
+  text-align: left;
+}
+.container .info .partOne text {
+  display: inline-block;
+  font-size: 28rpx;
+  line-height: 48rpx;
+  color: #fff;
+  vertical-align: middle;
+}
+.container .info .partOne .photo {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  border: 1rpx solid #fff;
+  background: #e6e6e6;
+  margin-right: 20rpx;
+}
+.container .info .partTwo {
+  display: inline-block;
+  width: 620rpx;
+  font-size: 28rpx;
+  text-align: left;
+}
+.container .info .partTwo progress {
+  margin-bottom: 10rpx;
+  width: 100%;
+  height: 20rpx;
+}
+.container .info .partTwo text {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #ffffff;
+}
+.container .info .partTwo text:nth-last-child(1) {
+  color: #fec630 ;
+  margin-left: 276rpx ;
+}
+.container .info .partThree {
+  padding-left: 20rpx ;
+  text-align: left;
+  line-height: 48rpx;
+  font-size: 28rpx;
+  color: #fff;
+  margin-top: 24rpx;
+}
+.container .info .btnSelect {
+  position: relative;
+  width: 100%;
+  margin-top: 36rpx ;
+}
+.container .info .btnSelect view {
+  display: inline-block;
+  position: absolute;
+  width: 273rpx;
+  box-sizing: border-box;
+  background: #fff;
+  font-size: 32rpx;
+  color: #ff4040;
+  line-height: 80rpx;
+  border-radius: 100rpx;
+  border: none;
+}
+.container .info .btnSelect view:nth-child(1) {
+  left: 0rpx;
+  background-color: #fec630;
+}
+.container .info .btnSelect view:nth-child(2) {
+  right: 0rpx;
+}
+.container .info .btnSelect button::after {
+  border: 0;
+}
+.container .record {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 30rpx;
+  padding: 20rpx 20rpx 30rpx;
+  border-radius: 10rpx;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.container .record .recordTitle {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 36rpx;
+  width: 100%;
+  line-height: 46rpx;
+  color: #fff;
+  font-size: 32rpx;
+}
+.container .record .friends {
+  width: 100%;
+  vertical-align: middle;
+  margin-bottom: 30rpx;
+}
+.container .record .friends view {
+  display: inline-block;
+  font-size: 26rpx;
+  color: #ffffff;
+  vertical-align: middle;
+}
+.container .record .friends view:nth-child(2) {
+  height: 100%;
+  width: 360rpx;
+  line-height: 40rpx ;
+  margin-left: 20rpx;
+}
+.container .record .friends view:nth-child(2) text {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.container .record .friends view:nth-child(3) {
+  font-size: 28rpx;
+  line-height: 78rpx;
+  float: right;
+}
+.container .record .friends view:nth-child(3) text {
+  color: #fec630;
+}
+.container .record .friends .photo {
+  width: 90rpx;
+  height: 90rpx;
+  border: 1rpx solid #fff;
+  background: #555555;
+  border-radius: 50%;
+}
+.container .record .friends:nth-last-child(1) {
+  margin-bottom: 0rpx;
+}
+.container .intro {
+  width: 100%;
+  margin-top: 30rpx;
+}
+.container .intro text {
+  position: relative;
+  display: inline-block;
+  padding-left: 48rpx;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+  width: 100%;
+  color: #fff;
+  line-height: 40rpx;
+  font-size: 28rpx;
+}
+.container .intro text:nth-child(1) {
+  text-align: center;
+  line-height: 46rpx;
+  margin-bottom: 20rpx;
+  font-size: 32rpx;
+}
+.container .intro text:nth-child(2)::before {
+  position: absolute;
+  content: '1';
+  left: 0;
+  top: 4rpx;
+  display: inline-block;
+  width: 32rpx;
+  height: 32rpx;
+  font-size: 24rpx ;
+  line-height: 32rpx;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  text-align: center;
+}
+.container .intro text:nth-child(3)::before {
+  position: absolute;
+  content: '2';
+  left: 0;
+  top: 4rpx;
+  display: inline-block;
+  width: 32rpx;
+  font-size: 24rpx ;
+  line-height: 32rpx;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  text-align: center;
+}
+.container .intro text:nth-child(4)::before {
+  position: absolute;
+  content: '3';
+  left: 0;
+  top: 4rpx;
+  display: inline-block;
+  width: 32rpx;
+  font-size: 24rpx ;
+  line-height: 32rpx;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  text-align: center;
+}
+.container .intro text:nth-child(5)::before {
+  position: absolute;
+  content: '4';
+  left: 0;
+  top: 4rpx;
+  display: inline-block;
+  width: 32rpx;
+  font-size: 24rpx ;
+  line-height: 32rpx;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  text-align: center;
+}
+.mask {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.dialog {
+  position: fixed;
+  z-index: 5000;
+  width: 520rpx;
+  height: 310rpx;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.dialog .title {
+  width: 90rpx;
+  height: 90rpx;
+  background-color: #555555;
+  border-radius: 50%;
+  margin: -45rpx auto 30rpx;
+  box-shadow: 0rpx -2rpx 2rpx #fff;
+}
+.dialog .content {
+  width: 100%;
+}
+.dialog .content text {
+  display: inline-block;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #222;
+  width: 100%;
+}
+.dialog .content text:nth-child(1) {
+  font-size: 32rpx;
+  color: #f3342f;
+  line-height: 46rpx;
+  margin-bottom: 20rpx;
+}
+.dialog .foot {
+  width: 300rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 42rpx auto 0rpx;
+  text-align: center;
+  font-size: 30rpx;
+  background-color: #ff3f3f;
+  color: #fff;
+  border-radius: 10rpx;
+}
+.block {
+  display: none;
+}
+.proBar {
+  position: relative;
+  width: 620rpx;
+  height: 20rpx;
+  border-radius: 100rpx;
+  background: #FF5757 ;
+  margin: 0 auto 10rpx;
+}
+.proBar .progressed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background: #fec630;
+  border-radius: 100rpx;
+}

@@ -1,0 +1,104 @@
+image {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background: #e6e6e6;
+  box-sizing: border-box;
+  padding: 20rpx 24rpx;
+  font-family: "PingFangSC-Regular";
+}
+.container .brand {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 5rpx 5rpx 5rpx rgba(0, 0, 0, 0.1);
+  margin-bottom: 30rpx;
+  padding-bottom: 30rpx;
+}
+.container .brand .imgWrapper {
+  position: relative;
+  width: 100%;
+  height: 468rpx;
+  background: lightgray;
+  margin-bottom: 20rpx;
+}
+.container .brand .imgWrapper .surplus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 138rpx;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 52rpx;
+}
+.container .brand .btm .title {
+  display: inline-block;
+  width: 100%;
+  font-size: 34rpx ;
+  color: #222;
+  box-sizing: border-box;
+  padding-left: 16rpx;
+  line-height: 48rpx;
+  margin-bottom: 10rpx;
+}
+.container .brand .btm .member {
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 0rpx 16rpx 0rpx 20rpx;
+  width: 100%;
+  height: 50rpx;
+  margin-bottom: 34rpx;
+}
+.container .brand .btm .member .photo {
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  background: #e6e6e6;
+  border-radius: 50%;
+  float: left;
+  margin-right: -5rpx;
+}
+.container .brand .btm .member text {
+  vertical-align: middle;
+  line-height: 60rpx;
+  float: right;
+  font-size: 28rpx;
+  color: #999999;
+}
+.container .brand .btm .priceInfo {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0rpx 20rpx 0rpx 16rpx;
+  vertical-align: middle;
+}
+.container .brand .btm .priceInfo .price {
+  font-size: 24rpx;
+  color: #999999;
+  display: inline-block;
+  margin-right: 146rpx;
+}
+.container .brand .btm .priceInfo .price text:nth-child(2) {
+  font-size: 34rpx;
+  color: #ff4040;
+  line-height: 60rpx;
+  margin: 0rpx 10rpx;
+}
+.container .brand .btm .priceInfo button {
+  vertical-align: middle;
+  display: inline-block;
+  width: 150rpx;
+  line-height: 60rpx;
+  color: #fff;
+  background-color: #FF5757;
+  text-align: center;
+  border-radius: 100rpx;
+  font-size: 30rpx;
+}
+.container .brand .btm .priceInfo button::after {
+  border: 0;
+}

@@ -1,0 +1,3 @@
+<view class="" style="margin: {{videoData.config.w_margin}}px {{videoData.config.h_margin}}px;">
+    <video id="myVideo" style="width: 100%;" src="{{videoData.config.src}}" poster='{{videoData.config.poster}}' controls='true'></video>
+</view>

@@ -1,0 +1,102 @@
+/* pages/welcome/welcome.wxss */
+.hongbao-bomb-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.hongbao-bomb-box {
+    position: relative;
+    width: 300px;
+    height: 483px;
+    z-index: 12;
+    animation: gradualIn 1s forwards;
+}
+
+.hongbao-bomb-close-btn {
+    position: absolute;
+    right: -10px;
+    top: 90px;
+    color: #fff;
+    font-size: 55px;
+}
+
+.hongbao-bomb-img-bg {
+    width: 300px;
+    height: 400px;
+    margin-top: 133px;
+    position: fixed;
+    border-radius: 5px;
+}
+
+.hongbao-bomb-receive-box {
+    height: 68px;
+    width: 234px;
+    background: #fff;
+    border-radius: 4px;
+    margin: 0 33px;
+    position: relative;
+}
+
+.hongbao-bomb-receive-title {
+    margin-left: 18px;
+    padding-top: 12px;
+    font-size: 17px;
+    color: #333;
+}
+
+.hongbao-bomb-receive-price {
+    margin-top: 3px;
+    margin-left: 18px;
+    font-size: 17px;
+    color: #E90412;
+}
+
+.hongbao-bomb-receive-btn {
+    position: absolute;
+    right: 12px;
+    height: 22px;
+    width: 60px;
+    border-radius: 23px;
+    top: 23px;
+    right: 12px;
+    text-align: center;
+    background: #fb5d42;
+    color: #fff;
+    font-size: 13px;
+    
+    background: linear-gradient(to right, #fb5d42, #fb4742);
+    /* 标准的语法 */
+}
+
+@keyframes gradualIn{
+  0% {opacity: 0; transform: scale(0);}
+  90% {opacity: 1;}
+  100% {opacity: 1;transform: scale(1);}
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 560268 */
+    src: url('//at.alicdn.com/t/font_560268_to1sykbugyl23xr.eot');
+    src: url('//at.alicdn.com/t/font_560268_to1sykbugyl23xr.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_560268_to1sykbugyl23xr.woff') format('woff'),
+    url('//at.alicdn.com/t/font_560268_to1sykbugyl23xr.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_560268_to1sykbugyl23xr.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.userinfo-hongbao-close-icon:before {
+    content: '\e6fa';
+}

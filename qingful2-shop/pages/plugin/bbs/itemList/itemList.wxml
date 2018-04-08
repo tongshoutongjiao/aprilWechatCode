@@ -1,0 +1,17 @@
+<!--pages/itemList/itemList.wxml-->
+<view class="qingful-bbs-container">
+    <scroll-view class="userList" scrollY="true" wx:key="{{item.id}}">
+        <view class="user" wx:for="{{topicData}}" bindtap="navigatorItemIndex">
+                <view class="userPhoto" style="background-image:url({{item.img_url}})" ></view>
+                <view>
+                    <view>＃{{item.name}}＃</view>
+                    <view>
+                        <text>{{item.describe}}</text>
+                        <text>阅读{{item.num_look}} 帖子{{item.num_post}} 讨论{{item.num_comment}}</text>
+                    </view>
+                </view>
+        </view>
+    </scroll-view>
+
+
+</view>

@@ -1,0 +1,74 @@
+<view class="qingful-bbs-container">
+    <view class="mySelf" style="background: {{color}};">
+        <view class="photoInfo">
+            <image class="photo" src="{{userInfo.headimg}}"></image>
+            <view class="idName">{{userInfo.username}}</view>
+        </view>
+        <view class="myRecord">
+            <view>
+                <text class="number">{{userInfo.num_post}}</text>
+                <text class="text">发帖</text>
+            </view>
+            <view>
+                <text class="number">{{userInfo.num_reply}}</text>
+                <text class="text">回帖</text>
+            </view>
+            <view>
+                <text class="number">{{userInfo.num_cream}}</text>
+                <text class="text">精华</text>
+            </view>
+        </view>
+    </view>
+    <scroll-view scrollY="true" class="userList" style="height: {{windowHeight*2-430}}rpx;">
+        <view class="title">他的帖子</view>
+        <navigator url='../indexComment/indexComment?id={{item.id}}' class="user" wx:for="{{postList}}">
+            <view class="name">
+                <image class="photo" src="{{userInfo.headimg}}"></image>
+                <view>
+                    <text>{{userInfo.username}}</text>
+                    <text>{{item.created_at}}</text>
+                </view>
+                <view class="concat" catchtap="takePhone" data-phone="{{item.phone}}">联系TA</view>
+            </view>
+            <view class="title" style="padding-left: {{!item.is_top&&!item.is_cream?0:''}}px;">
+                <text class="title-tap-1" wx:if="{{item.is_top}}">顶</text>
+                <text class="title-tap-2" wx:if="{{item.is_cream}}">精</text>
+                <text>{{item.title}}</text>
+            </view>
+            <view class="con">
+                <view wx:if="{{item.content}}">{{item.content}}</view>
+                <view class="imgList" wx:if="{{item.img.length}}">
+                    <view class="imgWrapper" wx:for="{{item.img}}" wx:for-item="img">
+                        <image src="{{img}}"></image>
+                    </view>
+                </view>
+                <view class="tagList">
+                    <text class="tag" wx:for="{{item.label}}" wx:for-item="label">{{label.plate.name}}</text>
+                </view>
+                <view class="position" wx:if="{{item.address}}">
+                    <text class="icon iconfont icon-address"></text>
+                    <text class="over-hide" style="-webkit-line-clamp:1;width: 75%;">{{item.address}}</text>
+                    <text wx:if="{{item.distance}}">{{item.distance}}km</text>
+                </view>
+            </view>
+            <view class="btm">
+                <view class="operateTab">
+                    <text class="icon iconfont icon-yanjing"></text>
+                    <text class="number">{{item.num_look}}</text>
+                </view>
+                <view class="operateTab">
+                    <text class="icon iconfont icon-pinglun"></text>
+                    <text class="number">{{item.num_reply}}</text>
+                </view>
+                <view class="operateTab">
+                    <text class="icon iconfont icon-zan"></text>
+                    <text class="number">{{item.num_zan}}</text>
+                </view>
+                <view class="operateTab">
+                    <text class="icon iconfont icon-fenxiang"></text>
+                    <text class="number">{{item.num_share}}</text>
+                </view>
+            </view>
+        </navigator>
+    </scroll-view>
+</view>

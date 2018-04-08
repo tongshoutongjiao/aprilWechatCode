@@ -1,0 +1,59 @@
+@import "../../../app.wxss";
+.qingful-window-title-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+.qingful-window-title-l{
+    margin-right: 10rpx;
+}
+.qingful-window-title-icon-wrap{
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 10rpx;
+}
+.qingful-window-title-icon{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.qingful-window-title-r{
+    margin-left: 10rpx;
+}
+.qingful-window-title-bg-wrap{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.qingful-window-title-info-wrap{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.qingful-window-title-wrap-type-bg{
+    height: 98rpx;
+    margin: 0 24rpx;
+    border-radius: 6rpx;
+    position: relative;
+}
+.qingful-window-title-bg{
+    width: 100%;
+    height: 100%;
+    border-radius: 6rpx;
+}
+.qingful-window-title-wrap-type-bg .qingful-window-title-info-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}

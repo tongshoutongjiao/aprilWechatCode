@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/address/address",
+    "pages/orderStatus/orderStatus"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "青否小程序",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,115 @@
+<view>
+    <view class="qingful-product-wrap {{productData.config.product_type==4 ? 'scroll' : ''}}" style="background:{{productData.config.background_color}}">
+        <!-- 一列大图 -->
+        <view class='qingful-product-0-wrap' wx:for="{{productData.data}}" wx:key="product_" wx:if="{{productData.config.product_type==0}}">
+            <view class="qingful-product-0-img-wrap"  wx:if="{{product_.img_proportion==0}}" style="width:{{(defaultWidth-48/(750/defaultWidth))}}px;height:{{(defaultWidth-48/(750/defaultWidth))}}px;margin:0 auto;">
+                <image class="qingful-product-img" src="{{item.theme_img_url}}"></image>
+            </view>
+            <view class="qingful-product-0-img-wrap"  wx:if="{{product_.img_proportion==1}}" style="width:{{defaultWidth-48/(750/defaultWidth)}}px;min-width:{{defaultWidth-48/(750/defaultWidth)}}px;height:{{(defaultWidth-48/(750/defaultWidth))*2/3}}px;margin:0 auto;">
+                <image class="qingful-product-img" src="{{item.theme_img_url}}"></image>
+            </view>
+            <view class="qingful-product-0-info-wrap">
+                <view class="qingful-product-0-info name-btn">
+                    <view class="qingful-product-0-info-name text-hidden-1" style="width:{{(defaultWidth-244/(750/defaultWidth))}}px">{{item.name}}</view>
+                    <view class="qingful-product-btn-icon qingful-text-color iconfont icon-gouwuche1" style="color:{{productData.config.cart_icon_color}}"></view>
+                </view>
+                <view class="qingful-product-0-info">
+                    <view class="qingful-product-0-info-price">
+                        <text class='qingful-text-color'>
+                            <text class="font-12">￥</text>
+                            <text class="font-20">{{item.price}}</text>
+                        </text>
+                        <text class="font-12" style="text-decoration:line-through;color:#999;padding-left:10rpx;">￥299.00</text>
+                    </view>
+                    <view class="qingful-product-0-btn-sale font-12" style="color:#999">已有368人购买</view>
+                </view>
+            </view>
+        </view>
+        <!-- 一列小图  -->
+        <view class="qingful-product-1-wrap is-slide" wx:for="{{productData.data}}" wx:key="product_" wx:if="{{productData.config.product_type==1}}">
+            <view class='qingful-product-1-img-wrap'>
+                <image class="qingful-product-img" src="{{item.theme_img_url}}"></image>
+            </view>
+            <view class="qingful-product-1-info-wrap">
+                <view class='qingful-product-1-name font-17 text-hidden-1' style="width:{{defaultWidth-338/(750/defaultWidth)}}px">{{item.name}}</view>
+                <view class='qingful-product-1-sub font-15 text-hidden-2' style="width:{{(defaultWidth-338/(750/defaultWidth))}}px">{{item.sub}}</view>
+                <view class='qingful-product-1-price-wrap'>
+                    <view>
+                        <view class="qingful-product-1-price">
+                            <text class='qingful-text-color'>
+                                <text class="font-12">￥</text>
+                                <text class="font-20">{{item.price}}</text>
+                            </text>
+                            <text class="font-12" style="text-decoration:line-through;color:#999;padding-left:10rpx;">￥68.8</text>
+                        </view>
+                        <view class="qingful-product-1-sale font-13" style="color:#999;margin-top:6rpx;">已有368人购买</view>
+                    </view>
+                    <view class="qingful-product-btn-icon qingful-text-color iconfont icon-gouwuche1" style="color:{{productData.config.cart_icon_color}}"></view>
+                </view>
+            </view>
+        </view>
+        <!-- 两列  -->
+        <view class='qingful-product-2-wrap' wx:if="{{productData.config.product_type==2}}">
+            <view class="qingful-product-2-wrap-item" wx:for="{{productData.data}}" wx:key="product_" style="width:{{(defaultWidth-68/(750/defaultWidth))/2}}px;" bindtap='goProductDetail' data-item="{{item}}">
+                <view class="qingful-product-2-img-wrap" style="width:{{(defaultWidth-68/(750/defaultWidth))/2}}px;height:{{(defaultWidth-68/(750/defaultWidth))/2}}px;">
+                    <image class="qingful-product-img" src="{{item.theme_img_url}}"></image>
+                </view>
+                <view class="qingful-product-2-info-wrap">
+                    <view class="qingful-product-2-name font-15 text-hidden-2">{{item.name}}</view>
+                    <view class="qingful-product-2-price-wrap">
+                        <view class="qingful-product-2-price">
+                            <text class='qingful-text-color'>
+                                <text class="font-12">￥</text>
+                                <text class="font-16">{{item.price}}</text>
+                            </text>
+                        </view>
+                        <view class="qingful-product-btn-icon qingful-text-color iconfont icon-gouwuche1" style="color:{{productData.config.cart_icon_color}}"></view>
+                    </view>
+                </view>
+            </view>
+            <view class="clearfix"></view> 
+        </view>
+        <!-- 三列  -->
+        <view class='qingful-product-3-wrap' wx:if="{{productData.config.product_type==3}}">
+            <view class='qingful-product-3-item' wx:for="{{productData.data}}" wx:key="product_" style="width:{{(defaultWidth-78/(750/defaultWidth))/3}}px">
+                <view class="qingful-product-3-img-wrap" style="width:{{(defaultWidth-78/(750/defaultWidth))/3}}px;height:{{(defaultWidth-78/(750/defaultWidth))/3}}px;">
+                    <image class="qingful-product-img" src="{{item.theme_img_url}}"></image>
+                </view>
+                <view class="qingful-product-2-info-wrap">
+                    <view class="qingful-product-2-name font-15 text-hidden-1">{{item.name}}</view>
+                    <view class="qingful-product-2-price-wrap">
+                        <view class="qingful-product-2-price">
+                            <text class='qingful-text-color'>
+                                <text class="font-12">￥</text>
+                                <text class="font-15">{{item.price}}</text>
+                            </text>
+                        </view>
+                        <view class="qingful-product-btn-icon qingful-text-color iconfont icon-gouwuche1" style="color:{{productData.config.cart_icon_color}}"></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <!-- 三列横向滚动  -->
+        <scroll-view scroll-x wx:if="{{productData.config.product_type==4}}">
+            <view class="qingful-product-4-wrap is-slide}}">
+                <view class="qingful-product-4-item" wx:for="{{productData.data}}" wx:key="product_">
+                    <view class="qingful-product-4-img-wrap">
+                        <image class="qingful-product-img" src="{{item.theme_img_url}}"></image>
+                    </view>
+                    <view class="qingful-product-2-info-wrap">
+                        <view class="qingful-product-2-name font-15 text-hidden-1">{{item.name}}</view>
+                        <view class="qingful-product-2-price-wrap">
+                            <view class="qingful-product-2-price">
+                                <text class='qingful-text-color'>
+                                    <text class="font-12">￥</text>
+                                    <text class="font-15">{{item.price}}</text>
+                                </text>
+                            </view>
+                            <view class="qingful-product-btn-icon qingful-text-color iconfont icon-gouwuche1" style="font-size:40rpx;color:{{productData.config.cart_icon_color}}"></view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

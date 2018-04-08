@@ -1,0 +1,20 @@
+<view class='qingful-search' style="padding:{{searchData.config.h_margin}}rpx 0">
+    <view class='qingful-search-wrap' wx:if="{{!searchData.config.show_address}}" style="border-radius:{{searchData.config.borderRadius}}rpx;margin:0 {{searchData.config.w_margin}}rpx;background:{{searchData.config.bg_color}}">
+        <view class='qingful-search-icon' style="border-radius:{{searchData.config.borderRadius}}rpx">
+            <icon class='iconfont icon-sousuo' style='color:#b2b2b2'></icon>
+            <input class="qingful-search-input {{searchData.config.position=='left' ? 'text-align-l' : searchData.config.position=='center' ? 'text-align-c' : 'text-align-r'}}" placeholder='{{searchData.config.placeholder}} ' style='width:{{defaultWidth-98/(750/defaultWidth)}}px' bindfocus='goSearch'></input>
+        </view>
+    </view>
+    <view class='qingful-search-wrap-1' wx:if="{{searchData.config.show_address}}">
+        <view class='qingful-search-address' bindtap='goAddress'>
+            <view style='position:relative;'>
+                <icon class='iconfont icon-address' style='position:absolute;left:12rpx;top:0;color:#b2b2b2'></icon>
+            </view>
+            <view class='font-14' style='width:56rpx;height:40rpx;padding:0 12rpx 0 58rpx;'>上海</view>
+        </view>
+        <view class='qingful-search-icon' style="border-radius:{{searchData.config.borderRadius}}rpx">
+            <icon class='iconfont icon-sousuo' style='color:#b2b2b2'></icon>
+            <input class="qingful-search-input {{searchData.config.position=='left' ? 'text-align-l' : searchData.config.position=='center' ? 'text-align-c' : 'text-align-r'}}" placeholder='{{searchData.config.placeholder}} ' style='width:{{defaultWidth-200/(750/defaultWidth)}}px;border-radius:0 {{searchData.config.borderRadius}}rpx  {{searchData.config.borderRadius}}rpx 0;' bindfocus='goSearch'></input>
+        </view>
+    </view>
+</view>

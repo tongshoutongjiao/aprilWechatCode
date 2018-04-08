@@ -1,0 +1,22 @@
+<view class='qingful-window-title-wrap-type-bg'>
+    <view class="qingful-window-title-bg-wrap">
+        <image class="qingful-window-title-bg" src="{{titleData.config.bg_img}}"></image>
+    </view>
+    <view class="qingful-window-title-info-wrap" style="color:{{titleData.config.color ? titleData.config.color : '#000000'}}">
+        <view class="qingful-window-title-l fl font-20">
+            <icon class='title-icon iconfont icon-shuangxiexian' wx:if="{{titleData.config.style_type==1}}"></icon>
+            <icon class='title-icon iconfont icon-shuanghengxian' wx:if="{{titleData.config.style_type==2}}"></icon>
+            <icon class='title-icon iconfont icon-danhengxian' wx:if="{{titleData.config.style_type==3}}"></icon>
+        </view>
+        <view class="qingful-window-title-icon-wrap fl" wx:if="{{titleData.config.left_icon}}">
+            <image class="qingful-window-title-icon" src="{{titleData.config.left_icon}}"></image>
+        </view>
+        <view class="font-17 fl">{{titleData.config.title}}</view>
+        <view class="qingful-window-title-r fl font-20">
+            <icon class='title-icon iconfont icon-shuangxiexian' wx:if="{{titleData.config.style_type==1}}"></icon>
+            <icon class='title-icon iconfont icon-shuanghengxian' wx:if="{{titleData.config.style_type==2}}"></icon>
+            <icon class='title-icon iconfont icon-danhengxian' wx:if="{{titleData.config.style_type==3}}"></icon>
+        </view>
+        <view class='clearfix'></view>
+    </view>
+</view>

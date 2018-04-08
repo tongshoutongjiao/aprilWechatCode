@@ -1,0 +1,160 @@
+<!--pages/activityDetail/activityDetail.wxml-->
+<view class="container">
+    <scroll-view  scrollY="true">
+        <view class="list">
+            <view class="brand">
+                <view class="photo"></view>
+                <view>
+                    <text>时尚迷人蕾丝花边两件套连衣裙时尚迷人蕾丝花边两件套连衣裙</text>
+                    <text>当前库存：3403件【 库存为0时，所有砍价将停止】</text>
+
+                </view>
+            </view>
+            <view class="barPart">
+                <view class="tip">
+                    <view class="show">￥269.00<view class="triangle"></view>
+                    </view>
+                </view>
+                <view class="proBar">
+                    <view class="progressed"></view>
+                </view>
+            </view>
+            <view class="priceInfo">
+                <text>原价 ¥ 269.00</text>
+                <text>已有68人帮砍</text>
+                <text>底价 ¥ 12.99</text>
+                <text class="underLine"></text>
+            </view>
+            <view class="activeStatus">
+                <text>活动状态：</text>
+                <text>进行中</text>
+                <view class="btn">当前价购买</view>
+            </view>
+        </view>
+        <view class="list end">
+            <view class="brand">
+                <view class="photo"></view>
+                <view>
+                    <text>时尚迷人蕾丝花边两件套连衣裙时尚迷人蕾丝花边两件套连衣裙</text>
+                    <text>当前库存：3403件【 库存为0时，所有砍价将停止】</text>
+
+                </view>
+            </view>
+            <view class="barPart">
+                <view class="tip">
+                    <view class="show">￥269.00<view class="triangle"></view>
+                    </view>
+                </view>
+                <view class="proBar">
+                    <view class="progressed"></view>
+                </view>
+            </view>
+            <view class="priceInfo">
+                <text>原价 ¥ 269.00</text>
+                <text>已有68人帮砍</text>
+                <text>底价 ¥ 12.99</text>
+                <text class="underLine"></text>
+            </view>
+            <view class="activeStatus">
+                <text>活动状态：</text>
+                <text>进行中</text>
+                <view class="btn">当前价购买</view>
+            </view>
+        </view>
+        <view class="list end">
+            <view class="brand">
+                <view class="photo"></view>
+                <view>
+                    <text>时尚迷人蕾丝花边两件套连衣裙时尚迷人蕾丝花边两件套连衣裙</text>
+                    <text>当前库存：3403件【 库存为0时，所有砍价将停止】</text>
+
+                </view>
+            </view>
+            <view class="barPart">
+                <view class="tip">
+                    <view class="show">￥269.00<view class="triangle"></view>
+                    </view>
+                </view>
+                <view class="proBar">
+                    <view class="progressed"></view>
+                </view>
+            </view>
+            <view class="priceInfo">
+                <text>原价 ¥ 269.00</text>
+                <text>已有68人帮砍</text>
+                <text>底价 ¥ 12.99</text>
+                <text class="underLine"></text>
+            </view>
+            <view class="activeStatus">
+                <text>活动状态：</text>
+                <text>进行中</text>
+                <view class="btn">当前价购买</view>
+            </view>
+        </view>
+        <view class="list">
+            <view class="brand">
+                <view class="photo"></view>
+                <view>
+                    <text>时尚迷人蕾丝花边两件套连衣裙时尚迷人蕾丝花边两件套连衣裙</text>
+                    <text>当前库存：3403件【 库存为0时，所有砍价将停止】</text>
+
+                </view>
+            </view>
+            <view class="barPart">
+                <view class="tip">
+                    <view class="show">￥269.00<view class="triangle"></view>
+                    </view>
+                </view>
+                <view class="proBar">
+                    <view class="progressed"></view>
+                </view>
+            </view>
+            <view class="priceInfo">
+                <text>原价 ¥ 269.00</text>
+                <text>已有68人帮砍</text>
+                <text>底价 ¥ 12.99</text>
+                <text class="underLine"></text>
+            </view>
+            <view class="activeStatus">
+                <text>活动状态：</text>
+                <text>进行中</text>
+                <view class="btn">当前价购买</view>
+            </view>
+        </view>
+        <view class="list">
+            <view class="brand">
+                <view class="photo"></view>
+                <view>
+                    <text>时尚迷人蕾丝花边两件套连衣裙时尚迷人蕾丝花边两件套连衣裙</text>
+                    <text>当前库存：3403件【 库存为0时，所有砍价将停止】</text>
+
+                </view>
+            </view>
+            <view class="barPart">
+                <view class="tip">
+                    <view class="show">￥269.00<view class="triangle"></view>
+                    </view>
+                </view>
+                <view class="proBar">
+                    <view class="progressed"></view>
+                </view>
+            </view>
+            <view class="priceInfo">
+                <text>原价 ¥ 269.00</text>
+                <text>已有68人帮砍</text>
+                <text>底价 ¥ 12.99</text>
+                <text class="underLine"></text>
+            </view>
+            <view class="activeStatus">
+                <text>活动状态：</text>
+                <text>进行中</text>
+                <view class="btn">当前价购买</view>
+            </view>
+        </view>
+
+    </scroll-view>
+    <view class="btm">
+        <view class="parted">我参与的砍价</view>
+        <view class="myOrder">我的订单</view>
+    </view>
+</view>

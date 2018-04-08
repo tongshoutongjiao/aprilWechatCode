@@ -1,0 +1,5 @@
+<!-- textarea组件模板 -->
+<view class="weui-cells__title" wx:if="{{textareaData.config.title}}" style="line-height: 44px;margin-bottom: 0px;margin-top: 0px;color: #000000;">{{textareaData.config.title}}</view>
+<view style="display: flex;">
+    <textarea class="weui-textarea" bindinput="bindinput" placeholder="{{textareaData.config.placeholder}}" style="width: 100%;height:{{textareaData.config.height}}px;padding: 5px;margin: 0px 15px 15px 15px;border:1px solid #f8f8f8;" />
+</view>

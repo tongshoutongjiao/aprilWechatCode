@@ -1,0 +1,7 @@
+.qingful-blank-wrap{
+    width: 100%;
+    min-height: 20rpx;
+    max-height: 200rpx;
+    background-color: #fff;
+    margin-bottom: 20rpx;
+}

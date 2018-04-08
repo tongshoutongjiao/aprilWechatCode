@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<!--index.wxml-->
+
+
+<!--<view class="container">-->
+    <!--<test my-class="red-class"-->
+          <!--id='dialog'-->
+          <!--title='我是标题我是'-->
+          <!--content='恭喜你，学会了小程序组件 '-->
+          <!--cancelText='知道了'-->
+          <!--confirmText="真的假的"-->
+          <!--confirm='谢谢你'-->
+          <!--bind:cancelEvent="_cancelEvent"-->
+          <!--bind:confirmEvent="_confirmEvent">-->
+    <!--</test>-->
+   <!--<button type="primary" bindtap="showDialog">ClickMe!</button>-->
+
+<!--</view>-->
+<view class="container">
+    <view class="tabList" wx:if="{{tabData.data.length}}" style="background-color:{{tabData.backgroundColor}};border-top:1px solid {{tabData.borderStyle}}">
+        <view class="specTab {{selectedIndex==item.index?'selected':''}}" data-index="{{item.index}}" wx:for="{{tabData.data}}"   bindtap="selectTab">
+            <text class="icon" style="background-image:url({{selectedIndex==item.index?item.selectedIconPath:item.iconPath}});">
+                <text>16</text>
+            </text>
+            <text class="con" style="color:{{selectedIndex==item.index?tabData.selectedColor:tabData.color}}"    >{{item.text}}</text>
+        </view>
+    </view>
+
+</view>

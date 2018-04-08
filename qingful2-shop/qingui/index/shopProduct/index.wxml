@@ -1,0 +1,327 @@
+<view class='qingful-store-wrap style-1' wx:if="{{shopProductData.config.style_type==0}}">
+    <view class='qingful-store-bg style-1'>
+        <image class="qingful-store-img style-1" src="{{shopProductData.config.theme_imgurl}}"></image>
+        <view class='qingful-store-active' wx:if="{{shopProductData.config.style_type==0}}"></view>
+    </view>
+    <view class='qingful-store-product'>
+        <view wx:for="{{shopProductData.data.length>3 ? [shopProductData.data[0],shopProductData.data[1],shopProductData.data[2]] : shopProductData.data}}" wx:key="">
+            <view style='width:{{(defaultWidth-108/(750/defaultWidth))/3}}px;height:{{(defaultWidth-108/(750/defaultWidth))/3}}px'>
+                <image class='qingful-store-img' src='{{item.theme_img_url}}'></image>
+            </view>
+            <view class='text-align-c' wx:if="{{shopProductData.config.style_type==0}}">
+                <view class='font-14' style='line-height:40rpx;padding-top:16rpx;'>{{item.title}}</view>
+                <view class='qingful-text-color font-14' style='line-height:42rpx;padding:6rpx 0 16rpx;'>
+                    <text class='font-12'>￥</text>
+                    <text class='font-15'>148.00</text>
+                </view>
+            </view>
+            <view class='qingful-store-product-info style-2' wx:if="{{shopProductData.config.style_type==1}}">
+                <view class='font-14' style='line-height:40rpx;padding-top:16rpx;'>{{item.title}}</view>
+                <view class='qingful-text-color font-14' style='line-height:42rpx;padding:6rpx 0 16rpx;'>
+                    <text class='font-12'>￥</text>
+                    <text class='font-15'>148.00</text>
+                </view>
+                <view class='qingful-store-buy qingful-text-color iconfont icon-gouwuche3' style="font-size:40rpx;color:{{shopProductData.config.cart_icon_color}}"></view>
+            </view>
+            <view class='qingful-store-product-info-style text-align-c' wx:if="{{shopProductData.config.style_type==2}}">
+                <view class='qingful-text-color font-14'>
+                    <text class='font-12'>￥</text>
+                    <text class='font-15'>148.00</text>
+                </view>
+                <view class='text-decoration font-12' style='color:#999;padding-left:10rpx;'>￥188</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class='qingful-store-wrap' wx:if="{{shopProductData.config.style_type==1}}">
+    <view class='qingful-store-bg style-2'>
+        <image class="qingful-store-img style-2" src='{{shopProductData.config.theme_imgurl}}'></image>
+    </view>
+    <scroll-view scroll-x>
+        <view class="qingful-store-product" style='padding-right: 20rpx;'>
+            <view class='qingful-store-product-item' wx:for="{{shopProductData.data}}" wx:key="">
+                <view class='qingful-store-product-img'>
+                    <image class='qingful-store-img' src='{{item.theme_img_url}}'></image>
+                </view>
+                <view class='text-align-c' wx:if="{{shopProductData.config.style_type==0}}">
+                    <view class='font-14' style='line-height:40rpx;padding-top:16rpx;'>{{item.title}}</view>
+                    <view class='qingful-text-color font-14' style='line-height:42rpx;padding:6rpx 0 16rpx;'>
+                        <text class='font-12'>￥</text>
+                        <text class='font-15'>148.00</text>
+                    </view>
+                </view>
+                <view class='qingful-store-product-info style-2' wx:if="{{shopProductData.config.style_type==1}}">
+                    <view class='font-14' style='line-height:40rpx;padding-top:16rpx;'>{{item.title}}</view>
+                    <view class='qingful-text-color font-14' style='line-height:42rpx;padding:6rpx 0 16rpx;'>
+                        <text class='font-12'>￥</text>
+                        <text class='font-15'>148.00</text>
+                    </view>
+                    <view class='qingful-store-buy qingful-text-color iconfont icon-gouwuche3' style="font-size:40rpx;color:{{shopProductData.config.cart_icon_color}}"></view>
+                </view>
+                <view class='qingful-store-product-info-style text-align-c' wx:if="{{shopProductData.config.style_type==2}}">
+                    <view class='qingful-text-color font-14'>
+                        <text class='font-12'>￥</text>
+                        <text class='font-15'>148.00</text>
+                    </view>
+                    <view class='text-decoration font-12' style='color:#999;padding-left:10rpx;'>￥188</view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+<view class='qingful-store-wrap' wx:if="{{shopProductData.config.style_type==2}}">
+    <view class='qingful-store-bg'>
+        <image class="qingful-store-img" src='{{shopProductData.config.theme_imgurl}}'></image>
+        <view class="qingful-store-logo style-3">
+            <image class='qingful-store-logo-img' src='{{shopProductData.config.shop_logo}}'></image>
+        </view>
+        <view class="qingful-store-info style-3" style='width:{{defaultWidth-182/(750/defaultWidth)}}px'>
+            <view class='font-16 text-hidden-1' style='padding-top:8rpx;'>{{shopProductData.config.shop_name}}</view>
+            <view class='font-14 text-hidden-1' style='padding-top:8rpx;'>{{shopProductData.config.shop_sub}}</view>
+        </view>
+    </view>
+    <scroll-view scroll-x>
+        <view class="qingful-store-product" style='padding-right: 20rpx;'>
+            <view class='qingful-store-product-item' wx:for="{{shopProductData.data}}" wx:key="">
+                <view class='qingful-store-product-img'>
+                    <image class='qingful-store-img' src='{{item.theme_img_url}}'></image>
+                </view>
+                <view class='text-align-c' wx:if="{{shopProductData.config.style_type==0}}">
+                    <view class='font-14' style='line-height:40rpx;padding-top:16rpx;'>{{item.title}}</view>
+                    <view class='qingful-text-color font-14' style='line-height:42rpx;padding:6rpx 0 16rpx;'>
+                        <text class='font-12'>￥</text>
+                        <text class='font-15'>148.00</text>
+                    </view>
+                </view>
+                <view class='qingful-store-product-info style-2' wx:if="{{shopProductData.config.style_type==1}}">
+                    <view class='font-14' style='line-height:40rpx;padding-top:16rpx;'>{{item.title}}</view>
+                    <view class='qingful-text-color font-14' style='line-height:42rpx;padding:6rpx 0 16rpx;'>
+                        <text class='font-12'>￥</text>
+                        <text class='font-15'>148.00</text>
+                    </view>
+                    <view class='qingful-store-buy qingful-text-color iconfont icon-gouwuche3' style="font-size:40rpx;color:{{shopProductData.config.cart_icon_color}}"></view>
+                </view>
+                <view class='qingful-store-product-info-style text-align-c' wx:if="{{shopProductData.config.style_type==2}}">
+                    <view class='qingful-text-color font-14'>
+                        <text class='font-12'>￥</text>
+                        <text class='font-15'>148.00</text>
+                    </view>
+                    <view class='text-decoration font-12' style='color:#999;padding-left:10rpx;'>￥188</view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+<view class='qingful-store-wrap' wx:if="{{shopProductData.config.style_type==3}}">
+    <view class='qingful-store-bg'>
+        <image class="qingful-store-img" src='{{shopProductData.config.theme_imgurl}}'></image>
+        <view class="qingful-store-logo style-4">
+            <image class='qingful-store-logo-img' src='{{shopProductData.config.shop_logo}}'></image>
+        </view>
+        <view class="qingful-store-info style-4 text-align-c" style='width:{{defaultWidth-88/(750/defaultWidth)}}px;'>
+            <view class='font-16 text-hidden-1' style='padding-top:8rpx;'>{{shopProductData.config.shop_name}}</view>
+            <view class='font-14 text-hidden-1' style='padding-top:8rpx;'>{{shopProductData.config.shop_sub}}{{shopProductData.config.shop_sub}}</view>
+        </view>
+    </view>
+    <scroll-view scroll-x>
+        <view class="qingful-store-product">
+            <view class='qingful-store-product-item' wx:for="{{shopProductData.data}}" wx:key="">
+                <view class='qingful-store-product-img'>
+                    <image class='qingful-store-img' src='{{item.theme_img_url}}'></image>
+                </view>
+                <view class='text-align-c' wx:if="{{shopProductData.config.style_type==0}}">
+                    <view class='font-14' style='line-height:40rpx;padding-top:16rpx;'>{{item.title}}</view>
+                    <view class='qingful-text-color font-14' style='line-height:42rpx;padding:6rpx 0 16rpx;'>
+                        <text class='font-12'>￥</text>
+                        <text class='font-15'>148.00</text>
+                    </view>
+                </view>
+                <view class='qingful-store-product-info style-2' wx:if="{{shopProductData.config.style_type==1}}">
+                    <view class='font-14' style='line-height:40rpx;padding-top:16rpx;'>{{item.title}}</view>
+                    <view class='qingful-text-color font-14' style='line-height:42rpx;padding:6rpx 0 16rpx;'>
+                        <text class='font-12'>￥</text>
+                        <text class='font-15'>148.00</text>
+                    </view>
+                    <view class='qingful-store-buy qingful-text-color iconfont icon-gouwuche3' style="font-size:40rpx;color:{{shopProductData.config.cart_icon_color}}"></view>
+                </view>
+                <view class='qingful-store-product-info-style text-align-c' wx:if="{{shopProductData.config.style_type==2}}">
+                    <view class='qingful-text-color font-14'>
+                        <text class='font-12'>￥</text>
+                        <text class='font-15'>148.00</text>
+                    </view>
+                    <view class='text-decoration font-12' style='color:#999;padding-left:10rpx;'>￥188</view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+<view class='qingful-store-wrap style-5' wx:if="{{shopProductData.config.style_type==4}}" style="width:{{defaultWidth}}px;height:{{shopProductData.config.style_type==2 ? (defaultWidth>360 ? 556 : 546) : (defaultWidth>360 ? 600 : 590)}}rpx">
+    <image class="qingful-store-img" src='{{shopProductData.config.theme_imgurl}}'></image>
+    <view class="qingful-store-logo style-3">
+        <image class='qingful-store-logo-img' src='{{shopProductData.config.shop_logo}}'></image>
+    </view>
+    <view class="qingful-store-info style-3" style='width:{{defaultWidth-88/(750/defaultWidth)}}px;'>
+        <view class='font-16 text-hidden-1' style='padding-top:8rpx;'>{{shopProductData.config.shop_name}}</view>
+        <view class='font-14 text-hidden-1' style='padding-top:8rpx;'>{{shopProductData.config.shop_sub}}{{shopProductData.config.shop_sub}}</view>
+    </view>
+    <scroll-view scroll-x style='position:absolute;top:220rpx;'>
+        <view class="qingful-store-product">
+            <view class='qingful-store-product-item style-5' wx:for="{{shopProductData.data}}" wx:key="">
+                <view style='width:216rpx;background:#fff'>
+                    <view class='qingful-store-product-img'>
+                        <image class='qingful-store-img' src='{{item.theme_img_url}}'></image>
+                    </view>
+                    <view class='text-align-c' wx:if="{{shopProductData.config.style_type==0}}">
+                        <view class='font-14' style='line-height:40rpx;padding-top:16rpx;'>{{item.title}}</view>
+                        <view class='qingful-text-color font-14' style='line-height:42rpx;padding:6rpx 0 16rpx;'>
+                            <text class='font-12'>￥</text>
+                            <text class='font-15'>148.00</text>
+                        </view>
+                    </view>
+                    <view class='qingful-store-product-info style-2' wx:if="{{shopProductData.config.style_type==1}}">
+                        <view class='font-14' style='line-height:40rpx;padding-top:16rpx;'>{{item.title}}</view>
+                        <view class='qingful-text-color font-14' style='line-height:42rpx;padding:6rpx 0 16rpx;'>
+                            <text class='font-12'>￥</text>
+                            <text class='font-15'>148.00</text>
+                        </view>
+                        <view class='qingful-store-buy qingful-text-color iconfont icon-gouwuche3' style="font-size:40rpx;color:{{shopProductData.config.cart_icon_color}}"></view>
+                    </view>
+                    <view class='qingful-store-product-info-style text-align-c' wx:if="{{shopProductData.config.style_type==2}}">
+                        <view class='qingful-text-color font-14'>
+                            <text class='font-12'>￥</text>
+                            <text class='font-15'>148.00</text>
+                        </view>
+                        <view class='text-decoration font-12' style='color:#999;padding-left:10rpx;'>￥188</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+<view class='qingful-store-wrap style-6' wx:if="{{shopProductData.config.style_type==5}}" style="height:{{shopProductData.config.style_type==2 ? (defaultWidth>360 ? 566 : 556) : (defaultWidth>360 ? 610 : 600)}}rpx">
+    <image class="qingful-store-img" src='{{shopProductData.config.theme_imgurl}}'></image>
+    <view class="qingful-store-logo style-3">
+        <image class='qingful-store-logo-img' src='{{shopProductData.config.shop_logo}}'></image>
+    </view>
+    <view class="qingful-store-info style-3" style='width:{{defaultWidth-88/(750/defaultWidth)}}px;'>
+        <view class='font-16 text-hidden-1' style='padding-top:8rpx;'>{{shopProductData.config.shop_name}}</view>
+        <view class='font-14 text-hidden-1' style='padding-top:8rpx;'>{{shopProductData.config.shop_sub}}{{shopProductData.config.shop_sub}}</view>
+    </view>
+    <view class='qingful-store-product' style='position:absolute;top:220rpx;'>
+        <view class='qingful-store-product-item style-6' wx:for="{{shopProductData.data.length>3 ? [shopProductData.data[0],shopProductData.data[1],shopProductData.data[2]] : shopProductData.data}}" wx:key="" style='background:#fff;'>
+            <view style='width:{{(defaultWidth-72/(750/defaultWidth))/3}}px;height:{{(defaultWidth-72/(750/defaultWidth))/3}}px'>
+                <image class='qingful-store-img' src='{{item.theme_img_url}}'></image>
+            </view>
+            <view class='text-align-c' wx:if="{{shopProductData.config.style_type==0}}">
+                <view class='font-14' style='line-height:40rpx;padding-top:16rpx;'>{{item.title}}</view>
+                <view class='qingful-text-color font-14' style='line-height:42rpx;padding:6rpx 0 16rpx;'>
+                    <text class='font-12'>￥</text>
+                    <text class='font-15'>148.00</text>
+                </view>
+            </view>
+            <view class='qingful-store-product-info style-2' wx:if="{{shopProductData.config.style_type==1}}">
+                <view class='font-14' style='line-height:40rpx;padding-top:16rpx;'>{{item.title}}</view>
+                <view class='qingful-text-color font-14' style='line-height:42rpx;padding:6rpx 0 16rpx;'>
+                    <text class='font-12'>￥</text>
+                    <text class='font-15'>148.00</text>
+                </view>
+                <view class='qingful-store-buy qingful-text-color iconfont icon-gouwuche3' style="font-size:40rpx;color:{{shopProductData.config.cart_icon_color}}"></view>
+            </view>
+            <view class='qingful-store-product-info-style text-align-c' wx:if="{{shopProductData.config.style_type==2}}">
+                <view class='qingful-text-color font-14'>
+                    <text class='font-12'>￥</text>
+                    <text class='font-15'>148.00</text>
+                </view>
+                <view class='text-decoration font-12' style='color:#999;padding-left:10rpx;'>￥188</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class='qingful-store-wrap' wx:if="{{shopProductData.config.style_type==6}}">
+    <view class='' style='position:relative;margin-bottom:340rpx;'>
+        <image class="qingful-store-img" src='{{shopProductData.config.theme_imgurl}}' style='height:270rpx;'></image>
+        <view class="qingful-store-logo style-4">
+            <image class='qingful-store-logo-img' src='{{shopProductData.config.shop_logo}}'></image>
+        </view>
+        <view class="qingful-store-info style-7 text-align-c" style='width:{{defaultWidth-48/(750/defaultWidth)}}px'>
+            <view class='font-16 text-hidden-1'>{{shopProductData.config.shop_name}}</view>
+            <view class='font-14 text-hidden-1' style='padding-top:8rpx;'>{{shopProductData.config.shop_sub}}</view>
+        </view>
+        <scroll-view scroll-x class='qingful-store-product-wrap'>
+            <view class="qingful-store-product" style='padding-right: 20rpx;'>
+                <view class='qingful-store-product-item' wx:for="{{shopProductData.data}}" wx:key="">
+                    <view class='qingful-store-product-img'>
+                        <image class='qingful-store-img' src='{{item.theme_img_url}}'></image>
+                    </view>
+                    <view class='text-align-c' wx:if="{{shopProductData.config.style_type==0}}">
+                        <view class='font-14' style='line-height:40rpx;padding-top:16rpx;'>{{item.title}}</view>
+                        <view class='qingful-text-color font-14' style='line-height:42rpx;padding:6rpx 0 16rpx;'>
+                            <text class='font-12'>￥</text>
+                            <text class='font-15'>148.00</text>
+                        </view>
+                    </view>
+                    <view class='qingful-store-product-info style-2' wx:if="{{shopProductData.config.style_type==1}}">
+                        <view class='font-14' style='line-height:40rpx;padding-top:16rpx;'>{{item.title}}</view>
+                        <view class='qingful-text-color font-14' style='line-height:42rpx;padding:6rpx 0 16rpx;'>
+                            <text class='font-12'>￥</text>
+                            <text class='font-15'>148.00</text>
+                        </view>
+                        <view class='qingful-store-buy qingful-text-color iconfont icon-gouwuche3' style="font-size:40rpx;color:{{shopProductData.config.cart_icon_color}}"></view>
+                    </view>
+                    <view class='qingful-store-product-info-style text-align-c' wx:if="{{shopProductData.config.style_type==2}}">
+                        <view class='qingful-text-color font-14'>
+                            <text class='font-12'>￥</text>
+                            <text class='font-15'>148.00</text>
+                        </view>
+                        <view class='text-decoration font-12' style='color:#999;padding-left:10rpx;'>￥188</view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view style='position: static;'></view>
+</view>
+<view class='qingful-store-wrap' wx:if="{{shopProductData.config.style_type==7}}">
+    <view class='' style='position:relative;margin-bottom:340rpx;'>
+        <image class="qingful-store-img" src='{{shopProductData.config.theme_imgurl}}' style='height:270rpx;'>
+        </image>
+        <view class="qingful-store-logo style-3">
+            <image class='qingful-store-logo-img' src='{{shopProductData.config.shop_logo}}'></image>
+        </view>
+        <view class="qingful-store-info style-3" style='width:{{defaultWidth-182/(750/defaultWidth)}}px'>
+            <view class='font-16 text-hidden-1' style='padding-top:14rpx;'>{{shopProductData.config.shop_name}}</view>
+            <view class='font-14 text-hidden-1' style='padding-top:8rpx;'>{{shopProductData.config.shop_sub}}</view>
+        </view>
+        <scroll-view scroll-x class='qingful-store-product-wrap'>
+            <view class="qingful-store-product" style='padding-right: 20rpx;'>
+                <view class='qingful-store-product-item' wx:for="{{shopProductData.data}}" wx:key="">
+                    <view class='qingful-store-product-img'>
+                        <image class='qingful-store-img' src='{{item.theme_img_url}}'></image>
+                    </view>
+                    <view class='text-align-c' wx:if="{{shopProductData.config.style_type==0}}">
+                        <view class='font-14' style='line-height:40rpx;padding-top:16rpx;'>{{item.title}}</view>
+                        <view class='qingful-text-color font-14' style='line-height:42rpx;padding:6rpx 0 16rpx;'>
+                            <text class='font-12'>￥</text>
+                            <text class='font-15'>148.00</text>
+                        </view>
+                    </view>
+                    <view class='qingful-store-product-info style-2' wx:if="{{shopProductData.config.style_type==1}}">
+                        <view class='font-14' style='line-height:40rpx;padding-top:16rpx;'>{{item.title}}</view>
+                        <view class='qingful-text-color font-14' style='line-height:42rpx;padding:6rpx 0 16rpx;'>
+                            <text class='font-12'>￥</text>
+                            <text class='font-15'>148.00</text>
+                        </view>
+                        <view class='qingful-store-buy qingful-text-color iconfont icon-gouwuche3' style="font-size:40rpx;color:{{shopProductData.config.cart_icon_color}}"></view>
+                    </view>
+                    <view class='qingful-store-product-info-style text-align-c' wx:if="{{shopProductData.config.style_type==2}}">
+                        <view class='qingful-text-color font-14'>
+                            <text class='font-12'>￥</text>
+                            <text class='font-15'>148.00</text>
+                        </view>
+                        <view class='text-decoration font-12' style='color:#999;padding-left:10rpx;'>￥188</view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

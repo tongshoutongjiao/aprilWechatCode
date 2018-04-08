@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'iconfont';
+    /* project id 560268 */
+    src: url('//at.alicdn.com/t/font_560268_88d0lh7dbcma38fr.eot');
+    src: url('//at.alicdn.com/t/font_560268_88d0lh7dbcma38fr.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_560268_88d0lh7dbcma38fr.woff') format('woff'),
+    url('//at.alicdn.com/t/font_560268_88d0lh7dbcma38fr.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_560268_88d0lh7dbcma38fr.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yanjing:before {
+    content: "\e70c";
+}
+
+.icon-pinglun:before {
+    content: "\e608";
+}
+
+.icon-xihuan:before {
+    content: "\e663";
+}
+
+.icon-xihuan-xuanzhong:before {
+    content: "\e707";
+}
+
+page {
+    width: 100%;
+    height: 100%;
+    font-size: 28rpx;
+    overflow: auto;
+}
+
+
+.qingful-article-container {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 28rpx 24rpx 0rpx;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+
+.qingful-article-top {
+    width: 100%;
+    margin-bottom: 40rpx;
+}
+
+.qingful-article-top .title {
+    font-size: 40rpx;
+    line-height: 60rpx;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #222222;
+    text-align: center;
+}
+
+.qingful-article-top .date {
+    font-size: 26rpx;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 40rpx;
+    letter-spacing: 0px;
+    color: #8a8a8a;
+    text-align: center;
+}
+
+.qingful-article-top .review {
+    margin: 30rpx auto 0rpx;
+    width: 409rpx;
+}
+
+.qingful-article-top .review .icon {
+    font-size: 26rpx;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 40rpx;
+    letter-spacing: 0px;
+    color: #8a8a8a;
+    margin: 0rpx 80rpx 0rpx 10rpx;
+}
+
+.icon::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    background: transparent;
+    width: 23rpx;
+    height: 23rpx;
+    border-radius: 50%;
+    line-height: 40rpx;
+    left: -30rpx;
+    top: 8rpx;
+}
+
+.wxParse-p image {
+    width: 100%!important;
+}
+
+.comment-content .specCon {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.comment-photo {
+    width: 68rpx;
+    height: 68rpx;
+    border-radius: 50%;
+    margin-right: 20rpx;
+    background-color: #E5E5E5;
+    display: inline-block;
+    float: left;
+}
+
+.comment,
+.replay {
+    margin-left: 88rpx;
+    margin-bottom: 20rpx;
+}
+
+.comment .nickName,
+.replay .title {
+    font-family: PingFangSC-Regular;
+    font-size: 30rpx;
+    font-stretch: normal;
+    line-height: 50rpx;
+    color: #606f89;
+    margin-bottom: 7rpx;
+    font-weight: bold;
+}
+
+.comment .con,
+.replay view {
+    font-size: 28rpx;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 50rpx;
+    color: #222222;
+}
+
+.comment .info .date {
+    font-size: 26rpx;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 40rpx;
+    color: #8a8a8a;
+}
+
+.comment .info .num {
+    font-size: 26rpx;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 40rpx;
+    color: #222222;
+    float: right;
+}
+
+.comment .info .num:hover {
+    color: #606f89;
+    font-family: PingFangSC-Regular;
+    font-weight: bold;
+}
+
+.replay {
+    background-color: #f8f8f8;
+    padding: 10rpx 10rpx;
+}
+
+.comment-content-title {
+    line-height: 50px;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.qingful-article-comment-bottom {
+    position: fixed;
+    height: 50px;
+    border-top: 1rpx solid #e6e6e6;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.qingful-article-comment-bottom input {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 8rpx 6rpx;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.qingful-article-comment-bottom .fabu {
+    text-align: center;
+    width: 60px;
+    line-height: 50px;
+}

@@ -1,0 +1,65 @@
+@import "../../../font.wxss";
+@import "../../../app.wxss";
+
+.qingful-mendian-wrap{
+    padding: 0 24rpx;
+    margin-bottom: 20rpx;
+}
+.qingful-mendian-item{
+    background-color: #fff;
+    box-shadow: 0 6rpx 12rpx rgba(0,0,0,.1);  
+}
+.qingful-mendian-style-wrap{
+    padding: 20rpx 30rpx;
+}
+.qingful-mendian-info-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.qingful-mendian-img-wrap{
+    width: 120rpx;
+    height: 120rpx;
+    margin-right: 20rpx;
+}
+.qingful-mendian-img{
+    width: 100%;
+    height: 100%;
+}
+.qingful-mendian-name{
+    font-size: 34rpx;
+    height: 48rpx;
+    line-height: 48rpx;
+    color:#000;
+    padding: 12rpx 0;
+}
+.qingful-mendian-sub{
+    font-size: 26rpx;
+    height: 36rpx;
+    line-height: 36rpx;
+}
+.qingful-mendian-address-wrap,.qingful-mendian-phone-wrap{
+    padding-top: 40rpx;
+    display: flex;
+    justify-content: space-between; 
+}
+.qingful-mendian-address-wrap.no-mendian-info{
+    padding-top: 0;
+}
+.qingful-mendian-address,.qingful-mendian-phone{
+    display: flex;
+    justify-content: space-between; 
+    position: relative;
+}
+.qingful-mendian-icon-left{
+    width: 25rpx;
+    /* height: 34rpx; */
+    line-height: 40rpx;
+    position: absolute;
+    top: 0;
+    margin: 0rpx 24rpx 0 0;
+}
+.qingful-mendian-icon-right{
+    width: 25rpx;
+    height: 34rpx;
+    margin-top: 0rpx;
+}

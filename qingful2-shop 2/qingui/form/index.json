@@ -1,0 +1,12 @@
+{
+    "component": true,
+    "usingComponents":
+    {
+        "qingui-form-input": "input/index",
+        "qingui-form-textarea": "textarea/index",
+        "qingui-form-switch": "switch/index",
+        "qingui-form-choose": "choose/index",
+        "qingui-form-picker": "picker/index",
+        "qingui-form-upload": "upload/index"
+    }
+}

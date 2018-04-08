@@ -1,0 +1,147 @@
+<import src="/utils/wxParse/wxParse.wxml" />
+<!--pages/zan/lottery_draw/lottery_draw.wxml-->
+<!--<view class="qingful_jizan_code">豆腐干岁的法国</view>-->
+<view class="qingful_jizan_lotter">
+    <!--店铺信息以上为上半部分-->
+    <view class="qingful_jizan_lotter_top">
+        <!--图片-->
+        <view class="qingful_jizan_lotter_image">
+            <image src="{{jizan.img_url}}"></image>
+            <!--人气/时间-->
+            <text class="qingful_jizan_text_lf ">{{jizan.renqi}}人气</text>
+            <text class="qingful_jizan_text_rt ">{{jizan.active_time_msg}}</text>
+        </view>
+        <view style="clear:both"></view>
+        <view class="qingful_jizan_lotter_title">
+            {{jizan.title}}
+        </view>
+        <!--获得赞数-->
+        <view class="qingful_jizan_zan_num">
+            <view class="qingful_jizan_num inline lf">{{jizan.num_zan_need}}</view>
+            <view class="lf" style="color: #222222;font-size:14px;vertical-align:top;margin-top:20px;">个赞</view>
+            <view class="qingful_jizan_price inline lf">￥{{jizan.price}}</view>
+
+            <block wx:if="{{!jizan.canyu}}">
+                <view class="rt qingful_jizan_ready" wx:if="{{jizan.num_zan_need == jizan.num_zan_on}}">
+                    已集齐
+                    <view class="iconfont icon-zan inline" style="font-size:20px;vertical-align:top;margin:-1px 0 0 -5px;padding:0"></view>
+                </view>
+                <view class="rt qingful_jizan_on" wx:if="{{jizan.num_zan_need != jizan.num_zan_on}}">
+                    已集到{{jizan.num_zan_on}}个
+                    <view class="iconfont icon-zan inline" style="color: #ff5757;font-size:20px;vertical-align:top;margin:-1px 0 0 -5px;padding:0"></view>
+                </view>
+            </block>
+            <block wx:if="{{jizan.canyu && jizan_canyu_data}}">
+                <view class="rt qingful_jizan_ready" wx:if="{{jizan.num_zan_need == jizan_canyu_data.num_zan_on}}">
+                    已集齐
+                    <view class="iconfont icon-zan inline" style="font-size:20px;vertical-align:top;margin:-1px 0 0 -5px;padding:0"></view>
+                </view>
+                <view class="rt qingful_jizan_on" wx:if="{{jizan.num_zan_need != jizan_canyu_data.num_zan_on}}">
+                    已集到{{jizan_canyu_data.num_zan_on}}个
+                    <view class="iconfont icon-zan inline" style="color: #ff5757;font-size:20px;vertical-align:top;margin:-1px 0 0 -5px;padding:0"></view>
+                </view>
+            </block>
+            <view style="clear:both"></view>
+            <view wx:if="{{jizan.describe}}" style="color: #8a8a8a;font-size:14px;">{{jizan.describe}}</view>
+            <view class="qingful_jizan_award">
+                <block wx:if="{{jizan.canyu && jizan_canyu_data.code.length}}">
+                    <!--您的获奖码-->
+                    <view class="qingful_jizan_code ">您的获奖码</view>
+                    <view class="inline qingful_jizan_code_num" wx:for="{{jizan_canyu_data.code}}" wx:key="index" style="position:relative">
+                        <view class="inline fw_6" style="z-index:1000;position:absolute;left:7.5px">{{item}}</view>
+                        <view class="qingful_jizan_code_num_bg"></view>
+                        <view class="qingful_jizan_code_num_bgbottom"></view>
+                    </view>
+                </block>
+                <block wx:if="{{!jizan.canyu}}">
+                    <view class="qingful_jizan_lotter_headpic">
+                        <image wx:for="{{jizan_data}}" wx:key="index" src="{{item.headimg}}" class="inline" style="width:37px;height:37px;border-radius:50%;"></image>
+                    </view>
+                </block>
+                <block wx:if="{{jizan.canyu && jizan_canyu_data}}">
+                    <view class="qingful_jizan_lotter_headpic">
+                        <image wx:for="{{jizan_canyu_data.sub}}" wx:key="index" src="{{item.headimg}}" class="inline" style="width:37px;height:37px;border-radius:50%;"></image>
+                        <view class="qingful_jizan_initiator">发起人</view>
+                    </view>
+                </block>
+
+                <view style="margin:20px 0 10px 0;color: #222222;font-size:15px;" class="fw_6"> 店铺信息</view>
+                <view class="qingful_jizan_bg_ddd">
+                    <view style="padding:10px 0px 10px 10px;">
+                        <view class="qingful_jizan_height fw_6">{{jizan.shop_name}}</view>
+                        <view class="qingful_jizan_height">营业：
+                            <view class="inline" style="font-weight:normal">{{jizan.shop_time}}</view>
+                        </view>
+                        <view class="qingful_jizan_height" bindtap='openLocation'>
+                            <view class="iconfont icon-dizhi1 inline" style="margin-top:-2px;vertical-align:top;font-size:20px;color:#ff5757"></view>
+                            {{jizan.shop_address}}
+                        </view>
+                        <view class="iconfont icon-phone inline rt" bindtap='makePhoneCall' data-phone="{{jizan.shop_phone}}" style="margin-top:-30px;vertical-align:top;font-size:35px;color:#ff5757"></view>
+                    </view>
+                </view>
+                <view class="qingful_jizan_activity">
+                    <view class="fw_6 qingful_jizan_activity_detail">活动说明</view>
+                    <!-- <view class="fw_6 qingful_jizan_detail qingful_jizan_marginBottom">
+                        转发朋友圈集赞77个，送恒大冰泉一箱！
+                    </view>
+                    <view class="tf qingful_jizan_marginBottom">
+                        <view class="fw_6 inline tf">
+                            活动时间：
+                        </view>2018.01.01 16:00 – 2018.06.06 18:00
+                    </view>
+                    <view class="tf qingful_jizan_marginBottom">
+                        <view class="fw_6 inline tf">
+                            活动地址：
+                        </view>郑州市北三环瀚海北金B座7021室
+                    </view>
+                    <view class="tf qingful_jizan_marginBottom">
+                        <view class="fw_6 inline tc lf" style="width:75px;">
+                            活动详情：
+                        </view>
+                        <view class="inline rt" style="width:78.5%;">
+                            <template is="wxParse" data="{{wxParseData:jizanDetail.nodes}}" />
+                        </view>
+                    </view> -->
+                    <view class="inline rt" style="width:100%;">
+                        <template is="wxParse" data="{{wxParseData:jizanDetail.nodes}}" />
+                    </view>
+                </view>
+                <view style="clear:both"></view>
+                <block wx:if="{{jizan_canyu_data_list}}">
+                    <view class="fw_6 qingful_jizan_score">参与记录</view>
+                    <view class="qingful_jizan_btn">
+                        <button size="mini" class="qingful_jizan_ful-btn {{btnstate==index?'add_bg':''}}" id="{{index}}" bindtap='toorder' wx:for="{{btnlist}}" wx:key="index"> {{item.btnname}} </button>
+                    </view>
+                    <view style="height:24px;padding:10.5px 0;" wx:for="{{jizan_canyu_data_list}}" wx:key="index">
+                        <view class="lf">
+                            <image src="{{item.headimg}}" class="inline" style="margin:0 10.5px;width:24px;height:24px;border-radius:50%;"></image>
+                            <view class="inline" style="vertical-align:top;margin-top:1px">{{item.username}}</view>
+                        </view>
+                        <view class="rt" style="margin-right:10px;color: #8a8a8a;">
+                            <view class="inline">已集齐{{item.num_zan_on}}</view>
+                            <view class="inline iconfont icon-zan" style="font-size:20px;margin-top:0px;vertical-align:top;color:#a5a5a5"></view>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+    <!--店铺信息一下为下半部分-->
+</view>
+<!--帮他点赞-->
+<button class="qingful_jizan_lottery_code_num" wx:if="{{!jizan.canyu}}" bindtap="dianzan">
+    帮他点赞
+    <view class="inline iconfont icon-zan qingful_jizan_lotter_btn qingful_jizan_lottery_code_icon"></view>
+</button>
+<!--我也要参与-->
+<view style="width:100%;background-color:#fff;" wx:if="{{jizan.canyu}}">
+    <block wx:if="{{jizan_canyu_data}}">
+        <button class="inline qingful_jizan_lottery_btn_lf" bindtap="jizancanyu">我也要参与</button>
+        <button class="inline qingful_jizan_lottery_btn_rt" bindtap="dianzan">帮他点赞
+            <view class="inline iconfont icon-zan qingful_jizan_lotter_btn" style="font-size:26px;vertical-align:top;margin-top:-10px"></view>
+        </button>
+    </block>
+    <block wx:if="{{!jizan_canyu_data}}">
+        <button class="inline qingful_jizan_lottery_btn_lf" bindtap="jizancanyu" style="width: 100%;">我也要参与</button>
+    </block>
+</view>

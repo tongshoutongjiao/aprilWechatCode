@@ -1,0 +1,253 @@
+page {
+  width: 100%;
+  height: 100%;
+  font-size: 28rpx;
+  overflow: auto;
+  font-family: PingFangSC-Regular;
+}
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #e6e6e6;
+  box-sizing: border-box;
+  font-size: 30rpx;
+}
+.container image {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.container scroll-view {
+  position: relative;
+  width: 100%;
+  height: 100rpx;
+  padding: 0 24rpx;
+  background-color: #ffffff;
+  flex-direction: row;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.container scroll-view .wrap {
+  display: inline-block;
+  line-height: 90rpx;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 6rpx 24rpx;
+  width: 20%;
+  font-size: 30rpx;
+}
+.container scroll-view .active view {
+  border-bottom: 6rpx solid #ff5757;
+}
+.container swiper.tab-content {
+  position: absolute;
+  top: 100rpx;
+  bottom: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.container swiper.tab-content swiper-item {
+  position: absolute;
+  top: 0rpx;
+  bottom: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.container swiper.tab-content swiper-item .wrapper {
+  box-sizing: border-box;
+  padding: 0 24rpx;
+  width: 100%;
+  background: #fff;
+  margin-top: 20rpx;
+}
+.container swiper.tab-content swiper-item .wrapper .orderNumber {
+  line-height: 84rpx;
+  color: #222222;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+.container swiper.tab-content swiper-item .wrapper .orderNumber view {
+  float: right;
+  color: #ff5757;
+}
+.container swiper.tab-content swiper-item .wrapper .mid {
+  position: relative;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  vertical-align: middle;
+}
+.container swiper.tab-content swiper-item .wrapper .mid view {
+  display: inline-block;
+}
+.container swiper.tab-content swiper-item .wrapper .mid .icon {
+  display: inline-block;
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  background: #e6e6e6;
+  margin-right: 20rpx;
+}
+.container swiper.tab-content swiper-item .wrapper .mid .right {
+  position: absolute;
+  right: 24rpx;
+  height: 0rpx;
+  width: 0rpx;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 16rpx solid transparent;
+  border-bottom: 16rpx solid transparent;
+  border-left: 16rpx solid #222;
+}
+.container swiper.tab-content swiper-item .wrapper .mid .rightTwo {
+  position: absolute;
+  right: 26rpx;
+  height: 0rpx;
+  width: 0rpx;
+  top: 50%;
+  z-index: 100;
+  transform: translateY(-50%);
+  border-top: 16rpx solid transparent;
+  border-bottom: 16rpx solid transparent;
+  border-left: 16rpx solid #fff;
+}
+.container swiper.tab-content swiper-item .wrapper .brand {
+  width: 100%;
+}
+.container swiper.tab-content swiper-item .wrapper .brand view {
+  display: inline-block;
+}
+.container swiper.tab-content swiper-item .wrapper .brand .imgWrapper {
+  width: 170rpx;
+  height: 170rpx;
+  background: #e6e6e6;
+  margin-right: 20rpx;
+}
+.container swiper.tab-content swiper-item .wrapper .brand .desc {
+  vertical-align: top;
+  width: 504rpx;
+  font-size: 28rpx;
+  color: #222;
+  line-height: 40rpx;
+}
+.container swiper.tab-content swiper-item .wrapper .brand .desc .btm {
+  width: 100%;
+  margin-top: 54rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+.container swiper.tab-content swiper-item .wrapper .brand .desc .btm text:nth-last-child(1) {
+  float: right;
+}
+.container swiper.tab-content swiper-item .wrapper .priceSection {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30rpx 0rpx;
+  border-bottom: 2rpx solid #e6e6e6 ;
+}
+.container swiper.tab-content swiper-item .wrapper .priceSection .price {
+  flex: 1;
+  text-align: center;
+  border-right: 2rpx solid #e6e6e6;
+}
+.container swiper.tab-content swiper-item .wrapper .priceSection .price:nth-last-child(1) {
+  border-right: 0rpx;
+}
+.container swiper.tab-content swiper-item .wrapper .priceSection .price text {
+  display: inline-block;
+  color: #ff5757 ;
+  font-size: 28rpx;
+  width: 100%;
+}
+.container swiper.tab-content swiper-item .wrapper .priceSection .price text:nth-child(2) {
+  color: #999999;
+}
+.container swiper.tab-content swiper-item .wrapper .bottom {
+  height: 100rpx;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx 0rpx 20rpx 24rpx;
+}
+.container swiper.tab-content swiper-item .wrapper .bottom view {
+  float: right;
+}
+.container swiper.tab-content swiper-item .wrapper .bottom view text {
+  display: inline-block;
+  height: 100%;
+  font-size: 26rpx;
+  box-sizing: border-box;
+  padding: 12rpx 24rpx;
+  color: #999999;
+  border: 2rpx solid #999;
+  border-radius: 30rpx;
+  text-align: center;
+}
+.container swiper.tab-content swiper-item .wrapper .bottom view text:nth-last-child(1) {
+  color: #fff;
+  background-color: #ff5757;
+  border: 2rpx solid #ff5757;
+  margin-left: 20rpx;
+}
+.container swiper.tab-content swiper-item .wrapperTwo .brand {
+  border-bottom: 2rpx solid #e6e6e6 ;
+  padding-bottom: 20rpx;
+}
+.container swiper.tab-content swiper-item .wrapperTwo .brand .desc {
+  vertical-align: top;
+}
+.container swiper.tab-content swiper-item .wrapperTwo .brand .desc view {
+  margin-bottom: 10rpx;
+}
+.container swiper.tab-content swiper-item .wrapperTwo .brand .desc .btm {
+  margin-top: 0rpx;
+}
+.container swiper.tab-content swiper-item .wrapperTwo .brand .desc .btm .colorStyle {
+  display: inline-block;
+  width: 100%;
+  line-height: 40rpx;
+}
+.container swiper.tab-content swiper-item .wrapperTwo .brand .desc .btm .price {
+  width: 100%;
+  color: #222;
+  line-height: 50rpx;
+}
+.container swiper.tab-content swiper-item .wrapperTwo .brand .desc .btm .price text:nth-child(2) {
+  float: right;
+}
+.container swiper.tab-content swiper-item .wrapperTwo .brand .orderTitle {
+  color: #999;
+  font-size: 26rpx;
+  width: 100%;
+  text-align: right;
+}
+.container swiper.tab-content swiper-item .wrapperThree .brand {
+  border-bottom: 2rpx solid #e6e6e6 ;
+  padding-bottom: 20rpx;
+}
+.container swiper.tab-content swiper-item .wrapperThree .brand .desc {
+  vertical-align: top;
+}
+.container swiper.tab-content swiper-item .wrapperThree .brand .desc view {
+  margin-bottom: 10rpx;
+}
+.container swiper.tab-content swiper-item .wrapperThree .brand .desc .btm {
+  margin-top: 0rpx;
+}
+.container swiper.tab-content swiper-item .wrapperThree .brand .desc .btm .colorStyle {
+  display: inline-block;
+  width: 100%;
+  line-height: 40rpx;
+}
+.container swiper.tab-content swiper-item .wrapperThree .brand .desc .btm .price {
+  width: 100%;
+  color: #222;
+  line-height: 50rpx;
+}
+.container swiper.tab-content swiper-item .wrapperThree .brand .desc .btm .price text:nth-child(2) {
+  float: right;
+}

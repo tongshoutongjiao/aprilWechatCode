@@ -1,0 +1,88 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.93",
+	"appid": "wx5f1c50823b837fe8",
+	"projectname": "tabBar",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "文章详情页面",
+					"pathName": "pages/articleDetail/articleDetail",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "评论页面",
+					"pathName": "pages/comment/comment",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "评论",
+					"pathName": "pages/comment/comment",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "帖子列表页",
+					"pathName": "pages/newsList/newsList",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "编辑帖子模式",
+					"pathName": "pages/editMode/editMode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "noteList",
+					"pathName": "pages/noteList/noteList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "article",
+					"pathName": "pages/article/article",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "社区",
+					"pathName": "pages/community/community",
+					"query": ""
+				}
+			]
+		}
+	}
+}

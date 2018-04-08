@@ -1,0 +1,214 @@
+.qingful-bbs-container{
+  position: relative;
+  width: 100%;
+  background: #e6e6e6;
+  padding-bottom: 30rpx;
+  font-family: "PingFangSC-Regular";
+  image{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  .formPart{
+    font-weight: lighter;
+    background: #ffffff;
+    .topicTitle{
+      width: 100%;
+      height: 98rpx;
+      box-sizing: border-box;
+      padding-left:24rpx;
+
+      input{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        font-size: 34rpx;
+        border-bottom: 1rpx solid #e6e6e6;
+      }
+    }
+    .multiInput{
+      width: 100%;
+      box-sizing: border-box;
+      height: 496rpx;
+      padding:22rpx 24rpx 50rpx;
+      textarea{
+        width: 100%;
+        display: inline-block;
+        line-height: 40rpx;
+        height: 280rpx;
+      }
+      .add{
+        position: relative;
+        width: 140rpx;
+        height: 140rpx;
+        border-radius: 6rpx;
+        background: #f8f8f8;
+        .icon{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 48rpx;
+          font-size:24rpx;
+          color: #8a8a8a;
+          text:nth-child(1){
+            position: relative;
+            display: inline-block;
+            border: 1rpx solid #8a8a8a;
+            text-align: center;
+            border-radius: 50%;
+            width: 40rpx;
+            height: 40rpx;
+            text{
+              position: absolute;
+              width: 20rpx;
+              height:1rpx ;
+              top: 50%;
+              left: 50%;
+              background:#8a8a8a ;
+              transform: translate(-50%,-50%);
+              border: 0;
+              &:nth-child(2){
+                width: 1rpx;
+                height: 20rpx;
+              }
+            }
+          }
+        }
+      }
+    }
+    .address{
+      position: relative;
+      height: 98rpx;
+      padding-left:60rpx;
+      line-height: 98rpx;
+      font-size:28rpx ;
+      color: #b2b2b2;
+      text{
+        display: inline-block;
+      }
+      text.locationIcon{
+        position: absolute;
+        left: 24rpx;
+        width: 22rpx;
+        height: 24rpx;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: lightgray;
+      }
+      text.underLine{
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0rpx;
+        left: 24rpx;
+        right: 0;
+        height: 1rpx;
+        padding-left: 24rpx;
+        border-bottom: 1rpx solid #e6e6e6;
+      }
+    }
+    .phone{
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
+      height: 98rpx;
+      padding-left: 60rpx;
+      .phoneIcon{
+        position: absolute;
+        left: 24rpx;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26rpx;
+        height: 28rpx;
+        background: lightgray;
+      }
+      input{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        font-size: 28rpx;
+      }
+    }
+  }
+  .topic{
+    width: 100%;
+    margin-top: 20rpx;
+    background: #fff;
+    .title{
+      width: 100%;
+      padding-left:24rpx ;
+      box-sizing: border-box;
+      font-size: 30rpx;
+      color: #b2b2b2;
+      line-height: 82rpx;
+    }
+    .addTopic{
+      position: relative;
+      font-size: 28rpx;
+      color: #ff5757;
+      padding-left:50rpx;
+      line-height: 40rpx;
+      margin-top: 15rpx;
+      margin-bottom: 15rpx;
+      view:nth-child(1){
+        position: absolute;
+        width:20rpx ;
+        height:20rpx ;
+        left:20rpx;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        text{
+          position: absolute;
+          width: 20rpx;
+          height:1rpx ;
+          top: 50%;
+          left: 50%;
+          background:#ff5757 ;
+          transform: translate(-50%,-50%);
+          border: 0;
+          &:nth-child(2){
+            width: 1rpx;
+            height: 20rpx;
+          }
+        }
+
+
+      }
+    }
+    .topicList{
+      .title{
+        width: 100%;
+        padding-left:24rpx ;
+        box-sizing: border-box;
+        font-size: 30rpx;
+        color: #b2b2b2;
+        line-height: 82rpx;
+      }
+      .list{
+        padding-left:24rpx;
+        text{
+          display: inline-block;
+          text-align: center;
+          border: 1rpx solid #b2b2b2;
+          font-size: 26rpx;
+          padding: 7rpx;
+          border-radius: 6rpx;
+          margin-right:20rpx ;
+          margin-bottom: 20rpx;
+          color: #b2b2b2;
+        }
+      }
+    }
+  }
+  .publish{
+    width:624rpx;
+    margin:30rpx auto 0rpx;
+    border-radius: 10rpx;
+    color: #fff;
+    background: #ff5757;
+    text-align: center;
+    line-height: 88rpx;
+  }
+}

@@ -1,0 +1,40 @@
+<!-- 大盒子 -->
+<view class='qingful_list'>
+    <!-- top -->
+    <view class='qingful_item'>
+        <!-- left -->
+        <view class='qingful_flexCCen flexMBtw flex'>
+            <view class='flex'>
+                <!-- logo -->
+                <view>
+                    <image class='qingful_itemPic' src="{{tongxunluData.config.left_img}}"></image>
+                </view>
+                <!-- 公司信息 -->
+                <view class="qingful_titBox" style="padding-top: 24rpx;">
+                    <!-- 公司名称 -->
+                    <view class='qingful_lineText'> {{tongxunluData.config.name}} </view>
+                    <!-- 公司电话 -->
+                    <view class='qingful_grey' wx:if="{{tongxunluData.config.labelArr}}">
+                        <text class='qingful_blue' wx:for="{{tongxunluData.config.labelArr}}" wx:key="item">{{item.label}}</text>
+                    </view>
+                </view>
+            </view>
+            <!-- right -->
+            <view class='qingful_telBox mainColor_bg flex MCCen' bindtap='makePhoneCall' data-phone="{{tongxunluData.config.phone}}">
+                <view class='qingful_itemPic1 iconfont icon-tongxunlu-phone' style="color: #08b8fd;font-size: 92rpx;"></view>
+            </view>
+        </view>
+
+        <!-- bottom -->
+        <view class='qingful_bottom'>
+            <view class='qingful_itemBot qingful_grey flex flexMBtw'>
+                <view class='qingful_sub qingful_mr15 qingful_lineText' data-lng="{{tongxunluData.config.lng}}" data-lat="{{tongxunluData.config.lat}}" data-address="{{tongxunluData.config.address}}" bindtap="openLocation">
+                    <view class='qingful_daohang iconfont icon-tongxunlu-dingwei' style="color: #08b8fd;font-size: 40rpx;"></view>
+                    <text>{{tongxunluData.config.address}}</text>
+                </view>
+                <view class='qingful_juli'>{{tongxunluData.config.distance}}km</view>
+            </view>
+        </view>
+    </view>
+
+</view>

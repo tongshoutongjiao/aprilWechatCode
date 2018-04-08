@@ -1,0 +1,204 @@
+<!--pages/itemIndex/itemIndex.wxml-->
+<view class="qingful-bbs-container">
+    <view class="partOne">
+        <view class="imgWrapper">
+            <image class=""></image>
+        </view>
+        <view class="mask"></view>
+        <view class="con">
+            <view class="userPhoto">
+            </view>
+            <view>
+                <view>＃一起迎接春天＃</view>
+                <view>
+                    <text>一起迎接春天。最美三月天，带你一起去…</text>
+                    <text>阅读1.3万 帖子786 讨论2568</text>
+                </view>
+            </view>
+        </view>
+
+    </view>
+    <scroll-view scrollY="true" class="userList">
+        <view class="user">
+            <view class="name">
+                <view class="photo"></view>
+                <view>
+                    <text>兔斯基爱吃萝…</text>
+                    <text>35分钟前</text>
+                </view>
+                <view class="concat">联系TA</view>
+            </view>
+            <view class="title">
+                <text class="top">顶</text>
+                <text class="better">精</text>
+                <text>最美踏青节</text>
+            </view>
+            <view class="con">
+                <view>春天来了，最美三月，带你一起去踏青，枯黄的原野变绿了。新绿的叶子在枯枝上长出来。阳光温柔地洒在草地…</view>
+                <view class="imgList">
+                    <view mode="aspectFill" class="imgWrapper">
+                        <image></image>
+                    </view>
+                    <view class="imgWrapper">
+                        <image></image>
+                    </view>
+                    <view class="imgWrapper">
+                        <image></image>
+                    </view>
+                    <view mode="aspectFill" class="imgWrapper">
+                        <image></image>
+                    </view>
+                    <view class="imgWrapper">
+                        <image></image>
+                    </view>
+                    <view class="imgWrapper">
+                        <image></image>
+                    </view>
+                </view>
+                <view class="tagList">
+                    <text class="tag">最美三月</text>
+                    <text class="tag">去踏青</text>
+                    <text class="tag">旅游的季节</text>
+                </view>
+                <view class="position">
+                    <text class="icon iconfont icon-address" style="margin-bottom:8rpx;"></text>
+                    <text>郑州市金水区瀚海北金</text>
+                    <text>2.5km</text>
+                </view>
+            </view>
+            <view class="btm">
+                <view class="operateTab">
+                    <text class="icon"></text>
+                    <text class="number">123</text>
+                </view>
+                <view class="operateTab">
+                    <text class="icon"></text>
+                    <text class="number">456</text>
+                </view>
+                <view class="operateTab">
+                    <text class="icon"></text>
+                    <text class="number">789</text>
+                </view>
+                <view class="operateTab">
+                    <text class="icon iconfont icon-fenxiang"></text>
+                    <text class="number">012</text>
+                </view>
+            </view>
+        </view>
+        <view class="user">
+            <view class="name">
+                <view class="photo"></view>
+                <view>
+                    <text>兔斯基爱吃萝…</text>
+                    <text>35分钟前</text>
+                </view>
+                <view class="concat">联系TA</view>
+            </view>
+            <view class="title">
+                <text class="top">顶</text>
+                <text class="better">精</text>
+                <text>最美踏青节</text>
+            </view>
+            <view class="con">
+                <view>春天来了，最美三月，带你一起去踏青，枯黄的原野变绿了。新绿的叶子在枯枝上长出来。阳光温柔地洒在草地…</view>
+                <view class="imgList">
+                    <view class="imgWrapper">
+                        <image></image>
+                    </view>
+                    <view class="imgWrapper">
+                        <image></image>
+                    </view>
+                    <view class="imgWrapper">
+                        <image></image>
+                    </view>
+                </view>
+                <view class="tagList">
+                    <text class="tag">最美三月</text>
+                    <text class="tag">去踏青</text>
+                    <text class="tag">旅游的季节</text>
+                </view>
+                <view class="position">
+                    <text class="icon iconfont icon-address"></text>
+                    <text>郑州市金水区瀚海北金</text>
+                    <text>2.5km</text>
+                </view>
+            </view>
+            <view class="btm">
+                <view class="operateTab">
+                    <text class="icon"></text>
+                    <text class="number">123</text>
+                </view>
+                <view class="operateTab">
+                    <text class="icon"></text>
+                    <text class="number">456</text>
+                </view>
+                <view class="operateTab">
+                    <text class="icon"></text>
+                    <text class="number">789</text>
+                </view>
+                <view class="operateTab">
+                    <text class="icon"></text>
+                    <text class="number">012</text>
+                </view>
+            </view>
+        </view>
+        <view class="user">
+            <view class="name">
+                <view class="photo"></view>
+                <view>
+                    <text>兔斯基爱吃萝…</text>
+                    <text>35分钟前</text>
+                </view>
+                <view class="concat">联系TA</view>
+            </view>
+            <view class="title">
+                <text class="top">顶</text>
+                <text class="better">精</text>
+                <text>最美踏青节</text>
+            </view>
+            <view class="con">
+                <view>春天来了，最美三月，带你一起去踏青，枯黄的原野变绿了。新绿的叶子在枯枝上长出来。阳光温柔地洒在草地…</view>
+                <view class="imgList">
+                    <view class="imgWrapper">
+                        <image></image>
+                    </view>
+                    <view class="imgWrapper">
+                        <image></image>
+                    </view>
+                    <view class="imgWrapper">
+                        <image></image>
+                    </view>
+                </view>
+                <view class="tagList">
+                    <text class="tag">最美三月</text>
+                    <text class="tag">去踏青</text>
+                    <text class="tag">旅游的季节</text>
+                </view>
+                <view class="position">
+                    <text class="icon iconfont icon-address"></text>
+                    <text>郑州市金水区瀚海北金</text>
+                    <text>2.5km</text>
+                </view>
+            </view>
+            <view class="btm">
+                <view class="operateTab">
+                    <text class="icon"></text>
+                    <text class="number">123</text>
+                </view>
+                <view class="operateTab">
+                    <text class="icon"></text>
+                    <text class="number">456</text>
+                </view>
+                <view class="operateTab">
+                    <text class="icon"></text>
+                    <text class="number">789</text>
+                </view>
+                <view class="operateTab">
+                    <text class="icon"></text>
+                    <text class="number">012</text>
+                </view>
+            </view>
+        </view>
+
+    </scroll-view>
+</view>

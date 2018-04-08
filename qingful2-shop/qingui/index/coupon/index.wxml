@@ -1,0 +1,62 @@
+<view class="qingful-coupon-wrapper">
+    <scroll-view scroll-x wx:if="{{couponData.config.style_type==0}}">
+        <view class="qingful-coupon-wrap">
+            <view class="qingful-coupon-item style-1" wx:for="{{couponData.data}}" wx:key="_coupon" style="width:{{(defaultWidth-88/(750/defaultWidth))/3 + 'px'}};min-width:{{(defaultWidth-88/(750/defaultWidth))/3 + 'px'}}">
+                <view class="qingful-coupon-style-1-left">
+                    <view class="qingful-coupon-style-1-left-text">COUPON</view>
+                </view>
+                <view class="qingful-coupon-style-1-right" style="width:{{((defaultWidth-88/(750/defaultWidth))/3)}}px">
+                    <view class="qingful-coupon-style-1-right-l" style="width:{{((defaultWidth-88/(750/defaultWidth))/3-90/(750/defaultWidth))}}px">
+                        <view class="qingful-coupon-style-1-info" style="width:{{((defaultWidth-88/(750/defaultWidth))/3-110/(750/defaultWidth))}}px;">
+                            <view class="qingful-coupon-style-1-inf0-t">{{item.price}}<text style="font-size:20rpx;">￥</text></view>
+                            <view class="qingful-coupon-style-1-inf0-b">满{{item.use_price}}可用</view>
+                        </view>
+                    </view>
+                    <view class="qingful-coupon-style-1-right-r">
+                        <view class="qingful-coupon-style-1-arc">
+                            <view class="qingful-coupon-style-1-arc-txt">领</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <scroll-view scroll-x wx:if="{{couponData.config.style_type==1}}">
+        <view class="qingful-coupon-wrap">
+            <view class="qingful-coupon-item" wx:for="{{couponData.data}}" wx:key="_coupon" style="width:{{(defaultWidth-88/(750/defaultWidth))/3 + 'px'}};min-width:{{(defaultWidth-88/(750/defaultWidth))/3 + 'px'}}">
+                <view class="qingful-coupon-style-2-left" style="width:{{((defaultWidth-88/(750/defaultWidth))/3-25)}}px">
+                    <view class="qingful-coupon-style-1-right-l" style="width:{{((defaultWidth-88/(750/defaultWidth))/3-90/(750/defaultWidth))}}px">
+                        <view class="qingful-coupon-style-1-info" style="width:{{((defaultWidth-88/(750/defaultWidth))/3-110/(750/defaultWidth))}}px;">
+                            <view class="qingful-coupon-style-1-inf0-t">{{item.price}}<text style="font-size:20rpx;">￥</text></view>
+                            <view class="qingful-coupon-style-1-inf0-b">满{{item.use_price}}可用</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="qingful-coupon-style-2-right">
+                    <view class="qingful-coupon-style-2-right-text">立即领取</view>
+                </view> 
+                <view class="qingful-coupon-ball top" wx:if="{{couponData.config.style_type==1}}"></view>
+                <view class="qingful-coupon-ball bottom" wx:if="{{couponData.config.style_type==1}}"></view>
+            </view>
+        </view>
+    </scroll-view>
+    <scroll-view scroll-x wx:if="{{couponData.config.style_type==2}}">
+        <view class="qingful-coupon-wrap">
+            <view class="qingful-coupon-item style-3" wx:for="{{couponData.data}}" wx:key="_coupon" style="width:{{(defaultWidth-88/(750/defaultWidth))/3 + 'px'}};min-width:{{(defaultWidth-88/(750/defaultWidth))/3 + 'px'}}">
+                <view class="qingful-coupon-style-2-left" style="width:{{((defaultWidth-88/(750/defaultWidth))/3-25)}}px">
+                    <view class="qingful-coupon-style-1-right-l" style="width:{{((defaultWidth-88/(750/defaultWidth))/3-90/(750/defaultWidth))}}px">
+                        <view class="qingful-coupon-style-1-info" style="width:{{((defaultWidth-88/(750/defaultWidth))/3-110/(750/defaultWidth))}}px;">
+                            <view class="qingful-coupon-style-1-inf0-t">{{item.price}}<text style="font-size:20rpx;">￥</text></view>
+                            <view class="qingful-coupon-style-1-inf0-b">满{{item.use_price}}可用</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="qingful-coupon-style-3-right">
+                    <view class="qingful-coupon-style-2-right-text">立即领取</view>
+                </view> 
+                <view class="qingful-coupon-ball top" wx:if="{{couponData.config.style_type==2}}"></view>
+                <view class="qingful-coupon-ball bottom" wx:if="{{couponData.config.style_type==2}}"></view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/orderStatus/orderStatus",
+    "pages/bargain/bargain",
+    "pages/index/index",
+    "pages/specStore/specStore",
+    "pages/activityDetail/activityDetail",
+    "pages/select/select",
+    "pages/store/store",
+    "pages/testPage/testPage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "青否小程序",
+    "navigationBarTextStyle": "black"
+  }
+}

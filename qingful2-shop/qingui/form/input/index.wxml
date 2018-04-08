@@ -1,0 +1,50 @@
+<!-- input组件模板 -->
+<!-- <input class="weui-input" placeholder="{{inputData.placeholder}}"/> -->
+
+<view wx:if="{{inputData.config.style_type == 1}}" style="padding: 10px 15px;">
+    <view wx:for="{{inputData.data}}" wx:for-item="input" wx:key="input" >
+
+        <view class="" style="line-height: 44px;">{{input.title}}</view>
+        <view class="" style="line-height: 44px;border:1px solid #f3f3f3;">
+            <input class="weui-input" bindinput="bindinput" data-index="{{index}}" placeholder="{{input.placeholder}}"/>
+        </view>
+    </view>
+</view>
+
+<view wx:if="{{inputData.config.style_type == 2}}">
+    <block wx:for="{{inputData.data}}" wx:for-item="input" wx:key="input" >
+        <view class="weui-cell weui-cell_input" style="height: 44px;">
+            <view class="weui-cell__bd">
+                <input class="weui-input" bindinput="bindinput" data-index="{{index}}" placeholder="{{input.placeholder}}"/>
+            </view>
+        </view>
+    </block>
+</view>
+
+<view wx:if="{{inputData.config.style_type == 3}}" style="padding: 5px 15px;">
+    <block wx:for="{{inputData.data}}" wx:for-item="input" wx:key="input" >
+        <view class="" style="line-height: 44px;background-color: #f8f8f8;margin: 5px 0px;display: flex;align-items: center;">
+            <image wx:if="{{input.img}}" style="width: 23px; height: 23px; margin: 0px 5px; background-color: #eeeeee;" mode="" src="{{input.img}}"></image>
+            <input class="weui-input" bindinput="bindinput" data-index="{{index}}" placeholder="{{input.placeholder}}"/>
+        </view>
+    </block>
+</view>
+
+<view wx:if="{{inputData.config.style_type == 4}}">
+    <block wx:for="{{inputData.data}}" wx:for-item="input" wx:key="input">
+
+        <view class="weui-cell weui-cell_input" style="height: 44px;">
+            <view wx:if="{{input.title}}" class="weui-cell__hd">
+                <view class="weui-label">{{input.title}}</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" bindinput="bindinput" data-index="{{index}}" placeholder="{{input.placeholder}}"/>
+            </view>
+            <view wx:if="{{input.img}}" class="weui-cell__ft" style="height: 23px;">
+                <image style="width: 23px; height: 23px; background-color: #eeeeee;" mode="" src="{{input.img}}"></image>
+            </view>
+        </view>
+    </block>
+</view>
+
+

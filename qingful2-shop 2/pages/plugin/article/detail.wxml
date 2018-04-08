@@ -1,0 +1,50 @@
+<import src="/utils/wxParse/wxParse.wxml" />
+<view class="qingful-article-container">
+    <view class="qingful-article-top">
+        <view class="title">
+            <view>{{article.title}}</view>
+        </view>
+        <view class="date">{{article.created_at}}</view>
+        <view class="review">
+            <view class="icon view">
+                <text class='iconfont   icon-yanjing'></text>{{article.num_look}}</view>
+            <view class="icon msg">
+                <text class='iconfont icon-pinglun'></text>{{article.num_comment}}</view>
+            <view class="icon favor">
+                <text class='iconfont icon-xihuan'></text>{{article.num_like}}</view>
+        </view>
+    </view>
+
+    <view class="qingful-article-content">
+        <template is="wxParse" data="{{wxParseData:articleDetail.nodes}}" />
+    </view>
+    <view class="comment-content-title">全部评论</view>
+    <view class="comment-content">
+        <block wx:for="{{comment}}" wx:key="index">
+            <view class="specCon">
+                <image class="comment-photo" mode="aspectFill" src="{{item.headimg}}"></image>
+                <view class="comment">
+                    <view class="nickName">{{item.username}}</view>
+                    <view class="con">{{item.content}}</view>
+                    <view class="info">
+                        <text class="date">{{item.created_at}}</text>
+                         <text class="num {{focus&&item.clicked?'actived':''}} " data-index="{{item.index}}"  bindtap="replayComment">回复</text>
+                    </view>
+                </view>
+                <view class="replay" wx:if="{{item.reply_content}}">
+                    <!-- <view class="title">黎黎黎黎黎黎(作者)：</view> -->
+                    <view>{{item.reply_content}}</view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>
+
+<view class="qingful-article-comment-bottom">
+    <input placeholder="请输入评论" placeholder-class="commentStyle" bindinput="bindinput" bindblur="bindBlur" cursor-spacing="20" focus="{{focus}}" />
+    <view wx:if="{{input_status}}" class="fabu" bindtap="formSubmit">发布</view>
+    <view wx:if="{{!input_status}}" class="fabu" bindtap="articleZan" data-id="{{article.id}}">
+        <text wx:if="{{!article.zan_status}}" class='iconfont icon-xihuan' style="font-size: 20px;"></text>
+        <text wx:if="{{article.zan_status}}" class='iconfont icon-xihuan-xuanzhong' style="font-size: 24px;color: red;"></text>
+    </view>
+</view>

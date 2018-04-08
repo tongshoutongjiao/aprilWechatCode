@@ -1,0 +1,115 @@
+@import "../../../app.wxss";
+/* 大盒子 */
+.qingful_item {
+    padding: 30rpx;
+    background-color: #fff;
+    margin-bottom: 20rpx;
+}
+
+
+/* 上部分 */
+
+.qingful_flexCCen {
+    -webkit-align-items: center;
+    align-items: center;
+    height: 80rpx;
+}
+
+.flexMBtw {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    font-size: 32rpx;
+}
+
+
+/* 图片 */
+
+.qingful_itemPic {
+    width: 110rpx;
+    height: 110rpx;
+    border-radius: 50%;
+    margin-top:12rpx;
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 20rpx;
+}
+
+
+/* 名字  */
+
+.qingful_lineText {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size:28rpx;
+}
+
+
+/* 电话 */
+
+.qingful_grey {
+    color: #888;
+    height: 50rpx;
+    font-size: 32rpx;
+}
+
+.qingful_blue {
+    border:1px solid #08b8fd;
+    text-align: center;
+    line-height: 30rpx;
+    display: inline-block;
+    border-radius: 10rpx;
+    padding: 2rpx 12rpx;
+    font-size: 22rpx;
+    margin-right: 10rpx;
+}
+
+
+/* 电话 */
+
+.qingful_telBox {
+    width: 80rpx;
+    border-radius: 50%;
+}
+
+
+/* 下 */
+
+
+/* 地址距离 */
+
+.qingful_itemBot {
+    margin-top: 40rpx;
+    font-size: 26rpx;
+}
+
+.qingful_sub {
+    width: 480rpx;
+}
+
+
+/* 地址栏 */
+
+.qingful_mr15 {
+    margin-right: 10rpx;
+    font-size: 26rpx;
+}
+
+.qingful_juli {
+    font-size: 26rpx;
+}
+
+.qingful_daohang {
+    float: left;
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 10rpx;
+}

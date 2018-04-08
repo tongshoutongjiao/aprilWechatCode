@@ -1,0 +1,219 @@
+.container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #e6e6e6;
+  scroll-view{
+    position: absolute;
+    top: 0;
+    bottom: 98rpx;
+    width: 100%;
+    .list{
+      margin-bottom: 20rpx;
+    }
+    image{
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+    .brand{
+      width: 100%;
+      background: #fff;
+      box-sizing: border-box;
+      padding: 20rpx 24rpx;
+      vertical-align: middle;
+      view{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .photo{
+        width: 170rpx;
+        height: 170rpx;
+        display: inline-block;
+        background: #e6e6e6;
+        vertical-align: middle;
+      }
+      view:nth-child(2){
+        width: 504rpx;
+        font-size:28rpx;
+        height: 170rpx;
+        padding-left: 20rpx;
+        color: #222;
+        text{
+          display: inline-block;
+          font-size: 28rpx;
+          line-height: 40rpx;
+          width: 100%;
+          &:nth-child(1){
+            margin-bottom: 16rpx;
+          }
+          &:nth-child(2){
+            color: #8a8a8a;
+            font-size: 26rpx;
+
+          }
+        }
+      }
+    }
+    .priceInfo{
+      position: relative;
+      width: 100%;
+      font-size: 28rpx;
+      line-height: 72rpx;
+      height: 72rpx;
+      color: #999999;
+      background-color: #fff;
+
+      box-sizing: border-box;
+      padding: 0rpx 24rpx;
+      text:nth-child(1){
+        margin-right: 82rpx;
+      }
+      text:nth-child(2){
+        margin-right: 100rpx;
+      }
+      text:nth-child(3){
+
+        float: right;
+        color: #f7412d;
+
+      }
+      text.underLine{
+        position:absolute;
+        display:inline-block;
+        bottom:0rpx;
+        left:24rpx;
+        right:24rpx;
+        border:1rpx solid #e6e6e6;
+      }
+    }
+    .activeStatus{
+      position: relative;
+      background-color: #fff;
+      box-sizing: border-box;
+      padding: 0rpx 24rpx;
+      width: 100%;
+      height: 100rpx;
+      line-height: 100rpx;
+      font-size: 28rpx;
+      color: #222;
+      text:nth-child(2){
+        color: #f3342f;
+      }
+      .btn{
+        display: inline-block;
+        position: absolute;
+        box-sizing: border-box;
+        top: 50%;
+        right: 24rpx;
+        transform: translateY(-50%);
+        width: 160rpx;
+        height: 60rpx;
+        border-radius: 10rpx;
+        line-height: 60rpx;
+        background-color: #ff5757;
+        color: #fff;
+        text-align: center;
+      }
+    }
+    /* end */
+    .end{
+      .priceInfo{
+        text:nth-child(3){
+          color:rgb(215,215,215);
+        }
+      }
+      .activeStatus{
+        text:nth-child(2){
+          content: '已结束';
+        }
+        .btn{
+          display: none;
+        }
+
+      }
+    }
+
+  }
+
+  .btm{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    view{
+      display: inline-block;
+      font-size: 34rpx;
+      color: #fff;
+      width: 50%;
+      text-align: center;
+      line-height: 98rpx;
+    }
+    view:nth-child(1){
+      background-color: #ff5757;
+    }
+    view:nth-child(2){
+      background-color: #212121;
+    }
+  }
+
+}
+
+/*progress 进度条*/
+.barPart{
+  width: 100%;
+  background: #fff;
+  .proBar{
+    position: relative;
+    width: 620rpx;
+    height: 20rpx;
+    border-radius: 100rpx;
+    background:#FF5757 ;
+    margin: 0 auto;
+    .progressed{
+      position: absolute;
+      width: 30%;
+      top: 0;
+      left: 0;
+      width: 30%;
+      height: 100%;
+      background: #fec630;
+      border-radius: 100rpx;
+    }
+
+  }
+  .tip{
+    position: relative;
+    width: 620rpx;
+    height: 46rpx;
+    margin:0rpx auto 14rpx;
+    view.show{
+      position: absolute;
+      top: 0;
+      left: 30%;
+      transform: translateX(-50%);
+      width: 126rpx;
+      height: 46rpx;
+      background: #f3342f;
+      text-align: center;
+      font-size: 26rpx;
+      line-height: 46rpx;
+      border-radius: 10rpx;
+      color: #fff;
+      .triangle{
+        position: absolute;
+        left: 50%;
+        height: 0rpx;
+        width: 0rpx;
+        transform: translateX(-50%);
+        border-top: 8rpx solid #f3342f;
+        border-right: 8rpx solid transparent;
+        border-left: 8rpx solid transparent;
+      }
+    }
+
+  }
+}
+
+
+
+

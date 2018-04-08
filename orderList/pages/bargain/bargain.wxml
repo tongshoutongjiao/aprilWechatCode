@@ -1,0 +1,82 @@
+<!--pages/bargain/bargain.wxml-->
+<view class="container">
+    <view class="brand">
+        <view class="imgWrapper">
+            <image></image>
+        </view>
+        <view class="brandName">
+            <view class="name">时尚迷人蕾丝花边两件套蕾丝花边连衣裙</view>
+            <view>
+                <text >最低</text>
+                <text >￥269.00</text>
+                <text >原价 ¥299.00</text>
+            </view>
+        </view>
+    </view>
+    <view class="info">
+        <view class="partOne">
+            <text class="photo"></text>
+            <text>砍价进度：已砍至125元</text>
+        </view>
+        <view class="partTwo">
+            <view class="proBar">
+                <view class="progressed"></view>
+            </view>
+            <text>原价 ¥ 269.00</text>
+            <text>底价 ¥ 12.99</text>
+        </view>
+        <view class="partThree">
+            距离活动结束还剩：128:36:48
+        </view>
+        <view class="btnSelect">
+            <view>邀请好友帮砍</view>
+            <view>当前价购买</view>
+        </view>
+    </view>
+    <view class="record">
+        <text class="recordTitle">【 砍价记录】</text>
+        <view class="friends">
+            <view class="photo"></view>
+            <view>
+                <text>兔斯基的胡萝卜</text>
+                <text>2018-3-12 12:20:46</text>
+            </view>
+            <view>砍掉 <text>12.30</text> 元</view>
+        </view>
+        <view class="friends">
+            <view class="photo"></view>
+            <view>
+                <text>兔斯基的胡萝卜</text>
+                <text>2018-3-12 12:20:46</text>
+            </view>
+            <view>砍掉 <text>12.30</text> 元</view>
+        </view>
+        <view class="friends">
+            <view class="photo"></view>
+            <view>
+                <text>兔斯基的胡萝卜</text>
+                <text>2018-3-12 12:20:46</text>
+            </view>
+            <view>砍掉 <text>12.30</text> 元</view>
+        </view>
+    </view>
+    <view class="intro">
+        <text>活动说明</text>
+        <text>参与方式：购买“恒大冰泉”促销装产品，使用手机淘宝或天猫客户端首次扫促。</text>
+        <text>兑奖方式和兑奖时间：中奖者所中支付宝红包。</text>
+        <text>支付宝红包使用规则：支付宝红包使用有效期为3个月自系统成功发放之日起算。</text>
+        <text>活动参与时间：即日起至2015年12月31日24:00止。</text>
+    </view>
+    <view class="block">
+        <view class="mask"></view>
+        <view class="dialog">
+            <view class="title"></view>
+            <view class="content">
+                <text>砍掉12.66元</text>
+                <text>小手一挥，成功帮TA砍下一刀</text>
+            </view>
+            <view class="foot">确定</view>
+        </view>
+    </view>
+
+</view>

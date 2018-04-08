@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<!--  <view class="warp">
+    <image class='img' src="../image/1.png"></image>
+    <view class='pic' bindtap="audioPause" audioPlay style="width: {{audioData.config.height}}rpx;height: {{audioData.config.height}}rpx;background:{{audioData.config.color}};top: {{audioData.config.top}}rpx;right: {{audioData.config.right}}rpx ">
+           <icon class='iconfont icon-yinfu' animation="{{animationData}}" style="font-size：{{audioData.config.size}}px;top: {{audioData.config.icontop}}rpx;left: {{audioData.config.left}}rpx "></icon>
+    </view>
+     <audio src="{{src}}" id="myAudio" loop></audio> 
+</view>  -->
+
+<!-- <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop style="width: 67px;overflow: hidden;border-radius: 100px;"></audio> -->
+
+<!-- <view animation="{{animationData}}" style="background:red;height:100rpx;width:100rpx"></view> -->
+
+<!-- <icon class='iconfont icon-audio-yinfu' animation="{{animationData}}" style="font-size：28px; "></icon> -->

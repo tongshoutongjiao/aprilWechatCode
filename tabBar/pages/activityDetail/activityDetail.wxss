@@ -1,0 +1,197 @@
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #e6e6e6;
+}
+.container scroll-view {
+  position: absolute;
+  top: 0;
+  bottom: 98rpx;
+  width: 100%;
+  /* end */
+}
+.container scroll-view .list {
+  margin-bottom: 20rpx;
+}
+.container scroll-view image {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.container scroll-view .brand {
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20rpx 24rpx;
+  vertical-align: middle;
+}
+.container scroll-view .brand view {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container scroll-view .brand .photo {
+  width: 170rpx;
+  height: 170rpx;
+  display: inline-block;
+  background: #e6e6e6;
+  vertical-align: middle;
+}
+.container scroll-view .brand view:nth-child(2) {
+  width: 504rpx;
+  font-size: 28rpx;
+  height: 170rpx;
+  padding-left: 20rpx;
+  color: #222;
+}
+.container scroll-view .brand view:nth-child(2) text {
+  display: inline-block;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  width: 100%;
+}
+.container scroll-view .brand view:nth-child(2) text:nth-child(1) {
+  margin-bottom: 16rpx;
+}
+.container scroll-view .brand view:nth-child(2) text:nth-child(2) {
+  color: #8a8a8a;
+  font-size: 26rpx;
+}
+.container scroll-view .priceInfo {
+  position: relative;
+  width: 100%;
+  font-size: 28rpx;
+  line-height: 72rpx;
+  height: 72rpx;
+  color: #999999;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0rpx 24rpx;
+}
+.container scroll-view .priceInfo text:nth-child(1) {
+  margin-right: 82rpx;
+}
+.container scroll-view .priceInfo text:nth-child(2) {
+  margin-right: 100rpx;
+}
+.container scroll-view .priceInfo text:nth-child(3) {
+  float: right;
+  color: #f7412d;
+}
+.container scroll-view .priceInfo text.underLine {
+  position: absolute;
+  display: inline-block;
+  bottom: 0rpx;
+  left: 24rpx;
+  right: 24rpx;
+  border: 1rpx solid #e6e6e6;
+}
+.container scroll-view .activeStatus {
+  position: relative;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0rpx 24rpx;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #222;
+}
+.container scroll-view .activeStatus text:nth-child(2) {
+  color: #f3342f;
+}
+.container scroll-view .activeStatus .btn {
+  display: inline-block;
+  position: absolute;
+  box-sizing: border-box;
+  top: 50%;
+  right: 24rpx;
+  transform: translateY(-50%);
+  width: 160rpx;
+  height: 60rpx;
+  border-radius: 10rpx;
+  line-height: 60rpx;
+  background-color: #ff5757;
+  color: #fff;
+  text-align: center;
+}
+.container scroll-view .end .priceInfo text:nth-child(3) {
+  color: #d7d7d7;
+}
+.container scroll-view .end .activeStatus text:nth-child(2) {
+  content: '已结束';
+}
+.container scroll-view .end .activeStatus .btn {
+  display: none;
+}
+.container .btm {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.container .btm view {
+  display: inline-block;
+  font-size: 34rpx;
+  color: #fff;
+  width: 50%;
+  text-align: center;
+  line-height: 98rpx;
+}
+.container .btm view:nth-child(1) {
+  background-color: #ff5757;
+}
+.container .btm view:nth-child(2) {
+  background-color: #212121;
+}
+/*progress 进度条*/
+.barPart {
+  width: 100%;
+  background: #fff;
+}
+.barPart .proBar {
+  position: relative;
+  width: 620rpx;
+  height: 20rpx;
+  border-radius: 100rpx;
+  background: #FF5757 ;
+  margin: 0 auto;
+}
+.barPart .proBar .progressed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background: #fec630;
+  border-radius: 100rpx;
+}
+.barPart .tip {
+  position: relative;
+  width: 620rpx;
+  height: 46rpx;
+  margin: 0rpx auto 14rpx;
+}
+.barPart .tip view.show {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  transform: translateX(-50%);
+  width: 126rpx;
+  height: 46rpx;
+  background: #f3342f;
+  text-align: center;
+  font-size: 26rpx;
+  line-height: 46rpx;
+  border-radius: 10rpx;
+  color: #fff;
+}
+.barPart .tip view.show .triangle {
+  position: absolute;
+  left: 50%;
+  height: 0rpx;
+  width: 0rpx;
+  transform: translateX(-50%);
+  border-top: 8rpx solid #f3342f;
+  border-right: 8rpx solid transparent;
+  border-left: 8rpx solid transparent;
+}

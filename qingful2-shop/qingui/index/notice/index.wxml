@@ -1,0 +1,44 @@
+<view class='qingful-notice-wrap'>
+    <view class="qingful-notice-style-1" wx:if="{{noticeData.config.style_type==1}}">
+        <view class='qingful-notice-icon-wrap fl'>
+            <image class='qingful-notice-icon' src="/images/form/notice{{noticeData.config.img_type + 1}}.png" wx:if="{{noticeData.config.use_type==0}}"></image>
+            <image class='qingful-notice-icon' src="{{noticeData.config.left_img}}" wx:if="{{noticeData.config.use_type==1}}"></image>
+        </view>
+        <view class="qingful-notice-vertical-line fl"></view>
+        <scroll-view scroll-y class="qingful-notice-info-wrap fl" style="width:{{defaultWidth-166/(750/defaultWidth)}}px">
+            <view class='qingful-notice-text-item font-14 text-hidden-1' style="width:{{defaultWidth-166/(750/defaultWidth)}}px" wx:for="{{noticeData.data}}" wx:key="">{{item.title}}</view>
+        </scroll-view>
+        <view class='clearfix'></view>
+    </view>
+    <view class="qingful-notice-style-2" wx:if="{{noticeData.config.style_type==2}}">
+        <view class='qingful-notice-icon-wrap fl'>
+            <image class='qingful-notice-icon' src="/images/form/notice{{noticeData.config.img_type + 1}}.png" wx:if="{{noticeData.config.use_type==0}}"></image>
+            <image class='qingful-notice-icon' src="{{noticeData.config.left_img}}" wx:if="{{noticeData.config.use_type==1}}"></image>
+        </view>
+        <scroll-view scroll-y class="qingful-notice-info-wrap fl" style="width:{{defaultWidth-144/(750/defaultWidth)}}px">
+            <view class='qingful-notice-text-item font-14 text-hidden-1' style="width:{{defaultWidth-128/(750/defaultWidth)}}px" wx:for="{{noticeData.data}}" wx:key="">{{item.title}}</view>
+        </scroll-view>
+        <view class='clearfix'></view>
+    </view>
+    <view class="qingful-notice-style-3" wx:if="{{noticeData.config.style_type==3}}">
+        <view class='qingful-notice-icon-wrap fl'>
+            <image class='qingful-notice-icon' src="/images/form/notice{{noticeData.config.img_type + 1}}.png" wx:if="{{noticeData.config.use_type==0}}"></image>
+            <image class='qingful-notice-icon' src="{{noticeData.config.left_img}}" wx:if="{{noticeData.config.use_type==1}}"></image>
+        </view>
+        <view class="qingful-notice-vertical-line fl"></view>
+        <scroll-view scroll-y class="qingful-notice-info-wrap fl" style="width:{{defaultWidth-138/(750/defaultWidth)}}px">
+            <view class='qingful-notice-text-item font-14 text-hidden-1' style="width:{{defaultWidth-138/(750/defaultWidth)}}px" wx:for="{{noticeData.data}}" wx:key="">{{item.title}}</view>
+        </scroll-view>
+        <view class='clearfix'></view>
+    </view>
+    <view class="qingful-notice-style-4" wx:if="{{noticeData.config.style_type==4}}">
+        <view class='qingful-notice-icon-wrap fl'>
+            <image class='qingful-notice-icon' src="/images/form/notice{{noticeData.config.img_type + 1}}.png" wx:if="{{noticeData.config.use_type==0}}"></image>
+            <image class='qingful-notice-icon' src="{{noticeData.config.left_img}}" wx:if="{{noticeData.config.use_type==1}}"></image>
+        </view>
+        <scroll-view scroll-y class="qingful-notice-info-wrap fl" style="width:{{defaultWidth-116/(750/defaultWidth)}}px">
+            <view class='qingful-notice-text-item font-14 text-hidden-1' style="width:{{defaultWidth-116/(750/defaultWidth)}}px" wx:for="{{noticeData.data}}" wx:key="">{{item.title}}</view>
+        </scroll-view>
+        <view class='clearfix'></view>
+    </view>
+</view>

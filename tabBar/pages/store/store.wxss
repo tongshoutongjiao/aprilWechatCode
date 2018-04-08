@@ -1,0 +1,145 @@
+/* pages/store/store.wxss */
+page{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    font-family: PingFangSC-Regular;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+.search{
+    position: relative;
+    box-sizing: border-box;
+    padding: 20rpx 24rpx 10rpx 24rpx;
+    background-color: #fff;
+    width: 100%;
+}
+.search icon{
+    position: absolute;
+    left: 44rpx;
+    top: 34rpx;
+}
+.search input{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left:66rpx ;
+    line-height: 60rpx;
+    background-color: #f8f8f8;
+    border-radius: 100rpx;
+    color: #212121;
+    font-size:28rpx;
+    height: 60rpx;
+}
+
+
+/*tabSelect*/
+.tabSelect{
+    box-sizing: border-box;
+    width: 750rpx;
+    height: 84rpx;
+    background-color: #ffffff;
+    display: flex;
+    border-bottom: solid 2rpx #e6e6e6;
+}
+.tabSelect view{
+    line-height: 84rpx;
+    font-size: 28rpx;
+    font-weight: normal;
+    color: #212121;
+    flex: 1;
+    text-align: center;
+}
+.tabSelect view.selected{
+    color: #ff5757;
+}
+
+
+
+/*list*/
+.list{
+    position: absolute;
+    top: 174rpx;
+    bottom: 0rpx;
+}
+/*storeList*/
+.storeList{
+    width: 100%;
+    padding: 20rpx 24rpx;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-bottom: 20rpx;
+}
+.storeList .storeName{
+    position: relative;
+    width: 100%;
+    height: 84rpx;
+    vertical-align: middle;
+}
+.storeList .storeName view{
+    display: inline-block;
+}
+.storeList .storeName .photo{
+    width: 84rpx;
+    height: 84rpx;
+    background-color: #999999;
+    border-radius: 50%;
+    margin-right: 16rpx;
+    vertical-align: middle;
+ }
+.storeList .storeName .intro{
+    color: #999999;
+    vertical-align: middle;
+    font-size: 24rpx;
+    line-height: 32rpx;
+
+}
+.storeList .storeName .intro text:nth-child(1){
+    display: inline-block;
+    width: 100%;
+    font-size: 28rpx;
+    line-height: 46rpx;
+    color: #222222;
+}
+.storeList .storeName .go{
+    position: absolute;
+    top: 50%;
+    right: 24rpx;
+    transform: translateY(-50%);
+    width: 90rpx;
+    line-height: 48rpx;
+    border-radius: 100rpx;
+    border: solid 2rpx #f3342f;
+    font-size: 24rpx;
+    color: #f43530;
+    text-align: center;
+}
+.imgList{
+    width: 100%;
+    background-color: #fff;
+    padding-top: 20rpx;
+    box-sizing: border-box;
+}
+.imgList .imgWrapper{
+    display: inline-block;
+    margin-right: 6rpx;
+    width: 230rpx;
+    height: 230rpx;
+}
+.imgList .imgWrapper:nth-last-child(1){
+    margin-right: 0rpx;
+}
+.imgList .imgWrapper image{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color:#E5E5E5 ;
+}
+
+
+

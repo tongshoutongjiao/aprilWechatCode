@@ -1,0 +1,9 @@
+<!-- 广告弹出 -->
+<block wx:for="{{layer_data}}" wx:key="layer">
+    <view wx:if="{{layer_index == index}}" class="hongbao-bomb-bg">
+        <view class="hongbao-bomb-box">
+            <view bindtap="hongbao_hidden" data-index="{{index}}" class="iconfont userinfo-hongbao-close-icon hongbao-bomb-close-btn"></view>
+            <image class="hongbao-bomb-img-bg" src="{{item.img_url}}" mode="aspectFit"></image>
+        </view>
+    </view>
+</block>

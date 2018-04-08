@@ -1,0 +1,70 @@
+<view class="container">
+    <view class="partOne">
+        <view class="imgWrapper">
+            <image src="{{plate.img_url}}"></image>
+        </view>
+        <view class="mask"></view>
+        <view class="con">
+            <image class="userPhoto" src="{{plate.img_url}}"></image>
+            <view>
+                <view>＃{{plate.name}}＃</view>
+                <view>
+                    <view>{{plate.describe}}</view>
+                    <view>阅读{{plate.num_log}} 帖子{{plate.num_post}} 讨论{{plate.num_comment}}</view>
+                </view>
+            </view>
+        </view>
+
+    </view>
+    <scroll-view scrollY="true" class="userList" style="height: {{windowHeight*2-240}}rpx;">
+        <view class="user" wx:for="{{postList}}" wx:key=":this" bindtap="linkPost" data-id="{{item.post_id}}">
+            <view class="name">
+                <image class="photo" catchtap="navigatorToSelf" src="{{item.post.headimg}}"></image>
+                <view>
+                    <text>{{item.post.username}}</text>
+                    <text>{{item.created_at}}</text>
+                </view>
+                <view catchtap="takePhone" data-phone="{{item.post.phone}}" class="concat">联系TA</view>
+            </view>
+            <view class="title">
+                <text class="title-tap-1" wx:if="{{item.post.is_top}}">顶</text>
+                <text class="title-tap-2" wx:if="{{item.post.is_cream}}">精</text>
+                <text>{{item.post.title}}</text>
+            </view>
+            <view class="con">
+                <view>{{item.post.content}}</view>
+                <view class="imgList">
+                    <view class="imgWrapper" wx:for="{{item.post.img}}" wx:for-item="img" wx:key=":this">
+                        <image src="{{img}}"></image>
+                    </view>
+                </view>
+                <view class="tagList">
+                    <text class="tag" wx:for="{{item.post.label}}" wx:for-item="label" wx:key=":this">{{label.plate.name}}</text>
+                </view>
+                <view class="position">
+                    <text class="icon"></text>
+                    <text style="margin-right: 5px;">{{item.post.address?item.post.address:''}}</text>
+                    <text wx:if="{{item.post.distance}}">{{item.post.distance}}km</text>
+                </view>
+            </view>
+            <view class="btm">
+                <view class="operateTab">
+                    <text class="icon iconfont icon-yanjing"></text>
+                    <text class="number">{{item.post.num_look}}</text>
+                </view>
+                <view class="operateTab">
+                    <text class="icon iconfont icon-pinglun"></text>
+                    <text class="number">{{item.post.num_reply}}</text>
+                </view>
+                <view class="operateTab">
+                    <text class="icon iconfont icon-zan"></text>
+                    <text class="number">{{item.post.num_zan}}</text>
+                </view>
+                <view class="operateTab">
+                    <text class="icon iconfont icon-fenxiang"></text>
+                    <text class="number">{{item.post.num_share}}</text>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

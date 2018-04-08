@@ -1,0 +1,6 @@
+<!-- wxml -->
+<web-view src="{{webData.config.url}}"></web-view>
+
+
+
+

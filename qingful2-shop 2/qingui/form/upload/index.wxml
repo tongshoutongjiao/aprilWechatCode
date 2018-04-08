@@ -1,0 +1,11 @@
+<!-- upload组件模板 -->
+<view class="qingful-form-upload" style="">
+    <view class="img-item" style="">
+        <view class="img-wrap" wx:if="{{img_list.length>0}}" wx:for="{{img_list}}" wx:key="upload">
+            <image bindlongpress="deleteImage" data-index="{{index}}" src="{{item}}"></image>
+        </view>
+        <image wx:if="{{uploadData.config.style_type == 1}}" bindtap="chooseImage" class="camera" src="/images/form/add.png" style="border:1px solid #cccccc;"></image>
+        <image wx:if="{{uploadData.config.style_type == 2}}" bindtap="chooseImage" class="camera" src="/images/form/add.png" style="background-color: #f8f8f8;"></image>
+    </view>
+    <text class="prompt1">温馨小提示: 长按可以删除图片哦~</text>
+</view>

@@ -1,0 +1,5 @@
+<import src="/utils/wxParse/wxParse.wxml" />
+
+<view style="background-color: {{richtextData.config.bg_color}};margin: {{richtextData.config.margin}}px;">
+    <template is="wxParse" data="{{wxParseData:richtext.nodes}}" />
+</view>

@@ -1,0 +1,11 @@
+<view class='qingful-title-wrap-type-text' style="padding:{{navigationData.config.h_margin}}rpx {{navigationData.config.h_margin}}rpx {{navigationData.config.h_margin}}rpx {{navigationData.config.w_margin}}rpx">
+    <view class="qingful-title-img-wrap fl">
+        <image class="qingful-title-img" src="{{navigationData.config.icon}}"></image>
+    </view>
+    <view class="qingful-title-text text-hidden-1 font-13 fl" style="color:{{navigationData.config.title_color}}">{{navigationData.config.title}}</view>
+    <view class="qingful-title-btn-wrap font-13 fr">
+        <text style="padding-right:40rpx;color:{{navigationData.config.tip_color}}">{{navigationData.config.tip}}</text>
+        <view class='qingful-title-arrow-right title-icon iconfont icon-xiangyou1'></view>
+    </view>
+    <view class='clearfix'></view>
+</view>

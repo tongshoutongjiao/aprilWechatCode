@@ -1,0 +1,84 @@
+<!-- <view class="container"> -->
+    <scroll-view class="qingful-article-menu" scroll-X="true">
+        <block wx:for="{{menu}}" wx:key="menu">
+            <view class="menu-item {{selectedTab == index ? 'menu-selected' : ''}}" data-index="{{index}}" data-id="{{item.id}}" bindtap="selectTap">
+                <text>{{item.name}}</text>
+                <text class="info-bottom"></text>
+            </view>
+        </block>
+    </scroll-view>
+    <view wx:if="{{articleData.config.type == 0}}" class="qingful-article-wrapper">
+        <block wx:for="{{articleList}}" wx:key="article">
+            <view class="qingful-article-specPart5" bindtap="navigatorToArticle" data-id="{{item.id}}">
+                <view class="title">{{item.title}}</view>
+                <view class="imgWrapper">
+                    <block wx:for="{{item.imgs}}" wx:for-item="img" wx:for-index="idx" wx:key="img">
+                        <image wx:if="{{idx == 0}}" mode="scaleToFill" src="{{img.img_url}}"></image>
+                    </block>
+                </view>
+                <text class="comment">{{item.num_comment}}评论</text>
+                <text class="comment">{{item.created_at}}</text>
+            </view>
+        </block>
+    </view>
+    <block wx:if="{{articleData.config.type == 1}}">
+        <view class="qingful-article-wrapper">
+            <block wx:for="{{articleList}}" wx:key="article">
+                <view class="qingful-article-specPart3 qingful-article-specPart4" bindtap="navigatorToArticle" data-id="{{item.id}}">
+                    <view class="qingful-article-leftPart">
+                        <block wx:for="{{item.imgs}}" wx:for-item="img" wx:for-index="idx" wx:key="img">
+                            <image wx:if="{{idx == 0}}" mode="scaleToFill" src="{{img.img_url}}"></image>
+                        </block>
+                    </view>
+                    <view class="qingful-article-rightPart">
+                        <view>{{item.title}}</view>
+                        <text class="comment">{{item.num_comment}}评论</text>
+                        <text class="comment">{{item.created_at}}</text>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </block>
+    <block wx:if="{{articleData.config.type == 2}}">
+        <view class="qingful-article-wrapper">
+            <block wx:for="{{articleList}}" wx:key="article">
+                <view class="qingful-article-specPart3" bindtap="navigatorToArticle" data-id="{{item.id}}">
+                    <view class="qingful-article-leftPart">
+                        <view>{{item.title}}</view>
+                        <text class="comment">{{item.num_comment}}评论</text>
+                        <text class="comment">{{item.created_at}}</text>
+                    </view>
+                    <view class="qingful-article-rightPart">
+                        <block wx:for="{{item.imgs}}" wx:for-item="img" wx:for-index="idx" wx:key="img">
+                            <image wx:if="{{idx == 0}}" mode="scaleToFill" src="{{img.img_url}}"></image>
+                        </block>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </block>
+    <block wx:if="{{articleData.config.type == 3}}">
+        <view class="qingful-article-wrapper">
+            <block wx:for="{{articleList}}" wx:key="article">
+                <view class="qingful-article-specList" bindtap="navigatorToArticle" data-id="{{item.id}}">
+                    <text>{{item.title}}</text>
+                    <view class="qingful-article-imgList">
+                        <block wx:for="{{item.imgs}}" wx:for-item="img" wx:key="">
+                            <image mode="scaleToFill" src="{{img.img_url}}"></image>
+                        </block>
+                    </view>
+                    <text class="comment">{{item.num_comment}}评论</text>
+                    <text class="comment">{{item.created_at}}</text>
+                </view>
+            </block>
+        </view>
+    </block>
+    <block wx:if="{{articleData.config.type == 4}}">
+        <view class="qingful-article-list qingful-article-wrapper">
+            <block wx:for="{{articleList}}" wx:key="article">
+                <view bindtap="navigatorToArticle" data-id="{{item.id}}">{{item.title}}</view>
+            </block>
+        </view>
+    </block>
+    <view style="height: 100px;width: 100%;"></view>
+<!-- </view> -->

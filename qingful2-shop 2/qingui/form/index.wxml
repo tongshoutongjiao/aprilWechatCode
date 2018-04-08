@@ -1,0 +1,44 @@
+<!-- 组件模板 -->
+<form bindsubmit="formSubmit">
+    <!-- <image style="width: 100%; height: 100%;position: fixed; background-color: {{formData.config.bg_color}};" mode="scaleToFill" src="{{formData.config.bg_img}}"></image> -->
+    <view style="width: 100%;background-color: {{formData.config.bg_color}};">
+        <view class="qingful-form-title" style="color: {{formData.config.title_color}}">{{formData.config.title}}</view>
+        <block wx:for="{{formData.child}}" wx:key="form">
+
+            <!-- 日期、时间选择器 -->
+            <view wx:if="{{item.name == 'picker'}}" style="margin: {{formData.config.h_margin}}px {{formData.config.w_margin}}px;border-radius: {{formData.config.borderRadius}}px;background-color: {{formData.config.bg_plugin_color}};">
+                <qingui-form-picker picker-data='{{item}}' p-index='{{index}}' bind:picker-event="onMyEvent"></qingui-form-picker>
+            </view>
+
+            <!-- 开关选择器 -->
+            <view wx:if="{{item.name == 'switch'}}" style="margin: {{formData.config.h_margin}}px {{formData.config.w_margin}}px;border-radius: {{formData.config.borderRadius}}px;background-color: {{formData.config.bg_plugin_color}};">
+                <qingui-form-switch switch-data='{{item}}' p-index='{{index}}' bind:switch-event="onMyEvent"></qingui-form-switch>
+            </view>
+
+            <!-- 单选、多选 -->
+            <view wx:if="{{item.name == 'choose'}}" style="margin: {{formData.config.h_margin}}px {{formData.config.w_margin}}px;border-radius: {{formData.config.borderRadius}}px;background-color: {{formData.config.bg_plugin_color}};">
+                <qingui-form-choose choose-data='{{item}}' p-index='{{index}}' bind:choose-event="onMyEvent"></qingui-form-choose>
+            </view>
+
+            <!-- 上传组件 -->
+            <view wx:if="{{item.name == 'upload'}}" style="margin: {{formData.config.h_margin}}px {{formData.config.w_margin}}px;border-radius: {{formData.config.borderRadius}}px;background-color: {{formData.config.bg_plugin_color}};">
+                <qingui-form-upload upload-data='{{item}}' p-index='{{index}}' bind:upload-event="onMyEvent"></qingui-form-upload>
+            </view>
+
+            <!-- textarea组件 -->
+            <view wx:if="{{item.name == 'textarea'}}" style="margin: {{formData.config.h_margin}}px {{formData.config.w_margin}}px;border-radius: {{formData.config.borderRadius}}px;background-color: {{formData.config.bg_plugin_color}};">
+                <qingui-form-textarea textarea-data='{{item}}' p-index='{{index}}' bind:textarea-event="onMyEvent"></qingui-form-textarea>
+            </view>
+
+            <!-- input组件 -->
+            <view wx:if="{{item.name == 'input'}}" style="margin: {{formData.config.h_margin}}px {{formData.config.w_margin}}px;border-radius: {{formData.config.borderRadius}}px;background-color: {{formData.config.bg_plugin_color}};">
+                <qingui-form-input input-data='{{item}}' p-index='{{index}}' bind:input-event="onMyEvent"></qingui-form-input>
+            </view>
+
+            <!-- button组件 -->
+            <view wx:if="{{item.name == 'button'}}" style="margin: {{formData.config.h_margin}}px {{formData.config.w_margin}}px;border-radius: {{formData.config.borderRadius}}px;background-color: {{formData.config.bg_plugin_color}};padding: 10px 0px;">
+                <button formType="submit" style="width: {{item.config.width}}%;border-radius: {{item.config.borderRadius}}px;line-height: {{item.config.height}}px;height: {{item.config.height}}px;font-size: {{item.config.font_size}}px;color: {{item.config.name_color}};background-color: {{item.config.bg_color}};margin-bottom: 0px;">{{item.config.name}}</button>
+            </view>
+        </block>
+    </view>
+</form>

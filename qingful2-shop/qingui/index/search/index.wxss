@@ -1,0 +1,35 @@
+@import "../../../font.wxss";
+@import "../../../app.wxss";
+.qingful-search{
+    background-color: #fff;
+    padding: 20rpx 0;
+    margin-bottom: 20rpx;
+}
+.qingful-search-wrap{
+    margin: 0 24rpx;
+    height: 80rpx;
+    background-color: #f8f8f8;
+    border-radius: 10rpx;
+}
+.qingful-search-icon{
+    display: flex;
+    flex-flow: row nowrap;
+    line-height: 80rpx;
+    border-radius: 10rpx;
+    background-color: #f8f8f8;
+}
+.qingful-search-input{
+    height: 80rpx;
+    padding-left: 10rpx;
+}
+.qingful-search-wrap-1,.qingful-search-address{
+    display: flex;
+    flex-direction: row;
+}
+.qingful-search-address{
+    line-height: 80rpx;
+}
+.qingful-search-wrap-1 .qingful-search-input{
+    background-color: #f8f8f8;
+    border-radius: 0 10rpx 10rpx 0;
+}

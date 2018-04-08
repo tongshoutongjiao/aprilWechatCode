@@ -1,0 +1,279 @@
+.qingful-bbs-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #e6e6e6;
+  font-family: "PingFangSC-Regular";
+  image{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  .partOne{
+    position: relative;
+    width: 100%;
+    height: 240rpx;
+    .imgWrapper{
+      width: 100%;
+      height: 100%;
+      background: lightblue;
+    }
+    .mask{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+     background-color: rgba(0,0,0,.2);
+    }
+    .con{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 40rpx 24rpx;
+      view{
+        display: inline-block;
+        vertical-align: middle;
+        &.userPhoto{
+          width: 160rpx;
+          height: 160rpx;
+          border-radius: 10rpx;
+          background: azure;
+        }
+        &:nth-child(2){
+          width: 494rpx;
+          color: #fff;
+          font-size: 26rpx;
+          margin-left: 34rpx;
+
+          view:nth-child(1){
+            font-size:34rpx ;
+            line-height: 48rpx;
+          }
+          view:nth-child(2){
+            margin-left: 0;
+            text{
+              display: inline-block;
+              line-height: 38rpx;
+              margin-top: 10rpx;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+  .userList{
+    //position: absolute;
+    //width: 100%;
+    //top: 240rpx;
+    //bottom: 0;
+    //background: #e6e6e6;
+    .user {
+      width: 100%;
+      box-sizing: border-box;
+      background: #fff;
+      margin-top: 20rpx;
+      padding: 0rpx 24rpx;
+      .name {
+        position: relative;
+        vertical-align: middle;
+        padding-top: 20rpx;
+        height: 110rpx;
+        view {
+          display: inline-block;
+          color: #222;
+          &:nth-child(2) {
+            width: 210rpx;
+            height: 100%;
+            vertical-align: top;
+            padding-top: 3rpx;
+            text {
+              display: inline-block;
+              width: 100%;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              font-size: 30rpx;
+              line-height: 42rpx;
+              &:nth-child(2) {
+                font-size: 26rpx;
+                color: #8a8a8a;
+                line-height: 38rpx;
+              }
+            }
+          }
+        }
+        .photo {
+          width: 90rpx;
+          height: 90rpx;
+          margin-right: 20rpx;
+          background: lightgray;
+          border-radius: 50%;
+        }
+        .concat {
+          position: absolute;
+          top: 50%;
+          right: 24rpx;
+          transform: translateY(-50%);
+          width: 120rpx;
+          height: 56rpx;
+          border: 2rpx solid #ff5757;
+          text-align: center;
+          line-height: 56rpx;
+          font-size: 26rpx;
+          border-radius: 6rpx;
+          color: #ff5757;
+        }
+      }
+      .title{
+        width: 100%;
+        height: 46rpx;
+        vertical-align: middle;
+        text{
+          display: inline-block;
+          font-size: 32rpx;
+          color: #222;
+          font-weight: bold;
+          text-align: center;
+          line-height: 46rpx;
+          vertical-align: middle;
+          &:nth-last-child(2){
+            margin-right: 14rpx;
+          }
+        }
+        .top{
+          padding: 2rpx;
+          width: 32rpx;
+          height: 32rpx;
+          border-radius: 6rpx;
+          font-size: 22rpx;
+          background-color: #ff5757;
+          color: #fff;
+          line-height: 32rpx;
+          margin-right: 2rpx;
+        }
+        .better{
+          padding: 2rpx;
+          width: 32rpx;
+          height: 32rpx;
+          font-size: 22rpx;
+          border-radius: 6rpx;
+          background-color: #08b7fc;
+          color: #fff;
+          line-height: 32rpx;
+          margin-right: 14rpx;
+        }
+
+
+      }
+      .con {
+        margin-top: 20rpx;
+        view {
+          font-size: 28rpx;
+          &:nth-child(1) {
+            line-height: 40rpx;
+            display: -webkit-box;
+            overflow: hidden;
+            white-space: normal!important;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+        }
+        .imgList {
+          width: 100%;
+          margin: 20rpx 0rpx;
+          box-sizing: border-box;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content:flex-start;
+          .imgWrapper {
+            display: block;
+            font-size: 0;
+            text-align: center;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            margin-right: 20rpx;
+            &:nth-child(3n){
+              margin-right: 0;
+            }
+            image {
+              width: 220rpx;
+              height: 220rpx;
+              background: #e6e6e6;
+            }
+          }
+        }
+        .tagList {
+          margin-bottom: 20rpx;
+          text {
+            margin-right: 20rpx;
+            line-height: 48rpx;
+            font-size: 26rpx;
+            background-color: #efefef;
+            padding: 6rpx 12rpx;
+            color: #999;
+            border-radius: 6rpx;
+          }
+        }
+        .position {
+          position: relative;
+          width: 100%;
+          color: #8a8a8a;
+          font-size: 26rpx;
+
+          vertical-align: middle;
+          .icon {
+            width: 22rpx;
+            height: 22rpx;
+            border-radius: 50%;
+            vertical-align: middle;
+            padding-left: 0;
+          }
+          text {
+            display: inline-block;
+            font-size: 26rpx;
+            line-height: 38rpx;
+            color: #999;
+            margin-right: 16rpx;
+            vertical-align: middle;
+            &:nth-last-child(1) {
+              position: absolute;
+              right: 0;
+            }
+          }
+          .icon-address{
+            margin-bottom: 14rpx;
+          }
+        }
+      }
+      .btm {
+        display: flex;
+        .operateTab {
+          flex: 1;
+          text-align: center;
+          padding: 30rpx 0rpx;
+          text {
+            display: inline-block;
+            margin-right: 12rpx;
+            font-size: 26rpx;
+            color: #b2b2b2;
+          }
+          .icon {
+            width: 40rpx;
+            height: 28rpx;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+

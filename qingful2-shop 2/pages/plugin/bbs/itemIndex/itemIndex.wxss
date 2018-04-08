@@ -1,0 +1,295 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #e6e6e6;
+  font-family: "PingFangSC-Regular";
+}
+.container image {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.container .partOne {
+  position: relative;
+  width: 100%;
+  height: 240rpx;
+}
+.container .partOne .imgWrapper {
+  width: 100%;
+  height: 100%;
+  background: lightblue;
+}
+.container .partOne .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.container .partOne .con {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 40rpx 24rpx;
+}
+.container .partOne .con view {
+  display: inline-block;
+  vertical-align: top;
+}
+.container .partOne .con image.userPhoto {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  background: azure;
+}
+.container .partOne .con view:nth-child(2) {
+  width: 494rpx;
+  vertical-align: top;
+  color: #fff;
+  font-size: 26rpx;
+  margin-left: 34rpx;
+}
+.container .partOne .con view:nth-child(2) view:nth-child(1) {
+  font-size: 34rpx ;
+  line-height: 48rpx;
+}
+.container .partOne .con view:nth-child(2) view:nth-child(2) {
+  margin-left: 0;
+}
+.container .partOne .con view:nth-child(2) view:nth-child(2) text {
+  display: inline-block;
+  line-height: 38rpx;
+  margin-top: 10rpx;
+}
+.container .userList {
+  margin-top: 20rpx;
+  position: absolute;
+  width: 100%;
+  top: 240rpx;
+  bottom: 0;
+  background: #e6e6e6;
+}
+.container .userList .user {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  margin-top: 20rpx;
+  padding: 0rpx 24rpx;
+}
+.container .userList .user:nth-child(1) {
+  margin-top: 0;
+}
+.container .userList .user .name {
+  position: relative;
+  vertical-align: middle;
+  padding-top: 20rpx;
+  height: 110rpx;
+}
+.container .userList .user .name view {
+  display: inline-block;
+  color: #222;
+}
+.container .userList .user .name view:nth-child(2) {
+  width: 210rpx;
+  height: 100%;
+  vertical-align: top;
+}
+.container .userList .user .name view:nth-child(2) text {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 30rpx;
+  line-height: 42rpx;
+}
+.container .userList .user .name view:nth-child(2) text:nth-child(2) {
+  font-size: 26rpx;
+  color: #8a8a8a;
+  line-height: 38rpx;
+}
+.container .userList .user .name .photo {
+  width: 90rpx;
+  height: 90rpx;
+  margin-right: 20rpx;
+  background: lightgray;
+  border-radius: 50%;
+}
+.container .userList .user .name .concat {
+  position: absolute;
+  top: 50%;
+  right: 24rpx;
+  transform: translateY(-50%);
+  width: 120rpx;
+  height: 56rpx;
+  border: 2rpx solid #ff5757;
+  text-align: center;
+  line-height: 56rpx;
+  font-size: 26rpx;
+  border-radius: 6rpx;
+  color: #ff5757;
+}
+.container .userList .user .title {
+  width: 100%;
+  height: 46rpx;
+}
+.container .userList .user .title text {
+  display: inline-block;
+  font-size: 28rpx;
+  text-align: center;
+}
+.title-tap-1 {
+  padding: 2rpx;
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 6rpx;
+  font-size: 22rpx;
+  background-color: #ff5757;
+  color: #fff;
+  line-height: 32rpx;
+  margin-right: 2rpx;
+}
+.title-tap-2 {
+  padding: 2rpx;
+  width: 32rpx;
+  height: 32rpx;
+  font-size: 22rpx;
+  border-radius: 6rpx;
+  background-color: #08b7fc;
+  color: #fff;
+  line-height: 32rpx;
+  margin-right: 14rpx;
+}
+.container .userList .user .con {
+  color:#8a8a8a;
+  margin-top: 20rpx;
+}
+.container .userList .user .con view {
+  font-size: 28rpx;
+}
+.container .userList .user .con view:nth-child(1) {
+  line-height: 40rpx;
+}
+.container .userList .user .con .imgList {
+  width: 100%;
+  display: flex;
+  height: 220rpx;
+  margin: 20rpx 0rpx;
+  box-sizing: border-box;
+}
+.container .userList .user .con .imgList .imgWrapper {
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  font-size: 0;
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.container .userList .user .con .imgList .imgWrapper image {
+  width: 220rpx;
+  height: 220rpx;
+  background-color: #8a8a8a;
+}
+.container .userList .user .con .tagList {
+  margin-bottom: 20rpx;
+}
+.container .userList .user .con .tagList text {
+  margin-right: 20rpx;
+  line-height: 48rpx;
+  font-size: 26rpx;
+  background-color: #efefef;
+  padding: 6rpx 12rpx;
+  color: #999;
+  border-radius: 6rpx;
+}
+.container .userList .user .con .tagList .position {
+  position: relative;
+  width: 100%;
+  color: #8a8a8a;
+  font-size: 26rpx;
+  vertical-align: middle;
+}
+.container .userList .user .con .tagList .position .icon {
+  width: 22rpx;
+  height: 22rpx;
+  background-color: #8a8a8a;
+  border-radius: 50%;
+  vertical-align: middle;
+  padding-left: 0;
+}
+.container .userList .user .con .tagList .position text {
+  display: inline-block;
+  font-size: 26rpx;
+  line-height: 38rpx;
+  color: #999;
+  margin-left: 16rpx;
+  vertical-align: middle;
+}
+.container .userList .user .con .tagList .position text:nth-last-child(1) {
+  position: absolute;
+  right: 24rpx;
+}
+.container .userList .user .btm {
+  display: flex;
+}
+.container .userList .user .btm .operateTab {
+  flex: 1;
+  text-align: center;
+  padding: 30rpx 0rpx;
+}
+.container .userList .user .btm .operateTab text {
+  display: inline-block;
+  margin-right: 12rpx;
+  font-size: 26rpx;
+  color: #b2b2b2;
+}
+.container .userList .user .btm .operateTab .icon {
+  width: 40rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  vertical-align: middle;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 560268 */
+    src: url('//at.alicdn.com/t/font_560268_fob2qv2c33plow29.eot');
+    src: url('//at.alicdn.com/t/font_560268_fob2qv2c33plow29.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_560268_fob2qv2c33plow29.woff') format('woff'),
+    url('//at.alicdn.com/t/font_560268_fob2qv2c33plow29.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_560268_fob2qv2c33plow29.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-address:before {
+    content: "\e6f3";
+}
+
+.icon-yanjing:before {
+    content: "\e70c";
+}
+
+.icon-pinglun:before {
+    content: "\e608";
+}
+
+.icon-zan:before {
+    content: "\e6a7";
+}
+
+.icon-fenxiang:before {
+    content: "\e6a4";
+}

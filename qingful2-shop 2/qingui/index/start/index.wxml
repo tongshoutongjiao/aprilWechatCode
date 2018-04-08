@@ -1,0 +1,9 @@
+<!--pages/welcome/welcome.wxml-->
+<block wx:if="{{start_status}}">
+	<view class="start" style="z-index: 200;">
+		<image style="width: 100%; height: 100%;" mode="scaleToFill" src="{{start_data.img_url}}"></image>
+		<view class="back" style="">
+			<text class="back-font" bindtap="goHome" style="">跳过{{ start_data.countdown }}</text>
+		</view>
+	</view>
+</block>

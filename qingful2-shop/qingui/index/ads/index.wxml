@@ -1,0 +1,24 @@
+<view>
+    <view class="qingful-ads-wrap big" wx:for="{{adsData.data}}" wx:key="_ads0"  style="border-radius:{{adsData.config.borderRadius}}rpx;height:{{adsData.config.height}}rpx;margin:{{adsData.config.h_margin}}rpx {{adsData.config.w_margin}}rpx;" wx:if="{{adsData.config.style_type==0}}">
+        <view class="qingful-ads-img-wrap" data-path="{{item.target_url}}" style="border-radius:{{adsData.config.borderRadius}}rpx;height:{{adsData.config.height}}rpx" bindtap="jumpAds">
+            <image class="qingful-ads-img" src="{{item.img_url}}" style="border-radius:{{adsData.config.borderRadius}}rpx"></image> 
+        </view>
+    </view>
+    <view class="qingful-ads-wrap" wx:if="{{adsData.config.style_type==1}}">
+        <view class="qingful-ads-middle-wrap" wx:for="{{adsData.data}}" wx:key="_ads1" style="width:{{(defaultWidth-48/(750/defaultWidth)-20/(750/defaultWidth))/2+'px'}};;height:{{adsData.config.height}}rpx;border-radius:{{adsData.config.borderRadius}}rpx">
+            <view class="qingful-ads-img-wrap" data-path="{{item.target_url}}" style="border-radius:{{adsData.config.borderRadius}}rpx" bindtap="jumpAds">
+                <image class="qingful-ads-img" src="{{item.img_url}}" style="border-radius:{{adsData.config.borderRadius}}rpx;height:{{adsData.config.height}}rpx"></image> 
+            </view>
+        </view>
+        <view style='clear:both'></view>
+    </view>
+    <scroll-view  wx:if="{{adsData.config.style_type==2}}" scroll-x="true" scroll-with-animation="true" scroll-left='0'>
+        <view class="qingful-ads-wrap small" style="margin:0 {{adsData.config.w_margin}}rpx;padding:{{adsData.config.h_margin}} 0;">
+            <view class="qingful-ads-small-wrap" wx:for="{{adsData.data}}" wx:key="_ads2" style="border-radius:{{adsData.config.borderRadius}}rpx;height:{{adsData.config.height}}rpx">
+                <view class="qingful-ads-img-wrap" data-path="{{item.target_url}}" style="border-radius:{{adsData.config.borderRadius}}rpx" bindtap="jumpAds">
+                    <image class="qingful-ads-img" src="{{item.img_url}}" style="border-radius:{{adsData.config.borderRadius}}rpx"></image>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

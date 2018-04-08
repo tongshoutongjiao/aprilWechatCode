@@ -1,0 +1,1 @@
+<view class="qingful-blank-wrap" style="height:{{lineData.config.height}}rpx;background:{{lineData.config.color}}"></view>

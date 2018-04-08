@@ -1,0 +1,24 @@
+{
+    "component": true,
+    "usingComponents": {
+        "qingui-index-slide": "./slide/index",
+        "qingui-index-menu": "./menu/index",
+        "qingui-index-ads": "./ads/index",
+        "qingui-index-line": "./line/index",
+        "qingui-index-store": "./store/index",
+        "qingui-index-notice": "./notice/index",
+        "qingui-index-theme": "./theme/index",
+        "qingui-index-wxa": "./wxa/index",
+        "qingui-index-title": "./title/index",
+        "qingui-index-navigation": "./navigation/index",
+        "qingui-index-xuanfu": "./xuanfu/index",
+        "qingui-index-form": "../form/index",
+        "qingui-index-web": "./web/index",
+        "qingui-index-start": "./start/index",
+        "qingui-index-layer": "./layer/index",
+        "qingui-index-video": "./video/index",
+        "qingui-index-article": "./article/index",
+        "qingui-index-tongxunlu": "./tongxunlu/index",
+        "qingui-index-richtext": "./richtext/index"
+    }
+}

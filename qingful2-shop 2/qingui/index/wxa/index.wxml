@@ -1,0 +1,43 @@
+<view class="qingful-jump-wrap" style="margin: 0 {{wxaData.config.w_margin}}rpx 20rpx;" bindtap="navigateTo" data-appid="{{wxaData.config.appid}}">
+    <view class='qingful-jump-bg-img-wrap qingful-jump-position-absolute' wx:if="{{wxaData.config.style == 1 || wxaData.config.style == 2 || wxaData.config.style == 3 || wxaData.config.style == 5 }}">
+        <image class="qingful-jump-bg-img" style="background: #ff6c4d;" src="{{wxaData.config.bg_img}}"></image>
+    </view>
+    <view class='qingful-jump-info-wrap qingful-jump-position-absolute'>
+        <view class="qingful-jump-info text-align-c" wx:if="{{wxaData.config.style==1}}">
+            <view class="qingful-jump-info-text font-16" style="line-height:45rpx;">{{wxaData.config.name}}</view>
+            <view class="qingful-jump-info-text font-14" style="line-height:40rpx;padding-top:8rpx;">{{wxaData.config.introduce}}</view>
+        </view>
+
+        <view class="qingful-jump-logo-wrap fl" wx:if="{{wxaData.config.style==2}}">
+            <image class="qingful-jump-bg-img" src="{{wxaData.config.logo}}"></image>
+        </view>
+        <view class="qingful-jump-info fl" wx:if="{{wxaData.config.style==2}}" style="width:{{defaultWidth-248/(750/defaultWidth)}}px;">
+            <view class="qingful-jump-info-text font-16" style="line-height:45rpx;">{{wxaData.config.name}}</view>
+            <view class="qingful-jump-info-text font-14" style="line-height:40rpx;padding-top:8rpx;">{{wxaData.config.introduce}}</view>
+        </view>
+
+        <view class="qingful-jump-info" wx:if="{{wxaData.config.style==3}}" style="margin-left:70rpx;">
+            <view class="qingful-jump-info-text font-16" style="line-height:45rpx;">{{wxaData.config.name}}
+                <text class='qingful-jump-info-go font-10' style="background: #62d2d5;">GO ></text>
+            </view>
+            <view class="qingful-jump-info-text font-14" style="line-height:40rpx;padding-top:8rpx;">{{wxaData.config.introduce}}</view>
+        </view>
+
+        <view class="qingful-jump-info-style-3" wx:if="{{wxaData.config.style==4}}">
+            <view class="qingful-jump-info-text-style font-16" style="line-height:45rpx;">{{wxaData.config.name}}</view>
+            <view class="qingful-jump-info-text-style font-14" style="line-height:40rpx;padding-top:8rpx;">{{wxaData.config.introduce}}</view>
+        </view>
+        <view class='qingful-jump-arrow-right' wx:if="{{wxaData.config.style==4}}">
+            <icon class='iconfont icon-xiangyou1'></icon>
+        </view>
+
+        <view class="qingful-jump-logo-wrap-5 fl" wx:if="{{wxaData.config.style==6}}">
+            <image class="qingful-jump-bg-img" src="{{wxaData.config.logo}}"></image>
+        </view>
+        <view class="qingful-jump-info-style-5 fr" wx:if="{{wxaData.config.style==6}}" style="width:{{defaultWidth-178/(750/defaultWidth)}}px">
+            <view class="qingful-jump-info-text-style font-16" style="line-height:45rpx;">{{wxaData.config.name}}</view>
+            <view class="qingful-jump-info-text-style font-14" style="line-height:40rpx;padding-top:8rpx;">{{wxaData.config.introduce}}</view>
+        </view>
+        <view class="clearfix"></view>
+    </view>
+</view>

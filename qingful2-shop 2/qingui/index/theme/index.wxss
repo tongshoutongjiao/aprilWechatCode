@@ -1,0 +1,190 @@
+.qingful-window-wrap{
+    margin: 0 24rpx;
+    margin-bottom: 20rpx;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+.qingful-window-wrap-more-line{
+    margin: 0 24rpx;
+}
+.qingful-window-img{
+    width: 100%;
+    height: 100%;
+}
+/*分左右排列  */
+.qingful-window-item-wrap{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+/*2个橱窗  */
+.qingful-window-item-2{
+    height: 472rpx;
+}
+.qingful-window-item-2:first-child{
+    margin-right: 16rpx;
+}
+/*3个橱窗  */
+.qingful-window-item-3{ 
+    height: 325rpx;
+}
+.qingful-window-item-3:not(:last-child){
+    margin-right: 16rpx;
+}
+    /*分左右排列  */
+    .qingful-window-item-l .qingful-window-item-3{
+        height: 472rpx;
+        margin-right: 16rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-3{
+        height: 228rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-3:last-child{
+        margin-top: 16rpx;
+    }
+/*4个橱窗  */
+.qingful-window-item-4{ 
+    height: 325rpx;
+}
+.qingful-window-item-4:not(:last-child){
+    margin-right: 16rpx;
+}
+    /*分左右排列  */
+    .qingful-window-item-l .qingful-window-item-4{
+        height: 228rpx;
+        margin-right: 16rpx;
+    }
+    .qingful-window-item-l .qingful-window-item-4:last-child{
+        margin-top: 16rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-4{
+        height: 228rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-4:last-child{
+        margin-top: 16rpx;
+    }
+/*5个橱窗  */
+    /*5-10  */
+    .qingful-window-item-l-t,.qingful-window-item-r-t,.qingful-window-item-l-b,.qingful-window-item-r-b{
+        display: flex;
+        flex-flow:row nowrap;
+        justify-content: space-between;
+    }
+    /*分左右排列  */
+    .qingful-window-item-l .qingful-window-item-5{
+        height: 228rpx;
+        margin-right: 16rpx;
+    }
+    .qingful-window-item-l .qingful-window-item-5:last-child{
+        margin-top: 16rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-5{
+        height: 228rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-r-b .qingful-window-item-5{
+        margin-top: 16rpx;
+    }
+/*6个橱窗  */
+    /*分左右排列  */
+    .qingful-window-item-l .qingful-window-item-6{
+        height: 228rpx;
+        margin-right: 16rpx;
+    }
+    .qingful-window-item-l .qingful-window-item-l-b .qingful-window-item-6{
+        margin-top: 16rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-6{
+        height: 228rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-r-b .qingful-window-item-6{
+        margin-top: 16rpx;
+    }
+/*7个橱窗  */
+    /*分左右排列  */
+    .qingful-window-item-l .qingful-window-item-7{
+        height: 228rpx;
+        margin-right: 16rpx;
+    }
+    .qingful-window-item-l .qingful-window-item-l-b .qingful-window-item-7{
+        margin-top: 16rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-7{
+        height: 228rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-r-t .qingful-window-item-7{
+        margin-right: 16rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-r-b .qingful-window-item-7{
+        margin-top: 16rpx;
+        margin-right: 16rpx;
+    }
+/*8个橱窗  */
+    /*分左右排列  */
+    .qingful-window-item-l .qingful-window-item-8{
+        height: 228rpx;
+        margin-right: 16rpx;
+    }
+    .qingful-window-item-l .qingful-window-item-l-b .qingful-window-item-8{
+        margin-top: 16rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-8{
+        height: 228rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-r-t .qingful-window-item-8{
+        margin-right: 16rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-r-b .qingful-window-item-8{
+        margin-top: 16rpx;
+        margin-right: 16rpx;
+    }
+/*9个橱窗  */
+    /*分左右排列  */
+    .qingful-window-item-l .qingful-window-item-9{
+        height: 228rpx;
+        margin-right: 16rpx;
+    }
+    .qingful-window-item-l .qingful-window-item-l-t.line-2{
+        margin-top: 16rpx;
+    }
+    .qingful-window-item-l .qingful-window-item-l-b .qingful-window-item-9{
+        margin-top: 16rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-r-t.line-2{
+        margin-top: 16rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-9{
+        height: 228rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-r-t .qingful-window-item-9{
+        margin-right: 16rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-r-b .qingful-window-item-9{
+        margin-top: 16rpx;
+        margin-right: 16rpx;
+    }
+/*10个橱窗  */
+    /*分左右排列  */
+    .qingful-window-item-l .qingful-window-item-10{
+        height: 228rpx;
+        margin-right: 16rpx;
+    }
+    .qingful-window-item-l .qingful-window-item-l-t.line-2{
+        margin-top: 16rpx;
+    }
+    .qingful-window-item-l .qingful-window-item-l-b .qingful-window-item-10{
+        margin-top: 16rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-r-t.line-2{
+        margin-top: 16rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-10{
+        height: 228rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-r-t .qingful-window-item-10{
+        margin-right: 16rpx;
+    }
+    .qingful-window-item-r .qingful-window-item-r-b .qingful-window-item-10{
+        margin-top: 16rpx;
+        margin-right: 16rpx;
+    }

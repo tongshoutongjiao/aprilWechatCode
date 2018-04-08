@@ -1,0 +1,5 @@
+<view class="qingful-xuanfu-wrap">
+    <block wx:for="{{xuanfuData.data}}" wx:key="">
+        <image class="qingful-xuanfu-item" bindtap="navigateTo" data-target_type="{{item.target_type}}" data-target_url="{{item.target_url}}" style="background:{{item.bg_color}};color:{{item.color}};" mode="" src="{{item.icon}}"></image>
+    </block>
+</view>
